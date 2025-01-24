@@ -24,7 +24,7 @@ public class PickUpScript : MonoBehaviour
             {
                 case PickUptypes.Armor:
                     Debug.Log("Armor Aquired");
-                    //Player.GetComponent<Health_Player>().Health(1)
+                    Player.GetComponent<Health_Player>().Health(-1);
                     Destroy(gameObject);
                     break;
 
