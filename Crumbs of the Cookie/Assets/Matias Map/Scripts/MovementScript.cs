@@ -1,58 +1,75 @@
 using System.Xml.Schema;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class MovementScript : MonoBehaviour
 {
     //Configurable parameters
-    [Header("Movement")]
-    public float moveSpeed = 10f;
-    public float jumpStrength = 10f;
-    public float castDistance;
-    public LayerMask groundLayer;
-    public Vector2 boxSize;
+    [SerializeField] float movementSpeed = 20f;
+    [SerializeField] float jumpingPower = 20f;
+    [SerializeField] float castDistance;
+    [SerializeField] float waterCastDistance;
+    [SerializeField] Vector2 boxSize;
+    [SerializeField] Vector2 waterBoxSize;
+    [SerializeField] LayerMask groundLayer;
+    [SerializeField] LayerMask hazardLayer;
+    [SerializeField] LayerMask waterLayer;
+    [SerializeField] float coyoteTimer = 0.075f;
+    [SerializeField] float jumpBuffering = 0.2f;
 
-    Vector2 movementVector;
+    //private variables 
+    private Vector2 movementInput;
+    private Vector2 jumpingInput;
+    private bool isGrounded;
+    private float coyoteCounter;
+    private float jumpBufferingTimer;
 
+    //Cached references
     Rigidbody2D rb;
+    SpriteRenderer spriteRenderer;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        spriteRenderer = GetComponentInChildren<SpriteRenderer>();
     }
 
     private void FixedUpdate()
     {
-        Move();
+        Movement();
+        SpriteFlip();
+        CoyoteJump();
     }
 
-    void OnJump(InputValue value)
+    void OnMove(InputValue inputValue)
+    { 
+        movementInput = inputValue.Get<Vector2>();
+    } 
+
+    void OnJump(InputValue inputValue)
     {
-        if (value.isPressed)
+        if (inputValue.isPressed)
         {
-            if (IsGrounded())
+            if (coyoteCounter > 0f)
             {
-                JumpForce();
+               JumpForce();
+
+               
             }
         }
     }
 
-    void OnMove(InputValue value)
+    void Movement()
     {
-        movementVector = value.Get<Vector2>();
-    }
-
-    void Move()
-    {
-        rb.linearVelocityX = movementVector.x * moveSpeed;
-
+        rb.linearVelocityX = movementInput.x * movementSpeed;
     }
 
     void JumpForce()
     {
-        rb.AddForce(Vector2.up * jumpStrength, ForceMode2D.Impulse);
+        rb.AddForce(Vector2.up * jumpingPower, ForceMode2D.Impulse);
+        coyoteCounter = 0f;
     }
-
 
     bool IsGrounded()
     {
@@ -64,6 +81,31 @@ public class MovementScript : MonoBehaviour
         else
         {
             return false;
+        }
+    }
+
+    void CoyoteJump()
+    {
+        if(IsGrounded())
+        {
+            coyoteCounter = coyoteTimer;
+        }
+        else
+        {
+            coyoteCounter -= Time.deltaTime;
+        }
+    }
+
+    void SpriteFlip()
+    {
+        if (rb.linearVelocityX < 0f)
+        {
+            spriteRenderer.flipX = true;
+        }
+
+        if (rb.linearVelocityX > 0f)
+        {
+            spriteRenderer.flipX = false;
         }
     }
 }
