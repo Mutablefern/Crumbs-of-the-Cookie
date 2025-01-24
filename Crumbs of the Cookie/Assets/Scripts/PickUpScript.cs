@@ -22,7 +22,7 @@ public class PickUpScript : MonoBehaviour
                     break;
 
                 default:
-                    Debug.LogError("Invalid Pickup type");
+                    Debug.LogError("Pickup type " + ThisPickUp + " doesnt have a function");
                     break;
             }
 
