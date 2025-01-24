@@ -11,6 +11,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BScene.unity
     guid: de8972a9a09890e408dce679e83838fb
+    path: Assets/Scenes/HerbertScene.unity
+    guid: 25e1bcd499844a14184eb0a3a333c074
+  - enabled: 1
+    path: Assets/Scenes/HerbertTestScene.unity
+    guid: e02d4f53f225b7342bc7b6c24f66ee54
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
