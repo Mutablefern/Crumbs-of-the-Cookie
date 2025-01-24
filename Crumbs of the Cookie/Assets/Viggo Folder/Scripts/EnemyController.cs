@@ -1,65 +1,49 @@
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class EnemyController : MonoBehaviour
 {
-    [Header("Enemy stats")] 
     [SerializeField] float moveSpeed = 1f;
 
-    [Header("Ground & Ledge Check")]
-    [SerializeField] Transform ledgeCheckPosition;
-    [SerializeField] float ledgeCheckLength;
-    [SerializeField] float groundCheck = 1f;
-    [SerializeField] LayerMask groundLayer;
+    public GameObject PointA;
+    public GameObject PointB;
 
-    bool isFacingRight;
+    Transform currentPoint;
+    Rigidbody2D rb_Enemy;
 
-    Rigidbody2D rb;
-
-    void Awake()
+    void Start()
     {
-        rb = GetComponent < Rigidbody2D>();
+        rb_Enemy = GetComponent<Rigidbody2D>();
+        currentPoint = PointB.transform;
     }
 
-    void Move()
+    void Update()
     {
-        if (CheckGrounded())
-        {
-            rb.linearVelocityX = transform.right.x * moveSpeed;
-        }
-        else
-        {
-            rb.linearVelocityX = 0f;
-        }
-    }
+        // Calculate direction and move
+        Vector2 direction = (currentPoint.position - transform.position).normalized;
+        rb_Enemy.linearVelocity = direction * moveSpeed;
 
-    void LedgeCheck()
-    {
-        RaycastHit2D hit = Physics2D.Raycast(
-            ledgeCheckPosition.position,
-            Vector2.down,
-            ledgeCheckLength,
-            groundLayer);
-
-        if (hit.collider == null && CheckGrounded())
+        // Check proximity to switch points
+        if (Vector2.Distance(transform.position, currentPoint.position) < 0.5f)
         {
-            isFacingRight = !isFacingRight;
-
-            if (isFacingRight)
-            {
-                transform.eulerAngles = new Vector3(0f, 0f, 0f);
-            }
-            else
-            {
-                transform.eulerAngles = new Vector3(0f, -180f, 0f);
-            }
+            flip();
+            currentPoint = currentPoint == PointB.transform ? PointA.transform : PointB.transform;
         }
     }
 
-    bool CheckGrounded()
+    private void flip()
     {
-        Collider2D isGrounded = Physics2D.OverlapCircle(transform.position, groundCheck, groundLayer);
+        Vector3 localscale = transform.localScale;
+        localscale.x *= -1;
+        transform.localScale = localscale;
+    }
 
-        return isGrounded;
+    void OnDrawGizmos()
+    {
+        if (PointA != null && PointB != null)
+        {
+            Gizmos.DrawWireSphere(PointA.transform.position, 0.5f);
+            Gizmos.DrawWireSphere(PointB.transform.position, 0.5f);
+            Gizmos.DrawLine(PointA.transform.position, PointB.transform.position);
+        }
     }
 }
