@@ -14,5 +14,14 @@ public class PointButtonAdd : MonoBehaviour
         {
             pointCalculationScript.GainPoints(100);
         }
+
+        if (Input.GetMouseButtonDown(1))
+        {
+            SceneManagement.changescene("SampleScene");
+        }
+        if (Input.GetKeyDown(KeyCode.G))
+        {
+            SceneManagement.changescene("BScene");
+        }
     }
 }
