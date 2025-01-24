@@ -9,6 +9,13 @@ public class PickUpScript : MonoBehaviour
     };
     [SerializeField] PickUptypes ThisPickUp;
 
+    GameObject Player;
+
+    private void Start()
+    {
+        Player = GameObject.FindGameObjectWithTag("Player");
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
@@ -17,7 +24,7 @@ public class PickUpScript : MonoBehaviour
             {
                 case PickUptypes.Armor:
                     Debug.Log("Armor Aquired");
-                    //Health_Player.Health(1)
+                    //Player.GetComponent<Health_Player>().Health(1)
                     Destroy(gameObject);
                     break;
 
