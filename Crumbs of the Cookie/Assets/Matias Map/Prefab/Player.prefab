@@ -51,7 +51,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 2
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -142,8 +142,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60488b1493505e944869cd422c5029ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 15
-  jumpingPower: 10
+  movementSpeed: 12.5
+  jumpingPower: 11.25
   castDistance: 0.75
   waterCastDistance: 1
   boxSize: {x: 0.5, y: 0.5}
@@ -159,6 +159,17 @@ MonoBehaviour:
     m_Bits: 16
   coyoteTimer: 0.09
   jumpBuffering: 0.2
+  gravityScale: 1.45
+  gravityStrength: 1.25
+  fallGravityMult: 2
+  maxFallSpeed: 15
+  fastFallGravityMult: 3
+  maxFastFallSpeed: 15
+  jumpCutGravityMult: 2.06
+  jumpHangGravityMult: 0.185
+  jumpHangTimeThreshold: 1.49
+  jumpHangAccelerationMult: 1.57
+  jumpHangMaxSpeedMult: 15
 --- !u!1 &4564530781037578232
 GameObject:
   m_ObjectHideFlags: 0
