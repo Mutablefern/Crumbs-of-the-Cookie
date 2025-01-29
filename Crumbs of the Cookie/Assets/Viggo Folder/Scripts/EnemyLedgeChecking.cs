@@ -18,6 +18,12 @@ public class EnemyLedgeChecking : MonoBehaviour
         rb_Enemy = GetComponent<Rigidbody2D>();
     }
 
+    void FixedUpdate()
+    {
+        Move();
+        LedgeCheck();
+    }
+
     void Move()
     {
         if (CheckGrounded())
@@ -32,6 +38,7 @@ public class EnemyLedgeChecking : MonoBehaviour
 
     void LedgeCheck()
     {
+        //Checking if ledge infront
         RaycastHit2D hit = Physics2D.Raycast(
             ledgeCheckPosition.position,
             Vector2.down,
@@ -53,7 +60,7 @@ public class EnemyLedgeChecking : MonoBehaviour
         }
     }
 
-    void CheckGrounded()
+    bool CheckGrounded()
     {
         Collider2D isGrounded = Physics2D.OverlapCircle(transform.position, groundCheck, groundLayer);
 

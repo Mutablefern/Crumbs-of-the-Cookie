@@ -18,11 +18,11 @@ public class EnemyController : MonoBehaviour
 
     void Update()
     {
-        // Calculate direction and move
+        //Calculate direction and move
         Vector2 direction = (currentPoint.position - transform.position).normalized;
         rb_Enemy.linearVelocity = direction * moveSpeed;
 
-        // Check proximity to switch points
+        //Check proximity to switch points
         if (Vector2.Distance(transform.position, currentPoint.position) < 0.5f)
         {
             flip();
@@ -30,8 +30,9 @@ public class EnemyController : MonoBehaviour
         }
     }
 
-    private void flip()
+    void flip()
     {
+        //Flips the game object
         Vector3 localscale = transform.localScale;
         localscale.x *= -1;
         transform.localScale = localscale;
