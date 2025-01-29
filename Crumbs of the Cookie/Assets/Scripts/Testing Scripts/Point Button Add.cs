@@ -1,11 +1,14 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PointButtonAdd : MonoBehaviour
 {
     PointCalculation pointCalculationScript;
+    SceneManagement sceneManagementScript;
 
     private void Start()
     {
+        sceneManagementScript = GameObject.Find("SceneManager").GetComponent<SceneManagement>();
         pointCalculationScript = GetComponent<PointCalculation>();
     }
     void Update()
@@ -17,11 +20,11 @@ public class PointButtonAdd : MonoBehaviour
 
         if (Input.GetMouseButtonDown(1))
         {
-            SceneManagement.changescene("SampleScene");
+            sceneManagementScript.changescene("SampleScene");
         }
         if (Input.GetKeyDown(KeyCode.G))
         {
-            SceneManagement.changescene("BScene");
+            sceneManagementScript.changescene("BScene");
         }
     }
 }
