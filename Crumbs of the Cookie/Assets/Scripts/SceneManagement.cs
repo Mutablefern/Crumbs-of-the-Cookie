@@ -1,17 +1,32 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class SceneManagement : MonoBehaviour
 {
-    // everything is static, so it can be called from anywhere, as long as SceneManagement is in a builded scene.
-    public static void changescene(string sceneName)
+    [SerializeField] GameObject Transitioner;
+    SceneTransition sceneTransitionScript;
+    int transitionSeconds;
+
+    private void Start()
     {
-        //to change scene, use "Scenemanagement.changescene([the scene you want to change to])"
-        SceneManager.LoadScene(sceneName);
+        sceneTransitionScript = Transitioner.GetComponent<SceneTransition>();
+    }
+    public void changescene(string sceneName)
+    {
+        StartCoroutine(WaitForTransitionCor(sceneName));
     }
 
-    public static void Quit()
+    public void Quit()
     {
         Application.Quit();
+    }
+
+    IEnumerator WaitForTransitionCor(string sceneName)
+    {
+        transitionSeconds = sceneTransitionScript.transitionDuration;
+        sceneTransitionScript.FadeOut();
+        yield return new WaitForSeconds(transitionSeconds);
+        SceneManager.LoadScene(sceneName);
     }
 }

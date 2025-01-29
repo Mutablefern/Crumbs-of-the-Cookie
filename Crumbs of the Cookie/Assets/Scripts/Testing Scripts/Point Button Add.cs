@@ -3,10 +3,13 @@ using UnityEngine;
 public class PointButtonAdd : MonoBehaviour
 {
     PointCalculation pointCalculationScript;
+    SceneManagement sceneManagementScript;
 
     private void Start()
     {
+        sceneManagementScript = GameObject.Find("SceneManager").GetComponent<SceneManagement>();
         pointCalculationScript = GetComponent<PointCalculation>();
+        Time.timeScale = 1;
     }
     void Update()
     {
@@ -15,13 +18,14 @@ public class PointButtonAdd : MonoBehaviour
             pointCalculationScript.GainPoints(100);
         }
 
-        if (Input.GetMouseButtonDown(1))
+        if (Input.GetKeyDown(KeyCode.A))
         {
-            SceneManagement.changescene("SampleScene");
+            Debug.Log("Hagha, ONE!");
+            sceneManagementScript.changescene("SampleScene");
         }
         if (Input.GetKeyDown(KeyCode.G))
         {
-            SceneManagement.changescene("BScene");
+            sceneManagementScript.changescene("BScene");
         }
     }
 }
