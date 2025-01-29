@@ -10,7 +10,10 @@ public class SceneManagement : MonoBehaviour
 
     private void Start()
     {
-        sceneTransitionScript = Transitioner.GetComponent<SceneTransition>();
+        if (Transitioner != null)
+        {
+            sceneTransitionScript = Transitioner.GetComponent<SceneTransition>();
+        }
     }
     public void changescene(string sceneName)
     {
@@ -24,8 +27,11 @@ public class SceneManagement : MonoBehaviour
 
     IEnumerator WaitForTransitionCor(string sceneName)
     {
-        transitionSeconds = sceneTransitionScript.transitionDuration;
-        sceneTransitionScript.FadeOut();
+        if (sceneTransitionScript != null)
+        {
+            transitionSeconds = sceneTransitionScript.transitionDuration;
+            sceneTransitionScript.FadeOut();
+        }
         yield return new WaitForSeconds(transitionSeconds);
         SceneManager.LoadScene(sceneName);
     }
