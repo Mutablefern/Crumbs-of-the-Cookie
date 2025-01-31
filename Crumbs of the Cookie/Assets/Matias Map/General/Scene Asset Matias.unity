@@ -317,7 +317,7 @@ Transform:
   m_GameObject: {fileID: 147138849}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.53, y: 0, z: 0}
+  m_LocalPosition: {x: -5.76, y: -1.41, z: 0}
   m_LocalScale: {x: 4.2833, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -451,7 +451,7 @@ Transform:
   m_GameObject: {fileID: 1273116566}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.5, y: -0.3, z: 0}
+  m_LocalPosition: {x: 5.11, y: -3.53, z: 0}
   m_LocalScale: {x: 4.2833, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -705,12 +705,12 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 2398665862090611863, guid: 9e531f0ff10db6e45860b6b6455a5d8c, type: 3}
-      propertyPath: coyoteTimer
-      value: 0.07
+      propertyPath: maxFallSpeed
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2398665862090611863, guid: 9e531f0ff10db6e45860b6b6455a5d8c, type: 3}
-      propertyPath: jumpBuffering
-      value: 0.01
+      propertyPath: minFastFallSpeed
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5998911278847716393, guid: 9e531f0ff10db6e45860b6b6455a5d8c, type: 3}
       propertyPath: m_LocalPosition.x

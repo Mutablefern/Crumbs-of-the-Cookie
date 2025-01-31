@@ -143,28 +143,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 12.5
-  jumpingPower: 11.25
+  jumpingPower: 14
   castDistance: 0.75
-  waterCastDistance: 1
   boxSize: {x: 0.5, y: 0.5}
-  waterBoxSize: {x: 0.56, y: 0.5}
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
-  hazardLayer:
-    serializedVersion: 2
-    m_Bits: 128
-  waterLayer:
-    serializedVersion: 2
-    m_Bits: 16
-  coyoteTimer: 0.2
-  jumpBuffering: 0.2
+  coyoteTimer: 0.25
+  jumpBuffering: 0.3
   gravityScale: 1.45
-  gravityStrength: 1.25
-  fallGravityMult: 2
-  maxFallSpeed: 15
-  fastFallGravityMult: 3
-  maxFastFallSpeed: 15
+  gravityStrength: 2.35
+  fallGravityMult: 3
+  maxFallSpeed: -15
+  fastFallGravityMult: 10
+  minFastFallSpeed: -1
 --- !u!1 &4564530781037578232
 GameObject:
   m_ObjectHideFlags: 0

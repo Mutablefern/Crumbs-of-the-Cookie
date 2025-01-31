@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -14,8 +15,8 @@ public class MovementScript : MonoBehaviour
     [SerializeField] LayerMask groundLayer;
 
     [Header("Movement Smoothness")]
-    [SerializeField] float coyoteTimer = 0.075f;  // Coyote time duration
-    [SerializeField] float jumpBuffering = 0.2f; // Jump buffering time
+    [SerializeField] float coyoteTimer = 0.075f;  
+    [SerializeField] float jumpBuffering = 0.2f; 
 
     [Header("Gravity Scale")]
     [SerializeField] float gravityScale;
@@ -23,7 +24,7 @@ public class MovementScript : MonoBehaviour
     [SerializeField] float fallGravityMult;
     [SerializeField] float maxFallSpeed;
     [SerializeField] float fastFallGravityMult;
-    [SerializeField] float maxFastFallSpeed;
+    [SerializeField] float minFastFallSpeed;
 
     // Private variables
     private Vector2 movementInput;
@@ -48,6 +49,20 @@ public class MovementScript : MonoBehaviour
         SetGravityScale(gravityScale);
     }
 
+    private void Update()
+    {
+        if (IsGrounded())
+        {
+            lastGroundedTime = Time.time;
+            coyoteCounter = coyoteTimer;
+        }
+        else
+        {
+            coyoteCounter -= Time.deltaTime;
+            jumpBufferingTimer -= Time.deltaTime;
+        }
+    }
+
     private void FixedUpdate()
     {
         Movement();
@@ -62,18 +77,7 @@ public class MovementScript : MonoBehaviour
                 JumpForce();
                 jumpBufferingTimer = 0;  
             }
-        }
-
-        
-        if (IsGrounded())
-        {
-            lastGroundedTime = Time.time;
-            coyoteCounter = coyoteTimer;  
-        }
-        else
-        {
-            coyoteCounter -= Time.deltaTime;  
-        }
+        }  
     }
 
     
@@ -121,6 +125,11 @@ public class MovementScript : MonoBehaviour
         else
         {
             SetGravityScale(gravityScale);
+        }
+
+        if(rb_Player.linearVelocity.y < 0)
+        {
+            SetGravityScale(gravityScale * fallGravityMult);
         }
     }
 
