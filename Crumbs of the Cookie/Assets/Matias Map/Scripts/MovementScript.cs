@@ -1,30 +1,21 @@
-using System.Xml.Schema;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using System.Collections;
 
 public class MovementScript : MonoBehaviour
 {
-
-    //Configurable parameters
+    // Configurable parameters
     [Header("Player Movement Stats")]
     [SerializeField] float movementSpeed = 20f;
     [SerializeField] float jumpingPower = 20f;
-    
 
     [Header("Ray Casting Utilities")]
     [SerializeField] float castDistance;
-    [SerializeField] float waterCastDistance;
     [SerializeField] Vector2 boxSize;
-    [SerializeField] Vector2 waterBoxSize;
     [SerializeField] LayerMask groundLayer;
-    [SerializeField] LayerMask hazardLayer;
-    [SerializeField] LayerMask waterLayer;
 
     [Header("Movement Smoothness")]
-    [SerializeField] float coyoteTimer = 0.075f;
-    [SerializeField] float jumpBuffering = 0.2f;
+    [SerializeField] float coyoteTimer = 0.075f;  // Coyote time duration
+    [SerializeField] float jumpBuffering = 0.2f; // Jump buffering time
 
     [Header("Gravity Scale")]
     [SerializeField] float gravityScale;
@@ -34,15 +25,15 @@ public class MovementScript : MonoBehaviour
     [SerializeField] float fastFallGravityMult;
     [SerializeField] float maxFastFallSpeed;
 
-    //private variables 
+    // Private variables
     private Vector2 movementInput;
-    private Vector2 jumpingInput;
     private float coyoteCounter;
     private float jumpBufferingTimer;
     private float lastGroundedTime = -0.09f;
     private bool jumpPressed;
+    private bool isGrounded;
 
-    //Cached references
+    // Cached references
     Rigidbody2D rb_Player;
     SpriteRenderer spriteRenderer;
 
@@ -63,79 +54,69 @@ public class MovementScript : MonoBehaviour
         SpriteFlip();
         ExtraGravity();
 
-        if(IsGrounded())
+       
+        if (jumpPressed && jumpBufferingTimer > 0)
+        {
+            if (IsGrounded() || coyoteCounter > 0)  
+            {
+                JumpForce();
+                jumpBufferingTimer = 0;  
+            }
+        }
+
+        
+        if (IsGrounded())
         {
             lastGroundedTime = Time.time;
-            coyoteCounter = coyoteTimer;
+            coyoteCounter = coyoteTimer;  
         }
         else
         {
-            coyoteCounter -= Time.deltaTime;
-        }
-
-        if (jumpPressed && jumpBufferingTimer > 0)
-        {
-            if (IsGrounded() || coyoteCounter > 0)
-            {
-                JumpForce();
-                jumpBufferingTimer = 0;
-            }
+            coyoteCounter -= Time.deltaTime;  
         }
     }
 
+    
     void OnMove(InputValue inputValue)
-    { 
+    {
         movementInput = inputValue.Get<Vector2>();
-    } 
+    }
 
     void OnJump(InputValue inputValue)
     {
-        if (inputValue.isPressed && !jumpPressed)
+        if (inputValue.isPressed)
         {
             jumpPressed = true;
-            jumpBufferingTimer = jumpBuffering;
-            Debug.Log("Jump pressed");
+            jumpBufferingTimer = jumpBuffering;  
         }
-        
-        if (!inputValue.isPressed && jumpPressed)
+        else
         {
             jumpPressed = false;
-            Debug.Log("Jump Button Released");
         }
     }
 
     void Movement()
     {
-        rb_Player.linearVelocityX = movementInput.x * movementSpeed;
+        rb_Player.linearVelocity = new Vector2(movementInput.x * movementSpeed, rb_Player.linearVelocity.y);
     }
 
     void JumpForce()
     {
-        if (IsGrounded() || coyoteCounter > 0)
-        {
-            rb_Player.linearVelocity = new Vector2(rb_Player.linearVelocityX, jumpingPower);
-            coyoteCounter = 0f;
-        }
+        rb_Player.linearVelocity = new Vector2(rb_Player.linearVelocity.x, jumpingPower);  
+        coyoteCounter = 0f; 
     }
 
     bool IsGrounded()
     {
-        if (Physics2D.BoxCast(transform.position, boxSize, 0, -transform.up, castDistance, groundLayer))
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
+        return Physics2D.BoxCast(transform.position, boxSize, 0, -transform.up, castDistance, groundLayer);
     }
 
     void ExtraGravity()
     {
-        if (rb_Player.linearVelocityY > 0)
+        if (rb_Player.linearVelocity.y > 0)
         {
             SetGravityScale(gravityScale * fallGravityMult);
-            rb_Player.linearVelocity = new Vector2(rb_Player.linearVelocity.x,Mathf.Max(rb_Player.linearVelocity.y, -maxFallSpeed));
+            rb_Player.linearVelocity = new Vector2(rb_Player.linearVelocity.x, Mathf.Max(rb_Player.linearVelocity.y, -maxFallSpeed));
         }
         else
         {
@@ -148,15 +129,14 @@ public class MovementScript : MonoBehaviour
         rb_Player.gravityScale = scale;
     }
 
-
     void SpriteFlip()
     {
-        if (rb_Player.linearVelocityX < 0f)
+        if (rb_Player.linearVelocity.x < 0f)
         {
             spriteRenderer.flipX = true;
         }
 
-        if (rb_Player.linearVelocityX > 0f)
+        if (rb_Player.linearVelocity.x > 0f)
         {
             spriteRenderer.flipX = false;
         }
