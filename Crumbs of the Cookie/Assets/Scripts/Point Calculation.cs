@@ -6,11 +6,11 @@ public class PointCalculation : MonoBehaviour
 {
     [SerializeField] AudioSource PointGain;
 
-    int pointammount;
+    static int pointammount;
 
     void Start()
     {
-        GainPoints(0);
+        GainPoints(pointammount);
     }
 
     [SerializeField] TextMeshProUGUI pointText;
