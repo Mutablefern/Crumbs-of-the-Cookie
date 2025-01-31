@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class EnemyController : MonoBehaviour
+public class EnemyPointMovement : MonoBehaviour
 {
     [SerializeField] float moveSpeed = 1f;
 
@@ -10,7 +10,7 @@ public class EnemyController : MonoBehaviour
     Transform currentPoint;
     Rigidbody2D rb_Enemy;
 
-    void Start()
+    void Awake()
     {
         rb_Enemy = GetComponent<Rigidbody2D>();
         currentPoint = PointB.transform;
