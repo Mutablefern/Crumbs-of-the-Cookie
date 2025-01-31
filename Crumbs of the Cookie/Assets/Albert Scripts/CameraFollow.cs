@@ -6,6 +6,7 @@ public class CameraFollow : MonoBehaviour
     [SerializeField] GameObject player; //links to the player so the script can track it
     [SerializeField] float CameraMovementSpeed; //how fast the camera goes to the target
     [SerializeField] bool cameraActive = true; //if the camera follows the player or not
+    [SerializeField] Animator cameraShake;
 
     void Start()
     {
@@ -26,5 +27,9 @@ public class CameraFollow : MonoBehaviour
     public void SetActive()
     {
         cameraActive = true;
+    }
+    public void triggerShake()
+    {
+        cameraShake.SetTrigger("Shake");
     }
 }
