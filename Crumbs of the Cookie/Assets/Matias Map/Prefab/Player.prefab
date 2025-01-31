@@ -59,9 +59,9 @@ Rigidbody2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_Interpolate: 1
+  m_SleepingMode: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!70 &2474395633756626431
 CapsuleCollider2D:
@@ -157,7 +157,7 @@ MonoBehaviour:
   waterLayer:
     serializedVersion: 2
     m_Bits: 16
-  coyoteTimer: 0.09
+  coyoteTimer: 0.2
   jumpBuffering: 0.2
   gravityScale: 1.45
   gravityStrength: 1.25
@@ -165,11 +165,6 @@ MonoBehaviour:
   maxFallSpeed: 15
   fastFallGravityMult: 3
   maxFastFallSpeed: 15
-  jumpCutGravityMult: 2.06
-  jumpHangGravityMult: 0.185
-  jumpHangTimeThreshold: 1.49
-  jumpHangAccelerationMult: 1.57
-  jumpHangMaxSpeedMult: 15
 --- !u!1 &4564530781037578232
 GameObject:
   m_ObjectHideFlags: 0

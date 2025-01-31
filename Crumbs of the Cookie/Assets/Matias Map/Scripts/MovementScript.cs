@@ -40,8 +40,7 @@ public class MovementScript : MonoBehaviour
     private float coyoteCounter;
     private float jumpBufferingTimer;
     private float lastGroundedTime = -0.09f;
-    private bool isJumping;
-    private bool isGrounded;
+    private bool jumpPressed;
 
     //Cached references
     Rigidbody2D rb_Player;
@@ -62,12 +61,25 @@ public class MovementScript : MonoBehaviour
     {
         Movement();
         SpriteFlip();
-        CoyoteJump();
         ExtraGravity();
 
-        if(isGrounded)
+        if(IsGrounded())
         {
             lastGroundedTime = Time.time;
+            coyoteCounter = coyoteTimer;
+        }
+        else
+        {
+            coyoteCounter -= Time.deltaTime;
+        }
+
+        if (jumpPressed && jumpBufferingTimer > 0)
+        {
+            if (IsGrounded() || coyoteCounter > 0)
+            {
+                JumpForce();
+                jumpBufferingTimer = 0;
+            }
         }
     }
 
@@ -78,12 +90,17 @@ public class MovementScript : MonoBehaviour
 
     void OnJump(InputValue inputValue)
     {
-        if (inputValue.isPressed)
+        if (inputValue.isPressed && !jumpPressed)
         {
-            if (Time.time -lastGroundedTime <= coyoteCounter)
-            {
-               JumpForce();
-            }
+            jumpPressed = true;
+            jumpBufferingTimer = jumpBuffering;
+            Debug.Log("Jump pressed");
+        }
+        
+        if (!inputValue.isPressed && jumpPressed)
+        {
+            jumpPressed = false;
+            Debug.Log("Jump Button Released");
         }
     }
 
@@ -94,8 +111,11 @@ public class MovementScript : MonoBehaviour
 
     void JumpForce()
     {
-        rb_Player.AddForce(Vector2.up * jumpingPower, ForceMode2D.Impulse);
-        coyoteCounter = 0f;
+        if (IsGrounded() || coyoteCounter > 0)
+        {
+            rb_Player.linearVelocity = new Vector2(rb_Player.linearVelocityX, jumpingPower);
+            coyoteCounter = 0f;
+        }
     }
 
     bool IsGrounded()
@@ -104,25 +124,11 @@ public class MovementScript : MonoBehaviour
         {
             return true;
         }
-
         else
         {
             return false;
         }
     }
-
-    void CoyoteJump()
-    {
-        if(IsGrounded())
-        {
-            coyoteCounter = coyoteTimer;
-        }
-        else
-        {
-            coyoteCounter -= Time.deltaTime;
-        }
-    }
-
 
     void ExtraGravity()
     {
@@ -131,8 +137,6 @@ public class MovementScript : MonoBehaviour
             SetGravityScale(gravityScale * fallGravityMult);
             rb_Player.linearVelocity = new Vector2(rb_Player.linearVelocity.x,Mathf.Max(rb_Player.linearVelocity.y, -maxFallSpeed));
         }
-        
-
         else
         {
             SetGravityScale(gravityScale);
