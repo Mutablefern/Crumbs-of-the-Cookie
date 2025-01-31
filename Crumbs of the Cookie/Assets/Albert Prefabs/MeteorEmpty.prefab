@@ -169,3 +169,4 @@ MonoBehaviour:
   rb_meteor: {fileID: 2885282380808694908}
   target: {fileID: 5966195053727503849}
   speed: 1
+  acceleration: 1.002

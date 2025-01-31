@@ -7,6 +7,7 @@ public class MeteorController : MonoBehaviour
     [SerializeField] Rigidbody2D rb_meteor; //link to rigidbody for setting Velocity
     [SerializeField] Transform target;
     [SerializeField] float speed = 1;
+    [SerializeField] float acceleration;
 
     Vector2 direction;
 
@@ -22,10 +23,10 @@ public class MeteorController : MonoBehaviour
     void FixedUpdate()
     {
         rb_meteor.linearVelocity = direction.normalized * speed; //makes the meteor go to the target
-        speed = speed * 1.002f;
+        speed = speed * acceleration;
     }
 
-    public void changeTarget(Transform targetPosition)
+    public void changeTarget(Transform targetPosition) //gets the target position from the meteor
     {
         target = targetPosition;
     }
@@ -39,9 +40,7 @@ public class MeteorController : MonoBehaviour
         }
         if (collision.gameObject.layer == 6 && !conatainsEnemy)
         {
-            Debug.Log("kill");
             Destroy(gameObject);
         }
     }
-
 }

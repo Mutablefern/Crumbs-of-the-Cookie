@@ -3,7 +3,8 @@ using UnityEngine;
 public class MeteorSpawner : MonoBehaviour
 {
     [SerializeField] GameObject strikeTarget; //the target for the meteor
-    [SerializeField] int meteorOrigin; //where the meteor is spawned
+    [SerializeField] int meteorOrigin; //where the meteor is spawned (X)
+    [SerializeField] int spawnHeight; //where the meteor is spawned (Y)
     [SerializeField] bool containsEnemy; //if the meteor has enemies inside
     [SerializeField] GameObject meteor; //the meteor that is spawned
     bool active = true; //turns on spawner, is turned off after it fires
