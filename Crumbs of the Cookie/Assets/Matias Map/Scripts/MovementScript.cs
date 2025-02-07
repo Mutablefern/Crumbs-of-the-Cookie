@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -8,6 +10,7 @@ public class MovementScript : MonoBehaviour
     [Header("Player Movement Stats")]
     [SerializeField] float movementSpeed = 20f;
     [SerializeField] float jumpingPower = 20f;
+    [SerializeField] float dragForce; 
 
     [Header("Ray Casting Utilities")]
     [SerializeField] float castDistance;
@@ -61,6 +64,9 @@ public class MovementScript : MonoBehaviour
             coyoteCounter -= Time.deltaTime;
             jumpBufferingTimer -= Time.deltaTime;
         }
+
+        VariableJumping();
+
     }
 
     private void FixedUpdate()
@@ -68,7 +74,6 @@ public class MovementScript : MonoBehaviour
         Movement();
         SpriteFlip();
         ExtraGravity();
-
        
         if (jumpPressed && jumpBufferingTimer > 0)
         {
@@ -93,6 +98,7 @@ public class MovementScript : MonoBehaviour
             jumpPressed = true;
             jumpBufferingTimer = jumpBuffering;  
         }
+
         else
         {
             jumpPressed = false;
@@ -108,6 +114,14 @@ public class MovementScript : MonoBehaviour
     {
         rb_Player.linearVelocity = new Vector2(rb_Player.linearVelocity.x, jumpingPower);  
         coyoteCounter = 0f; 
+    }
+
+    void VariableJumping()
+    {
+        if (rb_Player.linearVelocityY > 0 && !Input.GetButton("Jump"))
+        {
+            rb_Player.AddForce(-transform.up * dragForce);
+        }
     }
 
     bool IsGrounded()

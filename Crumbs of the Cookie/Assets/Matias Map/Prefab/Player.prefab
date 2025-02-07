@@ -73,7 +73,7 @@ CapsuleCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: c88b95268f945534e989a9d0a6f19c67, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -144,19 +144,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementSpeed: 12.5
   jumpingPower: 14
-  castDistance: 0.75
+  dragForce: 15
+  castDistance: 0.72
   boxSize: {x: 0.5, y: 0.5}
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
   coyoteTimer: 0.25
   jumpBuffering: 0.3
-  gravityScale: 1.45
+  gravityScale: 1.75
   gravityStrength: 2.35
   fallGravityMult: 3
-  maxFallSpeed: -15
+  maxFallSpeed: 15
   fastFallGravityMult: 10
-  minFastFallSpeed: -1
+  minFastFallSpeed: 1
 --- !u!1 &4564530781037578232
 GameObject:
   m_ObjectHideFlags: 0
