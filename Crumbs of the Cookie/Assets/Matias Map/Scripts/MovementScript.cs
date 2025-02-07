@@ -26,16 +26,13 @@ public class MovementScript : MonoBehaviour
     [SerializeField] float gravityStrength;
     [SerializeField] float fallGravityMult;
     [SerializeField] float maxFallSpeed;
-    [SerializeField] float fastFallGravityMult;
-    [SerializeField] float minFastFallSpeed;
 
     // Private variables
     private Vector2 movementInput;
     private float coyoteCounter;
     private float jumpBufferingTimer;
-    private float lastGroundedTime = -0.09f;
     private bool jumpPressed;
-    private bool isGrounded;
+    
 
     // Cached references
     Rigidbody2D rb_Player;
@@ -56,7 +53,6 @@ public class MovementScript : MonoBehaviour
     {
         if (IsGrounded())
         {
-            lastGroundedTime = Time.time;
             coyoteCounter = coyoteTimer;
         }
         else
@@ -65,7 +61,7 @@ public class MovementScript : MonoBehaviour
             jumpBufferingTimer -= Time.deltaTime;
         }
 
-        VariableJumping();
+        VariableJumping(); 
 
     }
 
