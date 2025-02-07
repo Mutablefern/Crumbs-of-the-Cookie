@@ -12,7 +12,7 @@ public class MovementScript : MonoBehaviour
     [SerializeField] float jumpingPower = 20f;
     [SerializeField] float dragForce; 
 
-    [Header("Ray Casting Utilities")]
+    [Header("Ray Casting Utilities")] // Neccesary variables for raycasting. 
     [SerializeField] float castDistance;
     [SerializeField] Vector2 boxSize;
     [SerializeField] LayerMask groundLayer;
@@ -21,7 +21,7 @@ public class MovementScript : MonoBehaviour
     [SerializeField] float coyoteTimer = 0.075f;  
     [SerializeField] float jumpBuffering = 0.2f; 
 
-    [Header("Gravity Scale")]
+    [Header("Gravity Scale")] // variables which are needed for extra gravity. 
     [SerializeField] float gravityScale;
     [SerializeField] float gravityStrength;
     [SerializeField] float fallGravityMult;
@@ -29,8 +29,8 @@ public class MovementScript : MonoBehaviour
 
     // Private variables
     private Vector2 movementInput;
-    private float coyoteCounter;
-    private float jumpBufferingTimer;
+    private float coyoteCounter; // Same as jumpbufferingtimer. 
+    private float jumpBufferingTimer; // The variable we use to make the jumpbuffering decay over time. A "Timer". 
     private bool jumpPressed;
     
 
@@ -55,7 +55,7 @@ public class MovementScript : MonoBehaviour
         {
             coyoteCounter = coyoteTimer;
         }
-        else
+        else // Make the different timers decay over time. 
         {
             coyoteCounter -= Time.deltaTime;
             jumpBufferingTimer -= Time.deltaTime;
@@ -82,14 +82,14 @@ public class MovementScript : MonoBehaviour
     }
 
     
-    void OnMove(InputValue inputValue)
+    void OnMove(InputValue inputValue) //Used to we actually let unity know that we have input from player. 
     {
-        movementInput = inputValue.Get<Vector2>();
+        movementInput = inputValue.Get<Vector2>(); // our inputValue we get from the player ("wasd") becomes movementInput.
     }
 
     void OnJump(InputValue inputValue)
     {
-        if (inputValue.isPressed)
+        if (inputValue.isPressed) // Unity detectes spacebar being pressed. 
         {
             jumpPressed = true;
             jumpBufferingTimer = jumpBuffering;  
@@ -120,19 +120,19 @@ public class MovementScript : MonoBehaviour
         }
     }
 
-    bool IsGrounded()
+    bool IsGrounded() // Raycasting, for ground check. 
     {
         return Physics2D.BoxCast(transform.position, boxSize, 0, -transform.up, castDistance, groundLayer);
     }
 
     void ExtraGravity()
     {
-        if (rb_Player.linearVelocity.y > 0)
+        if (rb_Player.linearVelocity.y > 0) //If rb velocity.y is bigger then 0, Adds extra gravity. 
         {
             SetGravityScale(gravityScale * fallGravityMult);
             rb_Player.linearVelocity = new Vector2(rb_Player.linearVelocity.x, Mathf.Max(rb_Player.linearVelocity.y, -maxFallSpeed));
         }
-        else
+        else // If rb velocity.y isnt bigger than 0 set gravity to normal. 
         {
             SetGravityScale(gravityScale);
         }
@@ -143,12 +143,12 @@ public class MovementScript : MonoBehaviour
         }
     }
 
-    public void SetGravityScale(float scale)
+    public void SetGravityScale(float scale) // For extra gravity. 
     {
         rb_Player.gravityScale = scale;
     }
 
-    void SpriteFlip()
+    void SpriteFlip() //Makes the sprite flip, by changing the value of the sprite render to true/false, depending on where the player is moving.
     {
         if (rb_Player.linearVelocity.x < 0f)
         {
