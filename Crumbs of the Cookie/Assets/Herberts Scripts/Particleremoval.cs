@@ -2,9 +2,10 @@ using UnityEngine;
 
 public class Particleremoval : MonoBehaviour
 {
+    //Destroys the particle system after it is done so that they do not take space
     [SerializeField] float particletimer;
     [SerializeField] float particletimerorg;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    
     void Start()
     {
         particletimerorg = particletimer;
