@@ -10,6 +10,8 @@ public class EnemyFollowPlayer : MonoBehaviour
     public float jumpForce = 2f;
     public LayerMask groundLayer;
 
+    [SerializeField] float castDistance;
+
     private bool isGrounded;
     private bool shouldJump;
     public GameObject player;
@@ -27,11 +29,12 @@ public class EnemyFollowPlayer : MonoBehaviour
     void Update()
     {
         DetectPlayer();
+        Debug.Log(isGrounded);
 
         if (playerDetected)
         {
             //Grounded
-            isGrounded = Physics2D.Raycast(transform.position, Vector2.down, 1f, groundLayer);
+            isGrounded = Physics2D.Raycast(transform.position, Vector2.down, castDistance, groundLayer);
             //Player direction
             float direction = Mathf.Sign(playerTransform.position.x - transform.position.x);
             //Player above detection
@@ -48,6 +51,8 @@ public class EnemyFollowPlayer : MonoBehaviour
                 //If player above
                 RaycastHit2D platformAbove = Physics2D.Raycast(transform.position, Vector2.up, 3f, groundLayer);
 
+                Debug.DrawRay(transform.position, Vector2.down, Color.red);
+
                 if (!groundInFront.collider && !gapAhead.collider)
                 {
                     shouldJump = true;
@@ -62,7 +67,9 @@ public class EnemyFollowPlayer : MonoBehaviour
 
     void FixedUpdate()
     {
-        if(isGrounded && shouldJump)
+        isGrounded = Physics2D.Raycast(transform.position, Vector2.down, castDistance, groundLayer);
+
+        if (isGrounded && shouldJump)
         {
             shouldJump = false;
             Vector2 direction = (playerTransform.position - transform.position).normalized;
