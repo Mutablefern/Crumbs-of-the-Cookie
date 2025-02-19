@@ -7,6 +7,8 @@ using UnityEngine.InputSystem;
 public class MovementScript : MonoBehaviour
 {
     // Configurable parameters
+    [SerializeField] Animator playerAnim;
+
     [Header("Player Movement Stats")]
     [SerializeField] float movementSpeed = 20f;
     [SerializeField] float jumpingPower = 20f;
@@ -108,6 +110,14 @@ public class MovementScript : MonoBehaviour
     void Movement()
     {
         rb_Player.linearVelocity = new Vector2(movementInput.x * movementSpeed, rb_Player.linearVelocity.y);
+        if (rb_Player.linearVelocity.x != 0)
+        {
+            playerAnim.SetBool("Running", true);
+        }
+        else
+        {
+            playerAnim.SetBool("Running", false);
+        }
     }
 
     void JumpForce()
