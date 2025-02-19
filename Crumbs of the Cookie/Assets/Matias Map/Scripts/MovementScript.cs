@@ -63,6 +63,7 @@ public class MovementScript : MonoBehaviour
 
         VariableJumping(); 
 
+        Debug.DrawRay(transform.position, Vector3.down, Color.yellow);
     }
 
     private void FixedUpdate()
