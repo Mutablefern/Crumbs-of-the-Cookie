@@ -15,6 +15,7 @@ public class ParticleCaller : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
+            //Use this in other scripts to call the particle that you want
             particlesManager.Particels(particleToCall, transform.position);
         }
     }
