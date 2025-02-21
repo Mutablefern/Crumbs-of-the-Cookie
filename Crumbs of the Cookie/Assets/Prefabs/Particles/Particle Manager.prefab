@@ -47,3 +47,4 @@ MonoBehaviour:
   particle:
   - {fileID: 4308721344618351241, guid: 8f0b512e3aab9ce47bbb27dce1ae3306, type: 3}
   - {fileID: 810660028299579957, guid: 4dd6701829fa83c429cec86f671aa4a3, type: 3}
+  - {fileID: 5578525219009668565, guid: e0a5e912162ba87448d6f7e16f5dcde1, type: 3}
