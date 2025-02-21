@@ -58,11 +58,13 @@ public class MovementScript : MonoBehaviour
     {
         if (IsGrounded())
         {
+            playerAnim.SetBool("IsGrounded", true);
             lastGroundedTime = Time.time;
             coyoteCounter = coyoteTimer;
         }
         else
         {
+            playerAnim.SetBool("IsGrounded", false);
             coyoteCounter -= Time.deltaTime;
             jumpBufferingTimer -= Time.deltaTime;
         }
