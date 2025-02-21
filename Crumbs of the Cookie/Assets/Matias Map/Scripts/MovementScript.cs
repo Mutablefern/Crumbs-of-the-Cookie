@@ -122,6 +122,7 @@ public class MovementScript : MonoBehaviour
 
     void JumpForce()
     {
+        playerAnim.SetTrigger("Jump");
         rb_Player.linearVelocity = new Vector2(rb_Player.linearVelocity.x, jumpingPower);  
         coyoteCounter = 0f; 
     }
@@ -166,12 +167,12 @@ public class MovementScript : MonoBehaviour
     {
         if (rb_Player.linearVelocity.x < 0f)
         {
-            spriteRenderer.flipX = true;
+            transform.eulerAngles = new Vector3(transform.rotation.x, 180, transform.rotation.z);
         }
 
         if (rb_Player.linearVelocity.x > 0f)
         {
-            spriteRenderer.flipX = false;
+            transform.eulerAngles = new Vector3(transform.rotation.x, 0, transform.rotation.z);
         }
     }
 }
