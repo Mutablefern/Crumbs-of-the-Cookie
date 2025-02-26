@@ -4,37 +4,47 @@ using UnityEngine.InputSystem;
 
 public class AttackScript : MonoBehaviour
 {
-    [SerializeField] GameObject TorchHitbox;
-    [SerializeField] float attackRange;
-    [SerializeField] float attackDuration;
+    [SerializeField] GameObject LightAttackHitbox;
+    [SerializeField] GameObject HeavyAttackHitbox;
+    [SerializeField] float LightAttackDuration;
+    [SerializeField] float HeavyAttackDuration;
     [SerializeField] int ammoAmmount;
     [SerializeField] int ammoMaxAmmount;
     [SerializeField] float reloadDuration;
     [SerializeField] GameObject torchFire;
-    [SerializeField] Animator PlayerAni;
+    [SerializeField] Animator PlayerAnim;
 
+    bool isReloading;
     bool isAttacking;
 
     void OnLightAttack(InputValue inputValue)
     {
         if (inputValue.isPressed && !isAttacking)
         {
-            StartCoroutine(Attack());
+            StartCoroutine(LightAttack());
         }
     }
 
-    IEnumerator Attack()
+    void OnHeavyAttack(InputValue inputValue)
+    {
+        if (inputValue.isPressed && !isAttacking)
+        {
+            StartCoroutine(HeavyAttack());
+        }
+    }
+
+    IEnumerator LightAttack()
     {
         if (!isAttacking)
         {
             if (ammoAmmount > 0)
             {
-                Debug.Log("attack");
+                Debug.Log("Light attack");
                 ammoAmmount--;
-                TorchHitbox.SetActive(true);
-                //start animation
-                yield return new WaitForSeconds(attackDuration);
-                TorchHitbox.SetActive(false);
+                LightAttackHitbox.SetActive(true);
+                PlayerAnim.SetTrigger("Light attack");
+                yield return new WaitForSeconds(LightAttackDuration);
+                LightAttackHitbox.SetActive(false);
                 if (ammoAmmount <= 0)
                 {
                     torchFire.SetActive(false);
@@ -48,15 +58,43 @@ public class AttackScript : MonoBehaviour
             }
         }
     }
+    IEnumerator HeavyAttack()
+    {
+        if (!isAttacking)
+        {
+            if (ammoAmmount > 0)
+            {
+                Debug.Log("Heavy attack");
+                ammoAmmount--;
+                HeavyAttackHitbox.SetActive(true);
+                PlayerAnim.SetTrigger("Heavy attack");
+                yield return new WaitForSeconds(HeavyAttackDuration);
+                HeavyAttackHitbox.SetActive(false);
+                if (ammoAmmount <= 0)
+                {
+                    torchFire.SetActive(false);
+                }
+            }
+
+            else
+            {
+                if (!isReloading)
+                {
+                    Debug.Log("reload");
+                    StartCoroutine(attackReloadCor());
+                }
+            }
+        }
+    }
 
     IEnumerator attackReloadCor()
     {
-        //start reload animation
-
+        isReloading = true;
+        PlayerAnim.SetTrigger("Ignite");
         yield return new WaitForSeconds(reloadDuration);
         ammoAmmount = ammoMaxAmmount;
         torchFire.SetActive(true);
-
+        isReloading = false;
     }
 
 }
