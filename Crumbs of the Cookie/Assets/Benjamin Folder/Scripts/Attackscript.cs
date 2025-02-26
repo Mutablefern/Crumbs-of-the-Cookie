@@ -37,6 +37,7 @@ public class AttackScript : MonoBehaviour
     {
         if (!isAttacking)
         {
+            isAttacking = true;
             if (ammoAmmount > 0)
             {
                 Debug.Log("Light attack");
@@ -56,19 +57,22 @@ public class AttackScript : MonoBehaviour
                 Debug.Log("reload");
                 StartCoroutine(attackReloadCor());
             }
+            isAttacking = false;
         }
     }
     IEnumerator HeavyAttack()
     {
         if (!isAttacking)
         {
+            isAttacking = true;
             if (ammoAmmount > 0)
             {
                 Debug.Log("Heavy attack");
                 ammoAmmount--;
+                yield return new WaitForSeconds(HeavyAttackDuration * 0.8f);
                 HeavyAttackHitbox.SetActive(true);
                 PlayerAnim.SetTrigger("Heavy attack");
-                yield return new WaitForSeconds(HeavyAttackDuration);
+                yield return new WaitForSeconds(HeavyAttackDuration*0.8f);
                 HeavyAttackHitbox.SetActive(false);
                 if (ammoAmmount <= 0)
                 {
@@ -84,7 +88,8 @@ public class AttackScript : MonoBehaviour
                     StartCoroutine(attackReloadCor());
                 }
             }
-        }
+            isAttacking = false;
+        } 
     }
 
     IEnumerator attackReloadCor()
