@@ -519,10 +519,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fire_effect
       objectReference: {fileID: 0}
-    - target: {fileID: 1500015795146439477, guid: 0ef611174d231d942a17da22e56cc324, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3982666625132247039, guid: 0ef611174d231d942a17da22e56cc324, type: 3}
       propertyPath: m_SortingOrder
       value: 1
