@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: CotC Tile-Map II_0
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: -885619693068112821, guid: 6c0e1073294dfeb44a023a0810510d62, type: 3}
+  m_Sprite: {fileID: -885619693068112821, guid: d1c7346930951b84fa8ccedf0ed15640, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
