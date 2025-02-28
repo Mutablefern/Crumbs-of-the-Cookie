@@ -3,44 +3,39 @@ using UnityEngine;
 public class MovingPlatform: MonoBehaviour
 {
     public float speed;
-    public int startingPoint;
-    public Transform[] points;
+    public Transform pointA;
+    public Transform pointB;
 
-    private int i;
+    private Vector3 nextPosition;
+    Rigidbody2D rb_MovingPlatform;
 
     void Start()
     {
-        transform.position = points[startingPoint].position;
+        nextPosition = pointB.position;
+        rb_MovingPlatform = GetComponent<Rigidbody2D>();
     }
 
     void Update()
     {
-        if (Vector2.Distance(transform.position, points[i].position) < 0.02f)
-        {
-            i++;
-            if(i == points.Length)
-            {
-                i = 0;
-            }
-        }
+        transform.position = Vector3.MoveTowards(transform.position, nextPosition, speed * Time.deltaTime);
 
-        transform.position = Vector2.MoveTowards(transform.position, points[i].position, speed * Time.deltaTime);
+        if (transform.position == nextPosition)
+        {
+            nextPosition = (nextPosition == pointA.position) ? pointB.position : pointA.position;
+        }
+    }
+
+    void FixedUpdate()
+    {
+        transform.position = Vector3.MoveTowards(transform.position, nextPosition, speed * Time.fixedDeltaTime);
     }
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            collision.gameObject.transform.parent = transform;
-        }
+        collision.transform.SetParent(transform);
     }
-
-    void OnCollisionExit2D(Collision2D collision)
+    private void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            collision.gameObject.transform.parent = null;
-        }
+        collision.transform.SetParent(null);
     }
 }
-
