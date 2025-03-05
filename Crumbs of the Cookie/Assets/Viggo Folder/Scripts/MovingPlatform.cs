@@ -1,23 +1,19 @@
 using UnityEngine;
 
-public class MovingPlatform: MonoBehaviour
+public class MovingPlatforms : MonoBehaviour
 {
-    public float speed;
-    public Transform pointA;
-    public Transform pointB;
+    public Transform pointA, pointB;
+    public float moveSpeed;
 
     private Vector3 nextPosition;
-    Rigidbody2D rb_MovingPlatform;
-
     void Start()
     {
         nextPosition = pointB.position;
-        rb_MovingPlatform = GetComponent<Rigidbody2D>();
     }
 
-    void Update()
+    void FixedUpdate()
     {
-        transform.position = Vector3.MoveTowards(transform.position, nextPosition, speed * Time.deltaTime);
+        transform.position = Vector3.MoveTowards(transform.position, nextPosition, moveSpeed * Time.deltaTime);
 
         if (transform.position == nextPosition)
         {
@@ -25,17 +21,24 @@ public class MovingPlatform: MonoBehaviour
         }
     }
 
-    void FixedUpdate()
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        transform.position = Vector3.MoveTowards(transform.position, nextPosition, speed * Time.fixedDeltaTime);
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            Vector2 contactNormal = collision.GetContact(0).normal;
+            if (Mathf.Abs(contactNormal.y) > Mathf.Abs(contactNormal.x))
+            {
+                collision.gameObject.transform.parent = transform;
+            }
+        }
+        else
+        {
+            nextPosition = (nextPosition == pointA.position) ? pointB.position : pointA.position;
+        }
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
-    {
-        collision.transform.SetParent(transform);
-    }
     private void OnCollisionExit2D(Collision2D collision)
     {
-        collision.transform.SetParent(null);
+        if (collision.gameObject.CompareTag("Player")) collision.gameObject.transform.parent = null;
     }
 }
