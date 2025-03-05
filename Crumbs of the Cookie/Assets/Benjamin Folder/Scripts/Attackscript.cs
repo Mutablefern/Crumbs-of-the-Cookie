@@ -69,9 +69,9 @@ public class AttackScript : MonoBehaviour
             {
                 Debug.Log("Heavy attack");
                 ammoAmmount--;
+                PlayerAnim.SetTrigger("Heavy attack");
                 yield return new WaitForSeconds(HeavyAttackDuration * 0.8f);
                 HeavyAttackHitbox.SetActive(true);
-                PlayerAnim.SetTrigger("Heavy attack");
                 yield return new WaitForSeconds(HeavyAttackDuration*0.8f);
                 HeavyAttackHitbox.SetActive(false);
                 if (ammoAmmount <= 0)

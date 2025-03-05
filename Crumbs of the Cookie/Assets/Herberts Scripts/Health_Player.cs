@@ -7,9 +7,11 @@ public class Health_Player : MonoBehaviour
     //[SerializeField] int playerHealth;
     [SerializeField] List<GameObject> armorIcon;
     [SerializeField] int healthIcon;
+    ParticlesManager particlesManager;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        particlesManager = GameObject.Find("Particle Manager").GetComponent<ParticlesManager>();
         SetHealth();
     }
 
@@ -24,6 +26,7 @@ public class Health_Player : MonoBehaviour
     }
     public void Health(int dmg)
     {
+        particlesManager.Particels(2, transform.position);
         //When called with a negative int, the players health is lowered. When called with a positive int player health is increased
         if (dmg > 0)
         {
