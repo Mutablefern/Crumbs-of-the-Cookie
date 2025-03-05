@@ -7,24 +7,30 @@ public class SceneManagement : MonoBehaviour
     [SerializeField] GameObject Transitioner;
     SceneTransition sceneTransitionScript;
     int transitionSeconds;
-    public static Scene prevScene;
+    public static string PrevScene;
 
-    private void Start()
+    private void Awake()
     {
         if (Transitioner != null)
         {
             sceneTransitionScript = Transitioner.GetComponent<SceneTransition>();
         }
+        Debug.Log("prevScene (Start) " + PrevScene);
     }
-    public void changescene(string sceneName)
+    public void ChangeScene(string sceneName)
     {
-        prevScene = SceneManager.GetActiveScene();
+        if ((SceneManager.GetActiveScene().name != ("DeathScene")))
+        {
+            PrevScene = SceneManager.GetActiveScene().name;
+        }
+        Debug.Log("prevscene is (changescene) " + PrevScene);
         StartCoroutine(WaitForTransitionCor(sceneName));
     }
 
     public void Quit()
     {
         Application.Quit();
+ 
     }
 
     IEnumerator WaitForTransitionCor(string sceneName)
@@ -40,6 +46,7 @@ public class SceneManagement : MonoBehaviour
 
     public void GoToPrevScene()
     {
-        changescene(prevScene.name);
+        Debug.Log("prevscene is " + PrevScene);
+        ChangeScene(PrevScene);
     }
 }

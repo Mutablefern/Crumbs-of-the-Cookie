@@ -7,11 +7,14 @@ public class Health_Player : MonoBehaviour
     //[SerializeField] int playerHealth;
     [SerializeField] List<GameObject> armorIcon;
     [SerializeField] int healthIcon;
+    SceneManagement sceneManagement;
     ParticlesManager particlesManager;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        particlesManager = GameObject.Find("Particle Manager").GetComponent<ParticlesManager>();
+        sceneManagement = GameObject.Find("SceneManager").GetComponent<SceneManagement>();
+        //particlesManager = GameObject.Find("Particle Manager").GetComponent<ParticlesManager>();
         SetHealth();
     }
 
@@ -26,9 +29,9 @@ public class Health_Player : MonoBehaviour
     }
     public void Health(int dmg)
     {
-        particlesManager.Particels(2, transform.position);
+        //particlesManager.Particels(2, transform.position);
         //When called with a negative int, the players health is lowered. When called with a positive int player health is increased
-        if (dmg > 0)
+        if (dmg > 0  && playerHealth >= 0)
         {
             playerHealth -= 1;
             healthIcon -= 1;
@@ -51,6 +54,10 @@ public class Health_Player : MonoBehaviour
     void SetHealth()
     {
         //Used to let the UI know how much health the player has  when the player swaps scene
+        if (playerHealth <= 0)
+        {
+            playerHealth = 1;
+        }
         healthIcon = playerHealth; 
         for (int i = healthIcon; i > 1; i--)
         {
@@ -61,12 +68,13 @@ public class Health_Player : MonoBehaviour
     }
     void Die()
     {
-        //SceneManagement.changescene("GameOver")
+        sceneManagement.ChangeScene("DeathScene");
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
+            Debug.Log("OW");
             Health(1);
         }
     }

@@ -15,17 +15,17 @@ public class PointButtonAdd : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            pointCalculationScript.GainPoints(100);
+            //pointCalculationScript.GainPoints(100);
         }
 
         if (Input.GetKeyDown(KeyCode.A))
         {
             Debug.Log("Hagha, ONE!");
-            sceneManagementScript.changescene("SampleScene");
+            sceneManagementScript.ChangeScene("SampleScene");
         }
         if (Input.GetKeyDown(KeyCode.G))
         {
-            sceneManagementScript.changescene("BScene");
+            sceneManagementScript.ChangeScene("BScene");
         }
     }
 }

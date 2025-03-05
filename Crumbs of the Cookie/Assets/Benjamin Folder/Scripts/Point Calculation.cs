@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PointCalculation : MonoBehaviour
 {
+    /*
     [SerializeField] AudioSource PointGain;
 
     static int pointammount;
@@ -21,4 +22,5 @@ public class PointCalculation : MonoBehaviour
         pointammount += point;
         pointText.text = pointammount.ToString();
     }
+    */
 }

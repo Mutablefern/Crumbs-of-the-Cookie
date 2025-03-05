@@ -32,7 +32,6 @@ public class SceneTransition : MonoBehaviour
     {
         for (float i = 0; i < transitionDuration; i += Time.deltaTime/transitionDuration)
         {
-            Debug.Log(i);
             spriteRenderer.color = new Color(0f, 0f, 0f, i);
             yield return new WaitForEndOfFrame();
         }
