@@ -7,6 +7,7 @@ public class SceneManagement : MonoBehaviour
     [SerializeField] GameObject Transitioner;
     SceneTransition sceneTransitionScript;
     int transitionSeconds;
+    public static Scene prevScene;
 
     private void Start()
     {
@@ -17,6 +18,7 @@ public class SceneManagement : MonoBehaviour
     }
     public void changescene(string sceneName)
     {
+        prevScene = SceneManager.GetActiveScene();
         StartCoroutine(WaitForTransitionCor(sceneName));
     }
 
@@ -34,5 +36,10 @@ public class SceneManagement : MonoBehaviour
         }
         yield return new WaitForSeconds(transitionSeconds);
         SceneManager.LoadScene(sceneName);
+    }
+
+    public void GoToPrevScene()
+    {
+        changescene(prevScene.name);
     }
 }
