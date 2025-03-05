@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 3519876823222620554}
   - component: {fileID: 5836098249825517907}
   - component: {fileID: 1687339579145170382}
+  - component: {fileID: 8744400907905576021}
   m_Layer: 0
   m_Name: Enemy  PointMovement
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -114,6 +115,20 @@ MonoBehaviour:
   moveSpeed: 2
   PointA: {fileID: 0}
   PointB: {fileID: 0}
+--- !u!114 &8744400907905576021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4633009758219886133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06459a397fea40347a17476a69245a24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thisEnemyType: 0
+  health: 4
 --- !u!1 &8166626954439668192
 GameObject:
   m_ObjectHideFlags: 0
