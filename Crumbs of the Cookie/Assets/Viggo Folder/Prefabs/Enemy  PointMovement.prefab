@@ -51,7 +51,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 2
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -113,8 +113,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 2
+  knockback: 3
+  knockbackY: 5
+  enemyState: 0
   PointA: {fileID: 0}
   PointB: {fileID: 0}
+  gravScale: 2
 --- !u!114 &8744400907905576021
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -129,6 +133,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thisEnemyType: 0
   health: 4
+  sourceOfKnockback: {x: 0, y: 0, z: 0}
 --- !u!1 &8166626954439668192
 GameObject:
   m_ObjectHideFlags: 0

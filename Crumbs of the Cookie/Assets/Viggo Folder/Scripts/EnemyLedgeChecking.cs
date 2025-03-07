@@ -9,7 +9,7 @@ public class EnemyLedgeChecking : MonoBehaviour
     [SerializeField] float groundCheck = 1f;
     [SerializeField] LayerMask groundLayer;
 
-    bool isFacingRight;
+    [SerializeField] bool isFacingRight;
 
     Rigidbody2D rb_Enemy;
 
@@ -47,16 +47,16 @@ public class EnemyLedgeChecking : MonoBehaviour
 
         if (hit.collider == null && CheckGrounded())
         {
-            isFacingRight = !isFacingRight;
+            Flip();
+        }
+    }
 
-            if (isFacingRight)
-            {
-                transform.eulerAngles = new Vector3(0f, 0f, 0f);
-            }
-            else
-            {
-                transform.eulerAngles = new Vector3(0f, -180f, 0f);
-            }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+       
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            Flip();
         }
     }
 
@@ -71,5 +71,19 @@ public class EnemyLedgeChecking : MonoBehaviour
     {
         Gizmos.color = Color.green;
         Gizmos.DrawWireSphere(transform.position, groundCheck);
+    }
+
+    void Flip()
+    {
+        isFacingRight = !isFacingRight;
+      
+        if (isFacingRight)
+        {
+            transform.eulerAngles = new Vector3(0f, 0f, 0f);
+        }
+        else
+        {
+            transform.eulerAngles = new Vector3(0f, -180f, 0f);
+        }
     }
 }

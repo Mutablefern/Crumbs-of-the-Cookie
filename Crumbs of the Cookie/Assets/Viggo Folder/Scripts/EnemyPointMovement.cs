@@ -13,14 +13,17 @@ public class EnemyPointMovement : MonoBehaviour
 
     Transform currentPoint;
     Rigidbody2D rb_Enemy;
-    
-    Vector2 direction;
-   
+    EnemyHealth enemyHealth;
+    [SerializeField] int gravScale;
+
+    Vector3 direction;
+
 
     void Awake()
     {
         enemyState = 1;
         rb_Enemy = GetComponent<Rigidbody2D>();
+        enemyHealth = GetComponent<EnemyHealth>();
         currentPoint = PointB.transform;
     }
 
@@ -29,13 +32,14 @@ public class EnemyPointMovement : MonoBehaviour
         //Check proximity to switch points
         if (Vector2.Distance(transform.position, currentPoint.position) < 0.5f)
         {
+
             flip();
             currentPoint = currentPoint == PointB.transform ? PointA.transform : PointB.transform;
         }
     }
     private void FixedUpdate()
     {
-       switch(enemyState)
+        switch (enemyState)
         {
             case 1:
 
@@ -48,32 +52,36 @@ public class EnemyPointMovement : MonoBehaviour
             case 2:
 
                 //Enemy knockback
-
-                Knockback();
+                //rb_Enemy.gravityScale = gravScale;
 
                 break;
 
+            case 3:
+
+                //Enemy knockback
+               
+
+
+                break;
 
         }
 
-     
-        
-        
+
+       
+
 
 
 
     }
-    void Knockback()
+    public void Knockback()
     {
-        Debug.Log("knockback");
-            StartCoroutine(KnockbackCor());
-    }
-    IEnumerator KnockbackCor()
-    {
-        yield return new WaitForSeconds(0.5f);
-        rb_Enemy.AddForce(direction * knockback, ForceMode2D.Impulse);
+        //Add variable colider from enemyHealth
+        direction = transform.position - enemyHealth.sourceOfKnockback;
+        //direction.y = 0;
+        rb_Enemy.AddForce(direction.normalized * knockback, ForceMode2D.Impulse);
         rb_Enemy.AddForce(transform.up * knockbackY, ForceMode2D.Impulse);
     }
+
     void flip()
     {
         //Flips the game object

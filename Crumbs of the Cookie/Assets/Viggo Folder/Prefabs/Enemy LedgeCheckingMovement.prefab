@@ -102,7 +102,7 @@ GameObject:
   - component: {fileID: 7671075495402290627}
   m_Layer: 0
   m_Name: Enemy LedgeCheckingMovement
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -117,7 +117,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 5, y: 2, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.94697, y: 0.94697, z: 0.94697}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4675488919274590017}
@@ -206,6 +206,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
+  isFacingRight: 0
 --- !u!114 &7671075495402290627
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -220,6 +221,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thisEnemyType: 1
   health: 2
+  sourceOfKnockback: {x: 0, y: 0, z: 0}
 --- !u!1 &8655409439225751589
 GameObject:
   m_ObjectHideFlags: 0
