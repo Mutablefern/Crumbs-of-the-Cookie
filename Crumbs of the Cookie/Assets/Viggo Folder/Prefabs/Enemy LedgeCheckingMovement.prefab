@@ -198,7 +198,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f53f1d89d2a01840b56e1b890bcf292, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 2
+  moveSpeed: 5
   ledgeCheckPosition: {fileID: 4675488919274590017}
   ledgeCheckLength: 0.5
   groundCheck: 0.5
