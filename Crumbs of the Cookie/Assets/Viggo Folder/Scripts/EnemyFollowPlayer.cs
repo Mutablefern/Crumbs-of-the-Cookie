@@ -30,7 +30,6 @@ public class EnemyFollowPlayer : MonoBehaviour
     void Update()
     {
         DetectPlayer();
-        Debug.Log(isGrounded);
 
         if (playerDetected)
         {

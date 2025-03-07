@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
 {
+    
     public enum enemyType
     {
         GummyBear,
@@ -11,17 +12,23 @@ public class EnemyHealth : MonoBehaviour
     [SerializeField] enemyType thisEnemyType;
     [Tooltip("3 or less for rat, more for bear")]
     [SerializeField] int health;
+    ParticlesManager particlesManager;
 
+    private void Start()
+    {
+        particlesManager = GameObject.Find("Particle Manager").GetComponent<ParticlesManager>();
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("LightHit"))
         {
             health--;
-
+            DamageEffect();
         }
         else if (collision.gameObject.CompareTag("HeavyHit"))
         {
-            health=- 2;
+            health -= 2;
+            DamageEffect();
         }
         if (health <= 0)
         {
@@ -29,4 +36,13 @@ public class EnemyHealth : MonoBehaviour
             Destroy(gameObject);
         }
     }
+    
+    void DamageEffect()
+    {
+        if (thisEnemyType==enemyType.GummyBear || thisEnemyType == enemyType.GummyRat)
+        {
+            particlesManager.Particels(1, transform.position);
+        }
+    }
+    
 }

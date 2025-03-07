@@ -37,7 +37,7 @@ public class MovementScript : MonoBehaviour
     private float jumpBufferingTimer;
     private float lastGroundedTime = -0.09f;
     private bool jumpPressed;
-    private bool isGrounded;
+    public bool isGrounded;
 
     // Cached references
     Rigidbody2D rb_Player;
