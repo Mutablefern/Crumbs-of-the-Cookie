@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 413268048162448624}
   - component: {fileID: 6386492155274534176}
   - component: {fileID: 8989280893105514215}
+  - component: {fileID: 8956029779880786830}
   m_Layer: 0
   m_Name: Bouncemellow
   m_TagString: Untagged
@@ -99,7 +100,7 @@ BoxCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: 5740e99239bb5214d8da35622b2e4ba9, type: 2}
+  m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -147,3 +148,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2539ef793b4cca4285b361af6c00f68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyBounceMellow: 0
+--- !u!114 &8956029779880786830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2472225397544480432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2548cc073b5cd9d47a9663446c4f0ec0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Bounciness: 20

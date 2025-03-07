@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class BouncemellowDestructionScript : MonoBehaviour
 {
-    private bool PlayerDetected = false;
-
+    private bool playerDetected = false;
+    public bool destroyBounceMellow;
 
     
 
@@ -11,8 +11,8 @@ public class BouncemellowDestructionScript : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            PlayerDetected = true;
-            Debug.Log("Player Detected!" + PlayerDetected);
+            playerDetected = true;
+            Debug.Log("Player Detected!" + playerDetected);
         }
     }
 
@@ -20,8 +20,12 @@ public class BouncemellowDestructionScript : MonoBehaviour
       {
        if (collision.gameObject.CompareTag("Player"))
        {
-         PlayerDetected = false;
-         Debug.Log("Player Left platform!" + PlayerDetected);
+         playerDetected = false;
+         Debug.Log("Player Left platform!" + playerDetected);
+            if( destroyBounceMellow == true)
+            {
+                Destroy(gameObject);
+            }
        }
     }
 }
