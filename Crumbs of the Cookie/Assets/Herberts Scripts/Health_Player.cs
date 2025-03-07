@@ -4,7 +4,6 @@ using UnityEngine;
 public class Health_Player : MonoBehaviour
 {
     public static int playerHealth = 1 ;
-    //[SerializeField] int playerHealth;
     [SerializeField] List<GameObject> armorIcon;
     [SerializeField] int healthIcon;
     SceneManagement sceneManagement;
@@ -14,7 +13,7 @@ public class Health_Player : MonoBehaviour
     void Start()
     {
         sceneManagement = GameObject.Find("SceneManager").GetComponent<SceneManagement>();
-        //particlesManager = GameObject.Find("Particle Manager").GetComponent<ParticlesManager>();
+        particlesManager = GameObject.Find("Particle Manager").GetComponent<ParticlesManager>();
         SetHealth();
     }
 
@@ -29,26 +28,21 @@ public class Health_Player : MonoBehaviour
     }
     public void Health(int dmg)
     {
-        //particlesManager.Particels(2, transform.position);
-        //When called with a negative int, the players health is lowered. When called with a positive int player health is increased
+        particlesManager.Particels(2, transform.position);
+        //When called with a negative int, the players health is increased. When called with a positive int player health is decreased
         if (dmg > 0  && playerHealth >= 0)
         {
-            playerHealth -= 1;
-            healthIcon -= 1;
+            playerHealth -= dmg;
+            healthIcon -= dmg;
             armorIcon[healthIcon].SetActive(false);
         }
 
         if (dmg < 0)
         {
-            playerHealth += 1;
+            playerHealth += dmg;
             armorIcon[healthIcon].SetActive(true);
-            healthIcon += 1;
+            healthIcon += dmg;
 
-        }
-        // if it is called with an number bigger than the amount of health the player has, the player instantly dies
-        if (dmg >= playerHealth)
-        {
-            playerHealth = 0;
         }
     }
     void SetHealth()

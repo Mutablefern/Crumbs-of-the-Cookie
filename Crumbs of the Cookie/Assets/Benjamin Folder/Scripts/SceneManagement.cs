@@ -6,8 +6,10 @@ public class SceneManagement : MonoBehaviour
 {
     [SerializeField] GameObject Transitioner;
     SceneTransition sceneTransitionScript;
-    int transitionSeconds;
+    float transitionSeconds;
     public static string PrevScene;
+    [Tooltip ("The scenechange duration when the player dies")]
+    [SerializeField] float deathDuration;
 
     private void Awake()
     {
@@ -15,15 +17,14 @@ public class SceneManagement : MonoBehaviour
         {
             sceneTransitionScript = Transitioner.GetComponent<SceneTransition>();
         }
-        Debug.Log("prevScene (Start) " + PrevScene);
     }
     public void ChangeScene(string sceneName)
     {
         if ((SceneManager.GetActiveScene().name != ("DeathScene")))
+            //Cant go back to death scene, but remembers all other scenes
         {
             PrevScene = SceneManager.GetActiveScene().name;
         }
-        Debug.Log("prevscene is (changescene) " + PrevScene);
         StartCoroutine(WaitForTransitionCor(sceneName));
     }
 
@@ -35,18 +36,27 @@ public class SceneManagement : MonoBehaviour
 
     IEnumerator WaitForTransitionCor(string sceneName)
     {
+        if (sceneName == "DeathScene")
+        {
+            //If the scene that is being changed to is the game over scene, this overrides the transitionscript duration
+            //Since this is before, the fadeout doesnt trigger
+            sceneTransitionScript = null;
+            transitionSeconds = deathDuration;
+        }
         if (sceneTransitionScript != null)
         {
             transitionSeconds = sceneTransitionScript.transitionDuration;
             sceneTransitionScript.FadeOut();
         }
+        Debug.Log(transitionSeconds);
         yield return new WaitForSeconds(transitionSeconds);
         SceneManager.LoadScene(sceneName);
     }
 
     public void GoToPrevScene()
     {
-        Debug.Log("prevscene is " + PrevScene);
+        //Goes back to the previous scene
+        transitionSeconds = deathDuration;
         ChangeScene(PrevScene);
     }
 }

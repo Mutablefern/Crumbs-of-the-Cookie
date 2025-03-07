@@ -16,19 +16,19 @@ public class EnemyHealth : MonoBehaviour
 
     private void Start()
     {
-        //particlesManager = GameObject.Find("Particle Manager").GetComponent<ParticlesManager>();
+        particlesManager = GameObject.Find("Particle Manager").GetComponent<ParticlesManager>();
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("LightHit"))
         {
             health--;
-            //DamageEffect();
+            DamageEffect();
         }
         else if (collision.gameObject.CompareTag("HeavyHit"))
         {
             health -= 2;
-            //DamageEffect();
+            DamageEffect();
         }
         if (health <= 0)
         {
@@ -36,7 +36,7 @@ public class EnemyHealth : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    /*
+    
     void DamageEffect()
     {
         if (thisEnemyType==enemyType.GummyBear || thisEnemyType == enemyType.GummyRat)
@@ -44,5 +44,5 @@ public class EnemyHealth : MonoBehaviour
             particlesManager.Particels(1, transform.position);
         }
     }
-    */
+    
 }
