@@ -18,7 +18,7 @@ public class PointCalculation : MonoBehaviour
     public void GainPoints(int point)
     {
         Debug.Log("Gained " + point + " points");
-        PointGain.Play();
+        //PointGain.Play();
         pointammount += point;
         pointText.text = pointammount.ToString();
     }
