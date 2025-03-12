@@ -1,4 +1,5 @@
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
@@ -15,12 +16,11 @@ public class EnemyHealth : MonoBehaviour
     [SerializeField] int health;
     ParticlesManager particlesManager;
     EnemyPointMovement enemyPointMovement;
+    EnemyLedgeChecking enemyLedgeChecking;
     Rigidbody2D rb_Enemy;
     Vector3 direction;
     public Vector3 sourceOfKnockback;
-    int knockback = 2;
-    int knockbackY = 1;
-
+    
 
 
 
@@ -29,6 +29,7 @@ public class EnemyHealth : MonoBehaviour
         rb_Enemy = GetComponent<Rigidbody2D>();
         particlesManager = GameObject.Find("Particle Manager").GetComponent<ParticlesManager>();
         enemyPointMovement = GetComponent<EnemyPointMovement>();
+        enemyLedgeChecking = GetComponent<EnemyLedgeChecking>();
 
     }
     private void OnTriggerEnter2D(Collider2D collision)
@@ -56,20 +57,29 @@ public class EnemyHealth : MonoBehaviour
         if (thisEnemyType == enemyType.GummyBear)
         {
             particlesManager.Particels(1, transform.position);
-            StartCoroutine(KnockBack());
+            StartCoroutine(KnockBackPoint());
             
             
         }
         if (thisEnemyType == enemyType.GummyRat)
         {
             particlesManager.Particels(1, transform.position);
+            StartCoroutine(KnockBackLedge());
         }
     }
-    IEnumerator KnockBack()
+    IEnumerator KnockBackPoint()
     {
         enemyPointMovement.enemyState = 2;
         enemyPointMovement.Knockback();
         yield return new WaitForSeconds(1);
         enemyPointMovement.enemyState = 1;
+    }
+
+    IEnumerator KnockBackLedge()
+    {
+        enemyLedgeChecking.enemyState = 2;
+        enemyLedgeChecking.Knockback();
+        yield return new WaitForSeconds(0.5f);
+        enemyLedgeChecking.enemyState = 1;
     }
 }

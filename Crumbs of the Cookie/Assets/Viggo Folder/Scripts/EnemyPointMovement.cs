@@ -52,15 +52,7 @@ public class EnemyPointMovement : MonoBehaviour
             case 2:
 
                 //Enemy knockback
-                //rb_Enemy.gravityScale = gravScale;
-
-                break;
-
-            case 3:
-
-                //Enemy knockback
-               
-
+                
 
                 break;
 
@@ -75,9 +67,8 @@ public class EnemyPointMovement : MonoBehaviour
     }
     public void Knockback()
     {
-        //Add variable colider from enemyHealth
+        // Makes sure the enemy is knocked back in the oposite direction it was hit
         direction = transform.position - enemyHealth.sourceOfKnockback;
-        //direction.y = 0;
         rb_Enemy.AddForce(direction.normalized * knockback, ForceMode2D.Impulse);
         rb_Enemy.AddForce(transform.up * knockbackY, ForceMode2D.Impulse);
     }

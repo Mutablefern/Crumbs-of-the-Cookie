@@ -7,56 +7,94 @@ public class EnemyLedgeChecking : MonoBehaviour
     [SerializeField] Transform ledgeCheckPosition;
     [SerializeField] float ledgeCheckLength;
     [SerializeField] float groundCheck = 1f;
+    [SerializeField] int knockback;
+    [SerializeField] int knockbackY;
     [SerializeField] LayerMask groundLayer;
+    public int enemyState;
+    [SerializeField] Animator enemyAnim;
 
     [SerializeField] bool isFacingRight;
 
     Rigidbody2D rb_Enemy;
+    EnemyHealth enemyHealth;
+    Vector3 direction;
+   
 
     void Awake()
     {
+        enemyState = 1;
         rb_Enemy = GetComponent<Rigidbody2D>();
+        enemyHealth = GetComponent<EnemyHealth>();
     }
 
     void FixedUpdate()
     {
-        Move();
+
+
         LedgeCheck();
-    }
 
-    void Move()
+        switch (enemyState)
+        {
+            case 1:
+
+                Move();
+
+                break;
+
+            case 2:
+
+                
+
+                break;
+
+        }
+    } 
+
+    public void Knockback()
     {
-        if (CheckGrounded())
-        {
-            rb_Enemy.linearVelocityX = transform.right.x * moveSpeed;
-        }
-        else
-        {
-            rb_Enemy.linearVelocityX = 0f;
-        }
+        direction = transform.position - enemyHealth.sourceOfKnockback;
+        rb_Enemy.AddForce(direction.normalized * knockback, ForceMode2D.Impulse);
+        rb_Enemy.AddForce(transform.up * knockbackY, ForceMode2D.Impulse);
     }
-
-    void LedgeCheck()
-    {
-        //Checking if ledge infront
-        RaycastHit2D hit = Physics2D.Raycast(
-            ledgeCheckPosition.position,
-            Vector2.down,
-            ledgeCheckLength,
-            groundLayer);
-
-        if (hit.collider == null && CheckGrounded())
+        void Move()
         {
-            Flip();
+            if (CheckGrounded())
+            {
+                rb_Enemy.linearVelocityX = transform.right.x * moveSpeed;
+            }
+            else
+            {
+                rb_Enemy.linearVelocityX = 0f;
+            }
         }
-    }
+
+        void LedgeCheck()
+        {
+            //Checking if ledge infront
+            RaycastHit2D hit = Physics2D.Raycast(
+                ledgeCheckPosition.position,
+                Vector2.down,
+                ledgeCheckLength,
+                groundLayer);
+
+            if (hit.collider == null && CheckGrounded())
+            {
+                Flip();
+            }
+        }
+    
+
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-       
+
         if (collision.gameObject.CompareTag("Enemy"))
         {
             Flip();
+        }
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            enemyAnim.SetTrigger("RatAttack");
         }
     }
 
@@ -76,7 +114,7 @@ public class EnemyLedgeChecking : MonoBehaviour
     void Flip()
     {
         isFacingRight = !isFacingRight;
-      
+
         if (isFacingRight)
         {
             transform.eulerAngles = new Vector3(0f, 0f, 0f);
