@@ -37,7 +37,7 @@ public class MovementScript : MonoBehaviour
     private float jumpBufferingTimer;
     private float lastGroundedTime = -0.09f;
     private bool jumpPressed;
-    private bool isGrounded;
+    public bool isGrounded;
 
     // Cached references
     Rigidbody2D rb_Player;
@@ -139,6 +139,7 @@ public class MovementScript : MonoBehaviour
 
     bool IsGrounded()
     {
+        Debug.DrawRay(transform.position, -transform.up*castDistance, Color.red);
         return Physics2D.BoxCast(transform.position, boxSize, 0, -transform.up, castDistance, groundLayer);
     }
 
