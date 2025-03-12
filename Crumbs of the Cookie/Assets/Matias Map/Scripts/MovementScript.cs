@@ -5,9 +5,10 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class MovementScript : MonoBehaviour
-{
+{ 
     // Configurable parameters
     [SerializeField] Animator playerAnim;
+    [SerializeField] Transform runtoPosition;
 
     [Header("Player Movement Stats")]
     [SerializeField] float movementSpeed = 20f;
@@ -52,6 +53,16 @@ public class MovementScript : MonoBehaviour
     private void Start()
     {
         SetGravityScale(gravityScale);
+        RunIn(runtoPosition.position);
+    }
+
+    public void RunIn(Vector3 runTo)
+    {
+        while (transform.position != runTo)
+        {
+            playerAnim.SetBool("Running", true);
+            transform.position = runTo;
+        }
     }
 
     private void Update()
