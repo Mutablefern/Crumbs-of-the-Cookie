@@ -99,6 +99,7 @@ GameObject:
   - component: {fileID: 8156490283258782286}
   - component: {fileID: 8189889682282818942}
   - component: {fileID: 5923007786507999977}
+  - component: {fileID: 7671075495402290627}
   m_Layer: 0
   m_Name: Enemy LedgeCheckingMovement
   m_TagString: Untagged
@@ -131,7 +132,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2627004226572899073}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -149,7 +150,7 @@ Rigidbody2D:
   m_Interpolate: 1
   m_SleepingMode: 0
   m_CollisionDetection: 1
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!58 &8189889682282818942
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -205,6 +206,20 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
+--- !u!114 &7671075495402290627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2627004226572899073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06459a397fea40347a17476a69245a24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thisEnemyType: 1
+  health: 2
 --- !u!1 &8655409439225751589
 GameObject:
   m_ObjectHideFlags: 0

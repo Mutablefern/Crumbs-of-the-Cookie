@@ -9,6 +9,8 @@ public class MeteorController : MonoBehaviour
     [SerializeField] float speed = 1;
     [SerializeField] float acceleration;
 
+    public GameObject MeteorSpawner;
+
     Vector2 direction;
 
     void Start()
@@ -33,14 +35,21 @@ public class MeteorController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        StartCoroutine(CrashDownCor(collision));
+    }
+
+    IEnumerator CrashDownCor(Collision2D collision)
+    {
         if (collision.gameObject.layer == 6 && conatainsEnemy)
         {
+            yield return new WaitForSeconds(0);
             //spawn enemies
             speed = 0;
         }
-        if (collision.gameObject.layer == 6 && !conatainsEnemy)
+        if (MeteorSpawner != null)
         {
-            Destroy(gameObject);
+            MeteorSpawner.GetComponent<MeteorSpawner>().switchMeteor();
         }
+        Destroy(gameObject);
     }
 }
