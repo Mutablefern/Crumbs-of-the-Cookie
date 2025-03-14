@@ -37,7 +37,7 @@ public class MovementScript : MonoBehaviour
     private float coyoteCounter;
     private float jumpBufferingTimer;
     private float lastGroundedTime = -0.09f;
-    private bool jumpPressed;
+    [SerializeField] private bool jumpPressed;
     public bool isGrounded;
 
     // Cached references
@@ -116,6 +116,7 @@ public class MovementScript : MonoBehaviour
 
         else
         {
+            Debug.Log("no");
             jumpPressed = false;
         }
     }
