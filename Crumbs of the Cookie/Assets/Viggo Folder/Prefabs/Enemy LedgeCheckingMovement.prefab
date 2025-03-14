@@ -121,9 +121,12 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
-  enemyState: 0
   enemyAnim: {fileID: 430087529518951760}
+  sightRange: 2
+  jumpForce: 4
   isFacingRight: 0
+  enemyState: 0
+  playerTransform: {fileID: 0}
 --- !u!114 &7671075495402290627
 MonoBehaviour:
   m_ObjectHideFlags: 0
