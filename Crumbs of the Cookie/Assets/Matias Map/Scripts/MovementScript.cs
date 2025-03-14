@@ -61,7 +61,7 @@ public class MovementScript : MonoBehaviour
         while (transform.position != runTo)
         {
             playerAnim.SetBool("Running", true);
-            transform.position = runTo;
+            Vector2.MoveTowards(transform.position, runTo, 10000);
         }
     }
 
