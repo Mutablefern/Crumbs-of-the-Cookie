@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class EnemyFollowPlayer : MonoBehaviour
 {
+
     public Transform playerTransform;
     [Tooltip("2 is recommended")]
     public float chaseSpeed = 2f;
@@ -29,7 +30,6 @@ public class EnemyFollowPlayer : MonoBehaviour
     void Update()
     {
         DetectPlayer();
-        Debug.Log(isGrounded);
 
         if (playerDetected)
         {

@@ -5,9 +5,12 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class MovementScript : MonoBehaviour
-{
+{ 
     // Configurable parameters
     [SerializeField] Animator playerAnim;
+    [SerializeField] Transform runtoTransform;
+    [SerializeField] bool startRun;
+    Vector3 runtoPosition;
 
     [Header("Player Movement Stats")]
     [SerializeField] float movementSpeed = 20f;
@@ -36,17 +39,17 @@ public class MovementScript : MonoBehaviour
     private float coyoteCounter;
     private float jumpBufferingTimer;
     private float lastGroundedTime = -0.09f;
-    private bool jumpPressed;
-    private bool isGrounded;
+    [SerializeField] private bool jumpPressed;
+    public bool isGrounded;
 
     // Cached references
     Rigidbody2D rb_Player;
-    SpriteRenderer spriteRenderer;
 
     private void Awake()
     {
         rb_Player = GetComponent<Rigidbody2D>();
-        spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+        startRun = true;
+        runtoPosition = runtoTransform.position;
     }
 
     private void Start()
@@ -56,21 +59,33 @@ public class MovementScript : MonoBehaviour
 
     private void Update()
     {
-        if (IsGrounded())
+        if (startRun)
         {
-            playerAnim.SetBool("IsGrounded", true);
-            lastGroundedTime = Time.time;
-            coyoteCounter = coyoteTimer;
+            movementInput.x = 1;
+            playerAnim.SetBool("Running", true);
+            if (transform.position.x > runtoPosition.x) // it stops even if it overshoots, but not if it undershoots
+            {
+                startRun = false;
+                movementInput.x = 0;
+            }
         }
-        else
+        if (!startRun)
         {
-            playerAnim.SetBool("IsGrounded", false);
-            coyoteCounter -= Time.deltaTime;
-            jumpBufferingTimer -= Time.deltaTime;
+            if (IsGrounded())
+            {
+                playerAnim.SetBool("IsGrounded", true);
+                lastGroundedTime = Time.time;
+                coyoteCounter = coyoteTimer;
+            }
+            else
+            {
+                playerAnim.SetBool("IsGrounded", false);
+                coyoteCounter -= Time.deltaTime;
+                jumpBufferingTimer -= Time.deltaTime;
+            }
+
+            VariableJumping();
         }
-
-        VariableJumping();
-
     }
 
     private void FixedUpdate()
@@ -92,7 +107,10 @@ public class MovementScript : MonoBehaviour
     
     void OnMove(InputValue inputValue)
     {
-        movementInput = inputValue.Get<Vector2>();
+        if (!startRun)
+        {
+            movementInput = inputValue.Get<Vector2>();
+        }
     }
 
     void OnJump(InputValue inputValue)
@@ -105,6 +123,7 @@ public class MovementScript : MonoBehaviour
 
         else
         {
+            Debug.Log("no");
             jumpPressed = false;
         }
     }
@@ -139,6 +158,7 @@ public class MovementScript : MonoBehaviour
 
     bool IsGrounded()
     {
+        Debug.DrawRay(transform.position, -transform.up*castDistance, Color.red);
         return Physics2D.BoxCast(transform.position, boxSize, 0, -transform.up, castDistance, groundLayer);
     }
 

@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 3
   tags:
   - Enemy
+  - LightHit
+  - HeavyHit
   layers:
   - Default
   - TransparentFX
@@ -14,10 +16,8 @@ TagManager:
   - UI
   - ground
   - 
-  - Ground
+  - 
   - Hazard
-  - 
-  - 
   - 
   - 
   - 
