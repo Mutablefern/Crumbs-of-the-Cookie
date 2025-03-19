@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8139019785647194950}
   - component: {fileID: 9127332720994520002}
   - component: {fileID: 5536806420500308807}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -110,17 +110,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerAnim: {fileID: 5081686740506289931}
-  movementSpeed: 12.5
-  jumpingPower: 14
-  dragForce: 15
+  movementSpeed: 11
+  jumpingPower: 23
+  dragForce: 35
   castDistance: 0.72
   boxSize: {x: 0.5, y: 0.5}
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
-  coyoteTimer: 0.25
-  jumpBuffering: 0.3
-  gravityScale: 1.75
+  coyoteTimer: 0.1
+  jumpBuffering: 0.1
+  gravityScale: 2.5
   gravityStrength: 2.35
   fallGravityMult: 3
   maxFallSpeed: 15
@@ -158,7 +158,7 @@ BoxCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: c88b95268f945534e989a9d0a6f19c67, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -222,7 +222,7 @@ GameObject:
   - component: {fileID: 8523061433814144450}
   - component: {fileID: 168434672458528653}
   - component: {fileID: 8811302061454606020}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: AttackhitboxHeavy
   m_TagString: HeavyHit
   m_Icon: {fileID: 0}
@@ -347,7 +347,7 @@ GameObject:
   - component: {fileID: 4638498630589681162}
   - component: {fileID: 2690315838920030526}
   - component: {fileID: 5946174237879129843}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: AttackhitboxLight
   m_TagString: LightHit
   m_Icon: {fileID: 0}
@@ -508,9 +508,41 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 520319270532446468, guid: 3f1c3d1514e9bf24a99089f2c8aa1c92, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 932716139444480555, guid: 3f1c3d1514e9bf24a99089f2c8aa1c92, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1673810168540163140, guid: 3f1c3d1514e9bf24a99089f2c8aa1c92, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 2487730543213311394, guid: 3f1c3d1514e9bf24a99089f2c8aa1c92, type: 3}
       propertyPath: m_Name
       value: Ginger man map
+      objectReference: {fileID: 0}
+    - target: {fileID: 2487730543213311394, guid: 3f1c3d1514e9bf24a99089f2c8aa1c92, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2956198860204767643, guid: 3f1c3d1514e9bf24a99089f2c8aa1c92, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4886542519859498233, guid: 3f1c3d1514e9bf24a99089f2c8aa1c92, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7929059926840059397, guid: 3f1c3d1514e9bf24a99089f2c8aa1c92, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8736717811402742135, guid: 3f1c3d1514e9bf24a99089f2c8aa1c92, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -546,6 +578,10 @@ PrefabInstance:
     - target: {fileID: 1500015795146439477, guid: 0ef611174d231d942a17da22e56cc324, type: 3}
       propertyPath: m_Name
       value: Fire_effect
+      objectReference: {fileID: 0}
+    - target: {fileID: 1500015795146439477, guid: 0ef611174d231d942a17da22e56cc324, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1500015795146439477, guid: 0ef611174d231d942a17da22e56cc324, type: 3}
       propertyPath: m_IsActive

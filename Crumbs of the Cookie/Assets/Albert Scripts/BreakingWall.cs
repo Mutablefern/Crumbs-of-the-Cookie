@@ -19,9 +19,14 @@ public class BreakingWall : MonoBehaviour
     {
         if (trigger)
         {
-            Break(transform);
+            Break();
             StartCoroutine(timer());
         }
+    }
+
+    public void BreakWall()
+    {
+        trigger = true;
     }
 
     IEnumerator timer()
@@ -36,7 +41,7 @@ public class BreakingWall : MonoBehaviour
         gameObject.layer = 8;
     }
 
-    public void Break(Transform force)
+    private void Break()
     {
         rb_box.mass = 10;
         rb_box.AddForce(new Vector2(5,-1f), ForceMode2D.Impulse);
