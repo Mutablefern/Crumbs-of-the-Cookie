@@ -116,7 +116,7 @@ MonoBehaviour:
   ledgeCheckPosition: {fileID: 4675488919274590017}
   ledgeCheckLength: 0.5
   groundCheck: 0.5
-  knockback: 5
+  knockback: 8
   knockbackY: 5
   groundLayer:
     serializedVersion: 2

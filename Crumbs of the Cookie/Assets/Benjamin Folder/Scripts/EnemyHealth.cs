@@ -72,7 +72,7 @@ public class EnemyHealth : MonoBehaviour
         enemyPointMovement.enemyState = 2;
         enemyPointMovement.Knockback();
         yield return new WaitForSeconds(1);
-        enemyPointMovement.enemyState = 1;
+        enemyPointMovement.enemyState = 3;
     }
 
     IEnumerator KnockBackLedge()

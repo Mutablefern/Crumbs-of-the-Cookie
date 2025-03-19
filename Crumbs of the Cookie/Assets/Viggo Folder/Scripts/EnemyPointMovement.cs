@@ -6,10 +6,13 @@ public class EnemyPointMovement : MonoBehaviour
     [SerializeField] float moveSpeed = 1f;
     [SerializeField] int knockback;
     [SerializeField] int knockbackY;
+    [SerializeField] int sightRange;    
     public int enemyState;
 
     public GameObject PointA;
     public GameObject PointB;
+    public Transform playerTransform;
+    bool playerDetected;
 
     Transform currentPoint;
     Rigidbody2D rb_Enemy;
@@ -39,6 +42,8 @@ public class EnemyPointMovement : MonoBehaviour
     }
     private void FixedUpdate()
     {
+
+               
         switch (enemyState)
         {
             case 1:
@@ -46,7 +51,6 @@ public class EnemyPointMovement : MonoBehaviour
                 //Calculate direction and move
                 direction = (currentPoint.position - transform.position).normalized;
                 rb_Enemy.linearVelocity = direction * moveSpeed;
-
                 break;
 
             case 2:
@@ -56,14 +60,14 @@ public class EnemyPointMovement : MonoBehaviour
 
                 break;
 
+
+            case 3:
+
+                //The enemy stops patroling to chase the player
+                Chase();
+
+                break;
         }
-
-
-       
-
-
-
-
     }
     public void Knockback()
     {
@@ -89,5 +93,24 @@ public class EnemyPointMovement : MonoBehaviour
             Gizmos.DrawWireSphere(PointB.transform.position, 0.5f);
             Gizmos.DrawLine(PointA.transform.position, PointB.transform.position);
         }
+    }
+
+    void Chase()
+    {
+        if (Vector2.Distance(transform.position, playerTransform.position) <= sightRange)
+        {
+            playerDetected = true;
+        }
+        else
+        {
+            playerDetected = false;
+        }
+
+        if (playerDetected)
+        {
+            float direction = Mathf.Sign(playerTransform.position.x - transform.position.x);
+            rb_Enemy.linearVelocity = new Vector2(direction * moveSpeed+3, rb_Enemy.linearVelocity.y);
+        }
+
     }
 }
