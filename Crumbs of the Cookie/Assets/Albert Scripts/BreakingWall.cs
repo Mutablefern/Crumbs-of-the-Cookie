@@ -31,7 +31,7 @@ public class BreakingWall : MonoBehaviour
 
     IEnumerator timer()
     {
-        yield return new WaitForSeconds(0.05f);
+        yield return new WaitForSeconds(0.1f);
         trigger = false;
     }
 
