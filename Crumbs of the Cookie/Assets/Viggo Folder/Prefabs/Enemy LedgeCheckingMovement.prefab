@@ -53,7 +53,7 @@ Rigidbody2D:
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: c88b95268f945534e989a9d0a6f19c67, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -78,7 +78,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 3
   ledgeCheckPosition: {fileID: 4675488919274590017}
-  ledgeCheckLength: 0.5
+  ledgeCheckOffset: 1
+  ledgeCheckLength: 0.98
   groundCheck: 0.5
   knockback: 8
   knockbackY: 5
