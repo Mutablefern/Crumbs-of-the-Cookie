@@ -247,7 +247,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      hus 3 destroid_0: -1861795290741057944
+      hus 3 destroid_1: -7984914684488658793
+      hus 3 destroid_2: 5195482313830095359
+      hus 3 destroid_3: -8591660833952446044
+      hus 3 destroid_4: -3592167251845326529
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
