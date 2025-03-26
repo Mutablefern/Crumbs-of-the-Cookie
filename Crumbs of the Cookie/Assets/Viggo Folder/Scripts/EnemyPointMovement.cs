@@ -7,6 +7,8 @@ public class EnemyPointMovement : MonoBehaviour
     [SerializeField] int knockback;
     [SerializeField] int knockbackY;
     [SerializeField] int sightRange;    
+    [SerializeField] int chaseSpeed;
+    [SerializeField]  Animator enemyAnim;
     public int enemyState;
 
     public GameObject PointA;
@@ -28,6 +30,7 @@ public class EnemyPointMovement : MonoBehaviour
         rb_Enemy = GetComponent<Rigidbody2D>();
         enemyHealth = GetComponent<EnemyHealth>();
         currentPoint = PointB.transform;
+        playerDetected = false;
     }
 
     void Update()
@@ -55,7 +58,7 @@ public class EnemyPointMovement : MonoBehaviour
 
             case 2:
 
-                //Enemy knockback
+                //Used when the enemy is hit, so that they can take knockback
                 
 
                 break;
@@ -97,19 +100,38 @@ public class EnemyPointMovement : MonoBehaviour
 
     void Chase()
     {
+        //After it has been attacked, it starts to chase the player
+
+       
+
         if (Vector2.Distance(transform.position, playerTransform.position) <= sightRange)
         {
             playerDetected = true;
+            enemyAnim.SetBool("IsChasing", true);
         }
         else
         {
             playerDetected = false;
+            enemyAnim.SetBool("IsChasing", false);
         }
 
+
+
+        //It stands still if it can not see the player
         if (playerDetected)
         {
             float direction = Mathf.Sign(playerTransform.position.x - transform.position.x);
-            rb_Enemy.linearVelocity = new Vector2(direction * moveSpeed+3, rb_Enemy.linearVelocity.y);
+
+            if (direction > 0)
+            {
+                transform.rotation = Quaternion.Euler(0, 0, 0);
+            }
+            else
+            {
+                transform.rotation = Quaternion.Euler(0, 180, 0);
+            }
+
+          rb_Enemy.linearVelocity = new Vector2(direction * chaseSpeed, rb_Enemy.linearVelocity.y);
         }
 
     }
