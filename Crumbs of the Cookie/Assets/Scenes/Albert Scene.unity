@@ -83547,6 +83547,105 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5998911278847716393, guid: 9e531f0ff10db6e45860b6b6455a5d8c, type: 3}
   m_PrefabInstance: {fileID: 609898643}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &601135906
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 601135909}
+  - component: {fileID: 601135910}
+  - component: {fileID: 601135911}
+  m_Layer: 0
+  m_Name: Square
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &601135909
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 601135906}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.099998474, y: -2.300003, z: 0}
+  m_LocalScale: {x: 7.694, y: 9.194409, z: 7.694}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &601135910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 601135906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53475b27851f14e4bad93550fec1606e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MeteorTarget: 0
+  strikeTarget:
+  - {fileID: 937805651}
+  - {fileID: 1005894521}
+  meteorSpread: 0
+  spawnHeight: 15
+  containsEnemy: 0
+  meteor: {fileID: 3449914547462380864, guid: aaef6ff939e394d4a84642589f523412, type: 3}
+--- !u!61 &601135911
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 601135906}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1001 &609898643
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -84540,6 +84639,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5269354552958703776, guid: 1b1061d550dd03347909aece8efdc6ee, type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5269354552958703776, guid: 1b1061d550dd03347909aece8efdc6ee, type: 3}
       propertyPath: m_SortingOrder
       value: 7
       objectReference: {fileID: 0}
@@ -84681,4 +84784,5 @@ SceneRoots:
   - {fileID: 1005894523}
   - {fileID: 1589417610}
   - {fileID: 647992662}
+  - {fileID: 601135909}
   - {fileID: 1703345591}
