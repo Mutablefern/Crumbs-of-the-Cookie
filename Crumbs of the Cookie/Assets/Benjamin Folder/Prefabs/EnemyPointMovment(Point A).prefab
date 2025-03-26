@@ -110,6 +110,7 @@ MonoBehaviour:
   knockbackY: 5
   sightRange: 6
   chaseSpeed: 3
+  enemyAnim: {fileID: 6591012177158282654}
   enemyState: 0
   PointA: {fileID: 5199706841042670109}
   PointB: {fileID: 928139235906274956}
@@ -154,7 +155,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5199706841042670109}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 6.37, y: -1.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -227,5 +228,10 @@ PrefabInstance:
 --- !u!4 &5925169593584372013 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7144943832006021795, guid: de606d71c2b278b47824d577d71ef1ec, type: 3}
+  m_PrefabInstance: {fileID: 3539159521951521678}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &6591012177158282654 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 7668051760444311056, guid: de606d71c2b278b47824d577d71ef1ec, type: 3}
   m_PrefabInstance: {fileID: 3539159521951521678}
   m_PrefabAsset: {fileID: 0}
