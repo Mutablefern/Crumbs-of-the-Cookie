@@ -122,7 +122,7 @@ public class EnemyPointMovement : MonoBehaviour
         {
             float direction = Mathf.Sign(playerTransform.position.x - transform.position.x);
 
-            if (direction > 0)
+            if (direction >= 0)
             {
                 transform.rotation = Quaternion.Euler(0, 0, 0);
             }

@@ -1690,11 +1690,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6643625456309947346, guid: 2c0215cea86481e4c84a738d0e20845d, type: 3}
   m_PrefabInstance: {fileID: 1967253204}
   m_PrefabAsset: {fileID: 0}
---- !u!95 &1295743637 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 6591012177158282654, guid: 7c16cb86b075689489c1456c4d71a687, type: 3}
-  m_PrefabInstance: {fileID: 6217013093739302859}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1399130334
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1989,9 +1984,17 @@ PrefabInstance:
       value: 0.15
       objectReference: {fileID: 0}
     - target: {fileID: 2398665862090611863, guid: 9e531f0ff10db6e45860b6b6455a5d8c, type: 3}
+      propertyPath: jumpingPower
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 2398665862090611863, guid: 9e531f0ff10db6e45860b6b6455a5d8c, type: 3}
       propertyPath: jumpBuffering
       value: 0.2
       objectReference: {fileID: 0}
+    - target: {fileID: 2398665862090611863, guid: 9e531f0ff10db6e45860b6b6455a5d8c, type: 3}
+      propertyPath: runtoTransform
+      value: 
+      objectReference: {fileID: 2039716591}
     - target: {fileID: 5998911278847716393, guid: 9e531f0ff10db6e45860b6b6455a5d8c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.07
@@ -2102,10 +2105,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 217541179178376230, guid: 7c16cb86b075689489c1456c4d71a687, type: 3}
-      propertyPath: enemyAnim
-      value: 
-      objectReference: {fileID: 1295743637}
     - target: {fileID: 217541179178376230, guid: 7c16cb86b075689489c1456c4d71a687, type: 3}
       propertyPath: playerTransform
       value: 
