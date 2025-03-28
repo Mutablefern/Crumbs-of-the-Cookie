@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Knack_helmet_0: 2839341044495764211
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
