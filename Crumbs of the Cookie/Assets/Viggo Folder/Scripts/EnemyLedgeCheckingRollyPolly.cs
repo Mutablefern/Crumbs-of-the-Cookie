@@ -3,6 +3,9 @@ using UnityEngine;
 public class EnemyLedgeCheckingRollyPolly : MonoBehaviour
 {
     [SerializeField] float moveSpeed = 1f;
+    [SerializeField] Transform ledgeCheckPosition;
+    [SerializeField] float ledgeCheckLength;
+    [SerializeField] float groundCheck = 1f;
     [SerializeField] LayerMask groundLayer;
     [SerializeField] Transform playerTransform;
     [SerializeField] float minMoveSpeed;
@@ -16,10 +19,11 @@ public class EnemyLedgeCheckingRollyPolly : MonoBehaviour
     Vector3 direction;
     public bool playerDetected;
     bool isFacingRight;
-    public float detectionDistance = 0.2f;
 
-    private Vector2 moveDirection = Vector2.right;
-    private Vector2 currentNormal = Vector2.up; 
+    public GameObject[] wayPoints;
+    public int nextWayPoint = 1;
+    float distToPoint;
+
     Rigidbody2D rb_Enemy;
 
     void Awake()
@@ -28,12 +32,6 @@ public class EnemyLedgeCheckingRollyPolly : MonoBehaviour
         rb_Enemy = GetComponent<Rigidbody2D>();
         animator = GetComponentInChildren<Animator>();
         enemyHealth = GetComponent<EnemyHealth>();
-    }
-
-    private void Start()
-    {
-        rb_Enemy.gravityScale = 0;
-        rb_Enemy.freezeRotation = true;
     }
 
     void FixedUpdate()
@@ -62,7 +60,6 @@ public class EnemyLedgeCheckingRollyPolly : MonoBehaviour
 
     private void Update()
     {
-        DetectSurface();
         DetectPlayer();
         RollMode();
     }
@@ -76,38 +73,41 @@ public class EnemyLedgeCheckingRollyPolly : MonoBehaviour
 
     void Move()
     {
-        rb_Enemy.linearVelocity = moveDirection * moveSpeed;
+        distToPoint = Vector2.Distance(transform.position, wayPoints[nextWayPoint].transform.position);
+
+        transform.position = Vector2.MoveTowards(transform.position, wayPoints[nextWayPoint].transform.position, moveSpeed * Time.deltaTime);
+
+        if (distToPoint < 0.2f)
+        {
+            TakeTurn();
+        }
     }
 
-    void DetectSurface()
+    void TakeTurn()
     {
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, moveDirection, detectionDistance, groundLayer);
-        Debug.DrawRay(transform.position, moveDirection * detectionDistance, Color.red);
-        if(hit)
+        Vector3 currRot = transform.eulerAngles;
+        currRot.z += wayPoints[nextWayPoint].transform.eulerAngles.z;
+        transform.eulerAngles = currRot;
+        ChooseNextWayPoint();
+    }
+
+    void ChooseNextWayPoint()
+    {
+        nextWayPoint++;
+
+        if(nextWayPoint == wayPoints.Length)
         {
-          AlignToSurface(hit.normal);
-        }
-        else
-        {
-            RaycastHit2D downhit = Physics2D.Raycast(transform.position, -currentNormal, detectionDistance, groundLayer);
-            Debug.DrawRay(transform.position, -currentNormal * detectionDistance, Color.blue);
-            if (downhit)
-            {
-                AlignToSurface(downhit.normal);
-            }
+            nextWayPoint = 0;
         }
     }
 
-      void AlignToSurface(Vector2 newNormal)
-      {
-        currentNormal = newNormal;
+    bool CheckGrounded()
+    {
+        Collider2D isGrounded = Physics2D.OverlapCircle(transform.position, groundCheck, groundLayer);
 
-        moveDirection = new Vector2(-currentNormal.y, currentNormal.x);
+        return isGrounded;
 
-        float angle = Mathf.Atan2(currentNormal.y, currentNormal.x) * Mathf.Rad2Deg;
-
-        transform.rotation = Quaternion.Euler(0, 0, angle - 90);
-      }
+    }
 
     void DetectPlayer()
     {
@@ -157,5 +157,12 @@ public class EnemyLedgeCheckingRollyPolly : MonoBehaviour
         {
             transform.eulerAngles = new Vector3(0f, -180f, 0f);
         }
+    }
+
+
+    void OnDrawGizmos()
+    {
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireSphere(transform.position, groundCheck);
     }
 }
