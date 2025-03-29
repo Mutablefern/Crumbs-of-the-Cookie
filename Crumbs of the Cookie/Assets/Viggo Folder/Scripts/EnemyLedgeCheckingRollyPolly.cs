@@ -20,10 +20,6 @@ public class EnemyLedgeCheckingRollyPolly : MonoBehaviour
     public bool playerDetected;
     bool isFacingRight;
 
-    public GameObject[] wayPoints;
-    public int nextWayPoint = 1;
-    float distToPoint;
-
     Rigidbody2D rb_Enemy;
 
     void Awake()
@@ -61,6 +57,7 @@ public class EnemyLedgeCheckingRollyPolly : MonoBehaviour
     private void Update()
     {
         DetectPlayer();
+        LedgeCheck();
         RollMode();
     }
     public void Knockback()
@@ -72,42 +69,27 @@ public class EnemyLedgeCheckingRollyPolly : MonoBehaviour
     }
 
     void Move()
+    { 
+            rb_Enemy.linearVelocityX = transform.right.x * moveSpeed;
+      
+    }
+
+    void LedgeCheck()
     {
-        distToPoint = Vector2.Distance(transform.position, wayPoints[nextWayPoint].transform.position);
+        //Checking if there is a ledge infrot of the enemy
+        RaycastHit2D hit = Physics2D.Raycast(
+            ledgeCheckPosition.position,
+            Vector2.down,
+            ledgeCheckLength,
+            groundLayer);
 
-        transform.position = Vector2.MoveTowards(transform.position, wayPoints[nextWayPoint].transform.position, moveSpeed * Time.deltaTime);
-
-        if (distToPoint < 0.2f)
+        if (hit.collider == null)
         {
-            TakeTurn();
+            Flip();
         }
     }
 
-    void TakeTurn()
-    {
-        Vector3 currRot = transform.eulerAngles;
-        currRot.z += wayPoints[nextWayPoint].transform.eulerAngles.z;
-        transform.eulerAngles = currRot;
-        ChooseNextWayPoint();
-    }
-
-    void ChooseNextWayPoint()
-    {
-        nextWayPoint++;
-
-        if(nextWayPoint == wayPoints.Length)
-        {
-            nextWayPoint = 0;
-        }
-    }
-
-    bool CheckGrounded()
-    {
-        Collider2D isGrounded = Physics2D.OverlapCircle(transform.position, groundCheck, groundLayer);
-
-        return isGrounded;
-
-    }
+    
 
     void DetectPlayer()
     {
