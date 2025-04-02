@@ -7,7 +7,7 @@ public class AttackScript : MonoBehaviour
     [SerializeField] GameObject LightAttackHitbox;
     [SerializeField] GameObject HeavyAttackHitbox;
     [SerializeField] float LightAttackDuration;
-    [SerializeField] float HeavyAttackDuration;
+    [SerializeField] float HeavyAttackStartLag;
     [SerializeField] int ammoAmmount;
     [SerializeField] int ammoMaxAmmount;
     [SerializeField] float reloadDuration;
@@ -15,7 +15,7 @@ public class AttackScript : MonoBehaviour
     [SerializeField] Animator PlayerAnim;
 
     bool isReloading;
-    bool isAttacking;
+    public bool isAttacking;
 
     void OnLightAttack(InputValue inputValue)
     {
@@ -70,9 +70,9 @@ public class AttackScript : MonoBehaviour
                 Debug.Log("Heavy attack");
                 ammoAmmount--;
                 PlayerAnim.SetTrigger("Heavy attack");
-                yield return new WaitForSeconds(HeavyAttackDuration * 0.8f);
+                yield return new WaitForSeconds(HeavyAttackStartLag * 0.8f);
                 HeavyAttackHitbox.SetActive(true);
-                yield return new WaitForSeconds(HeavyAttackDuration*0.8f);
+                yield return new WaitForSeconds(0.3f);
                 HeavyAttackHitbox.SetActive(false);
                 if (ammoAmmount <= 0)
                 {
@@ -88,7 +88,6 @@ public class AttackScript : MonoBehaviour
                     StartCoroutine(attackReloadCor());
                 }
             }
-            isAttacking = false;
         } 
     }
 
