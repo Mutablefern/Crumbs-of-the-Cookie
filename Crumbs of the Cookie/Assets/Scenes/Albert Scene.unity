@@ -81953,42 +81953,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 168434672458528653, guid: 9e531f0ff10db6e45860b6b6455a5d8c, type: 3}
-      propertyPath: m_Color.a
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 168434672458528653, guid: 9e531f0ff10db6e45860b6b6455a5d8c, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 168434672458528653, guid: 9e531f0ff10db6e45860b6b6455a5d8c, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 168434672458528653, guid: 9e531f0ff10db6e45860b6b6455a5d8c, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2297554566500561407, guid: 9e531f0ff10db6e45860b6b6455a5d8c, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2398665862090611863, guid: 9e531f0ff10db6e45860b6b6455a5d8c, type: 3}
-      propertyPath: jumpingPower
-      value: 16
-      objectReference: {fileID: 0}
     - target: {fileID: 2398665862090611863, guid: 9e531f0ff10db6e45860b6b6455a5d8c, type: 3}
       propertyPath: runtoTransform
       value: 
       objectReference: {fileID: 1327867968}
-    - target: {fileID: 2690315838920030526, guid: 9e531f0ff10db6e45860b6b6455a5d8c, type: 3}
-      propertyPath: m_Color.a
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4087171699187291558, guid: 9e531f0ff10db6e45860b6b6455a5d8c, type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 6200000, guid: c88b95268f945534e989a9d0a6f19c67, type: 2}
     - target: {fileID: 5536806420500308807, guid: 9e531f0ff10db6e45860b6b6455a5d8c, type: 3}
       propertyPath: 'armorIcon.Array.data[0]'
       value: 
@@ -82039,18 +82007,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5998911278847716393, guid: 9e531f0ff10db6e45860b6b6455a5d8c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8139019785647194950, guid: 9e531f0ff10db6e45860b6b6455a5d8c, type: 3}
-      propertyPath: LightAttackDuration
-      value: 0.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 8231151021998414769, guid: 9e531f0ff10db6e45860b6b6455a5d8c, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8398586250269062770, guid: 9e531f0ff10db6e45860b6b6455a5d8c, type: 3}
-      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
