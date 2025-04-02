@@ -10,6 +10,7 @@ public class MovementScript : MonoBehaviour
     [SerializeField] Animator playerAnim;
     [SerializeField] Transform runtoTransform;
     [SerializeField] bool startRun;
+    [SerializeField] public float timeInAir = 1f;
     Vector3 runtoPosition;
 
     [Header("Player Movement Stats")]
@@ -57,7 +58,7 @@ public class MovementScript : MonoBehaviour
         SetGravityScale(gravityScale);
     }
 
-    private void Update()
+    public void Update()
     {
         if (startRun)
         {
@@ -156,7 +157,7 @@ public class MovementScript : MonoBehaviour
         }
     }
 
-    bool IsGrounded()
+    public bool IsGrounded()
     {
         Debug.DrawRay(transform.position, -transform.up*castDistance, Color.red);
         return Physics2D.BoxCast(transform.position, boxSize, 0, -transform.up, castDistance, groundLayer);
@@ -179,6 +180,7 @@ public class MovementScript : MonoBehaviour
             SetGravityScale(gravityScale * fallGravityMult);
         }
     }
+
 
     public void SetGravityScale(float scale)
     {
