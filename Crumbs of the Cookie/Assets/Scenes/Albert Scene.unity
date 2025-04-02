@@ -82041,6 +82041,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8139019785647194950, guid: 9e531f0ff10db6e45860b6b6455a5d8c, type: 3}
+      propertyPath: LightAttackDuration
+      value: 0.25
+      objectReference: {fileID: 0}
     - target: {fileID: 8231151021998414769, guid: 9e531f0ff10db6e45860b6b6455a5d8c, type: 3}
       propertyPath: m_IsActive
       value: 0
