@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2615626752942500858}
   - component: {fileID: 7066611632131859697}
   - component: {fileID: 163774408121779965}
+  - component: {fileID: 8596376354448767816}
   m_Layer: 0
   m_Name: Enemy FollowPlayer
   m_TagString: Untagged
@@ -130,6 +131,21 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &8596376354448767816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3552687830107892253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06459a397fea40347a17476a69245a24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thisEnemyType: 0
+  health: 0
+  sourceOfKnockback: {x: 0, y: 0, z: 0}
 --- !u!1 &3762255366489421385
 GameObject:
   m_ObjectHideFlags: 0

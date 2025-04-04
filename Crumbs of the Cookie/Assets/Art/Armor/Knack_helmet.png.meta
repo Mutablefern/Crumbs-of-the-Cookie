@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 603fe158afde2e74d92bbc3ab79a0939
+guid: adcc6e5744b09f54c8ef5b9ff66ed704
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1717555111616452035
-    second: Slime_rat__0
+      213: 2839341044495764211
+    second: Knack_helmet_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,17 +96,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Slime_rat__0
+      name: Knack_helmet_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 23
         y: 0
-        width: 2236
-        height: 718
+        width: 236
+        height: 229
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d3ae1f9d9b40a28e0800000000000000
-      internalID: -1717555111616452035
+      spriteID: 3fa4b51f2ad576720800000000000000
+      internalID: 2839341044495764211
       vertices: []
       indices: 
       edges: []
@@ -135,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Slime_rat__0: -1717555111616452035
+      Knack_helmet_0: 2839341044495764211
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
