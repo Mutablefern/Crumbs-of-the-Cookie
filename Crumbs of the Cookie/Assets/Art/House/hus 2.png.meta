@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: e0cb86628e019054b979ab5b4404a520
+guid: eabde3fb345bac144812218d4013c21c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7627233351724219519
-    second: Marshmellow_0
+      213: -3071213783180204932
+    second: hus 2_0
+  - first:
+      213: -1041191178092216210
+    second: hus 2_1
+  - first:
+      213: -1172732757568640454
+    second: hus 2_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Marshmellow_0
+      name: hus 2_0
       rect:
         serializedVersion: 2
-        x: 26
-        y: 19
-        width: 208
-        height: 209
+        x: 517
+        y: 577
+        width: 6
+        height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +134,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f7cb884925069d960800000000000000
-      internalID: 7627233351724219519
+      spriteID: c74a240165bd065d0800000000000000
+      internalID: -3071213783180204932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hus 2_1
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 569
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e600b86d322fc81f0800000000000000
+      internalID: -1041191178092216210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hus 2_2
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 203
+        width: 528
+        height: 365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3a28a835cd99bfe0800000000000000
+      internalID: -1172732757568640454
       vertices: []
       indices: 
       edges: []
@@ -148,7 +198,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Marshmellow_0: 7627233351724219519
+      hus 2_0: -3071213783180204932
+      hus 2_1: -1041191178092216210
+      hus 2_2: -1172732757568640454
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -8,10 +8,13 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/TestBuildScene.unity
     guid: c1fe7705ef955e749b0d07867199a78a
+  - enabled: 1
+    path: Assets/Scenes/Albert Scene.unity
+    guid: d6c2af30b67619f4699fa9bbedc2e48a
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/BScene.unity
     guid: de8972a9a09890e408dce679e83838fb
   - enabled: 0

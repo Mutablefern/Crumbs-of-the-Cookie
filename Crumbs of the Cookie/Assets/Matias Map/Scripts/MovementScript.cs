@@ -114,6 +114,7 @@ public class MovementScript : MonoBehaviour
         if (!startRun)
         {
             movementInput = inputValue.Get<Vector2>();
+            Debug.Log(movementInput);
         }
     }
 
