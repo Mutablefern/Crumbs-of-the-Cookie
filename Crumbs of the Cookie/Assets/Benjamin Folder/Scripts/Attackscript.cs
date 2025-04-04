@@ -37,9 +37,10 @@ public class AttackScript : MonoBehaviour
     {
         if (!isAttacking)
         {
-            isAttacking = true;
+           
             if (ammoAmmount > 0)
             {
+                isAttacking = true;
                 Debug.Log("Light attack");
                 ammoAmmount--;
                 LightAttackHitbox.SetActive(true);
@@ -64,9 +65,10 @@ public class AttackScript : MonoBehaviour
     {
         if (!isAttacking)
         {
-            isAttacking = true;
+            
             if (ammoAmmount > 0)
             {
+                isAttacking = true;
                 Debug.Log("Heavy attack");
                 ammoAmmount--;
                 PlayerAnim.SetTrigger("Heavy attack");
