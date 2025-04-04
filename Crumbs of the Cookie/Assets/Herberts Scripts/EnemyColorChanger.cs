@@ -2,20 +2,24 @@ using UnityEngine;
 
 public class EnemyColorChanger : MonoBehaviour
 {
+    public int colorValue;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     Renderer enemy_Renderer;
+    Particlecolorchanger particlecolorchanger;
 
     void Start()
     {
         enemy_Renderer = GetComponentInChildren<Renderer>();
-        ColorChanger();
-       
+        particlecolorchanger = FindAnyObjectByType<Particlecolorchanger>();
+        colorValue = Random.Range(0, 4);
+        ColorChanger(colorValue);
+
     }
 
-    void ColorChanger()
+    public void ColorChanger(int color)
     {
-         
-        int colorValue = Random.Range(0,4);
+
+       
         if (colorValue == 0)
         {
             enemy_Renderer.material.SetColor("_Color", Color.green);
@@ -36,12 +40,12 @@ public class EnemyColorChanger : MonoBehaviour
         {
             enemy_Renderer.material.SetColor("_Color", Color.yellow);
         }
-       
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        particlecolorchanger.localColor = colorValue;
+
     }
 }

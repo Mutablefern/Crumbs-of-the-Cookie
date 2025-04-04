@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1068520989855550573}
   - component: {fileID: 8235079409847091584}
+  - component: {fileID: -100658479935936709}
   m_Layer: 0
   m_Name: Particle Manager
   m_TagString: Untagged
@@ -48,3 +49,16 @@ MonoBehaviour:
   - {fileID: 4308721344618351241, guid: 8f0b512e3aab9ce47bbb27dce1ae3306, type: 3}
   - {fileID: 810660028299579957, guid: 4dd6701829fa83c429cec86f671aa4a3, type: 3}
   - {fileID: 5578525219009668565, guid: e0a5e912162ba87448d6f7e16f5dcde1, type: 3}
+--- !u!114 &-100658479935936709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2891633578771483842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8eea96ad8a0262646b5158923bef4b91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  localColor: 0

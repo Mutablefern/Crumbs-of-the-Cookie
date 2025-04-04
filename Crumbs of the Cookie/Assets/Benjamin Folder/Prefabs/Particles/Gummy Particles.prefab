@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5531464755324568979}
   - component: {fileID: 9157283284803088181}
   - component: {fileID: 810660028299579957}
+  - component: {fileID: 2552378099741089775}
   m_Layer: 0
   m_Name: Gummy Particles
   m_TagString: Untagged
@@ -4907,3 +4908,16 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!114 &2552378099741089775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3427142743896691788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8eea96ad8a0262646b5158923bef4b91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  localColor: 0
