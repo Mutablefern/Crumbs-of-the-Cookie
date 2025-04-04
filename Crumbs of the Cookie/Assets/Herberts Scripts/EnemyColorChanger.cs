@@ -15,18 +15,20 @@ public class EnemyColorChanger : MonoBehaviour
     void ColorChanger()
     {
          
-        int colorValue = Random.Range(0,4);
+        int colorValue = Random.Range(0,5);
+        //Green and cyan are basiacally the same, Red and magenta are basically the same.
+        Debug.Log(colorValue);
         if (colorValue == 0)
         {
             enemy_Renderer.material.SetColor("_Color", Color.green);
         }
         if (colorValue == 1)
         {
-            enemy_Renderer.material.SetColor("_Color", Color.red);
+            enemy_Renderer.material.SetColor("_Color", Color.cyan);
         }
         if (colorValue == 2)
         {
-            enemy_Renderer.material.SetColor("_Color", Color.cyan);
+            enemy_Renderer.material.SetColor("_Color", Color.red);
         }
         if (colorValue == 3)
         {
@@ -42,6 +44,9 @@ public class EnemyColorChanger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            ColorChanger();
+        }
     }
 }
