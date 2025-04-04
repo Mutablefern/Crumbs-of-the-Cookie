@@ -17,6 +17,7 @@ public class EnemyPointMovement : MonoBehaviour
     bool playerDetected;
 
     Transform currentPoint;
+    Vector3 transformLocalscaleOrg;
     Rigidbody2D rb_Enemy;
     EnemyHealth enemyHealth;
     [SerializeField] int gravScale;
@@ -26,6 +27,7 @@ public class EnemyPointMovement : MonoBehaviour
 
     void Awake()
     {
+        transformLocalscaleOrg = transform.localScale;
         enemyState = 1;
         rb_Enemy = GetComponent<Rigidbody2D>();
         enemyHealth = GetComponent<EnemyHealth>();
@@ -101,8 +103,17 @@ public class EnemyPointMovement : MonoBehaviour
     void Chase()
     {
         //After it has been attacked, it starts to chase the player
+        transform.localScale = transformLocalscaleOrg;
+        float directionLocal = Mathf.Sign(playerTransform.position.x - transform.position.x);
 
-       
+        if (directionLocal < 0)
+        {
+            transform.rotation = Quaternion.Euler(0, 0, 0);
+        }
+        else
+        {
+            transform.rotation = Quaternion.Euler(0, 180, 0);
+        }
 
         if (Vector2.Distance(transform.position, playerTransform.position) <= sightRange)
         {
@@ -114,24 +125,15 @@ public class EnemyPointMovement : MonoBehaviour
             playerDetected = false;
             enemyAnim.SetBool("IsChasing", false);
         }
-
+       
 
 
         //It stands still if it can not see the player
         if (playerDetected)
         {
-            float direction = Mathf.Sign(playerTransform.position.x - transform.position.x);
+          rb_Enemy.linearVelocity = new Vector2(directionLocal * chaseSpeed, rb_Enemy.linearVelocity.y);
 
-            if (direction > 0)
-            {
-                transform.rotation = Quaternion.Euler(0, 0, 0);
-            }
-            else
-            {
-                transform.rotation = Quaternion.Euler(0, 180, 0);
-            }
-
-          rb_Enemy.linearVelocity = new Vector2(direction * chaseSpeed, rb_Enemy.linearVelocity.y);
+           
         }
 
     }

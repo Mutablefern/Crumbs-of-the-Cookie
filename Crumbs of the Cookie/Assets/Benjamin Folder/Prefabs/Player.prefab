@@ -56,7 +56,7 @@ Rigidbody2D:
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: c88b95268f945534e989a9d0a6f19c67, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -113,7 +113,7 @@ MonoBehaviour:
   runtoTransform: {fileID: 0}
   startRun: 0
   movementSpeed: 12.5
-  jumpingPower: 14
+  jumpingPower: 16
   dragForce: 15
   castDistance: 0.72
   boxSize: {x: 0.5, y: 0.5}
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LightAttackHitbox: {fileID: 8398586250269062770}
   HeavyAttackHitbox: {fileID: 2297554566500561407}
-  LightAttackDuration: 0.5
+  LightAttackDuration: 0.25
   HeavyAttackDuration: 0.8
   ammoAmmount: 0
   ammoMaxAmmount: 3
@@ -292,7 +292,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -356,7 +356,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4638498630589681162
 Transform:
   m_ObjectHideFlags: 0
@@ -366,8 +366,8 @@ Transform:
   m_GameObject: {fileID: 8398586250269062770}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.97, y: 0.01, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 1.2, y: -0.2, z: 0}
+  m_LocalScale: {x: 1.1, y: 1.1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5998911278847716393}
@@ -552,7 +552,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1500015795146439477, guid: 0ef611174d231d942a17da22e56cc324, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3982666625132247039, guid: 0ef611174d231d942a17da22e56cc324, type: 3}
       propertyPath: m_SortingOrder
