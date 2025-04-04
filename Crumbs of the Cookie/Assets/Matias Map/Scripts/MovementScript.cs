@@ -12,6 +12,8 @@ public class MovementScript : MonoBehaviour
     [SerializeField] bool startRun;
     [SerializeField] public float timeInAir = 1f;
     Vector3 runtoPosition;
+    public float playerVelocityY;
+    public float playerVelocityX;
 
     [Header("Player Movement Stats")]
     [SerializeField] float movementSpeed = 20f;
@@ -44,7 +46,7 @@ public class MovementScript : MonoBehaviour
     public bool isGrounded;
 
     // Cached references
-    Rigidbody2D rb_Player;
+    public Rigidbody2D rb_Player;
 
     private void Awake()
     {
@@ -84,7 +86,8 @@ public class MovementScript : MonoBehaviour
                 coyoteCounter -= Time.deltaTime;
                 jumpBufferingTimer -= Time.deltaTime;
             }
-
+            playerVelocityY = rb_Player.linearVelocity.y;
+            playerVelocityX = rb_Player.linearVelocity.x;
             VariableJumping();
         }
     }

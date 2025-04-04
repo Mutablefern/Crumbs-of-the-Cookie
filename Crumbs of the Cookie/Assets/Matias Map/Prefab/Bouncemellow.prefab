@@ -161,4 +161,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2548cc073b5cd9d47a9663446c4f0ec0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Bounciness: 20
+  player_rb: {fileID: 0}
+  guaranteedBounce: 7
