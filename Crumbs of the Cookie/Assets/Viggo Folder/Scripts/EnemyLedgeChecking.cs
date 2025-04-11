@@ -27,6 +27,7 @@ public class EnemyLedgeChecking : MonoBehaviour
 
     void Awake()
     {
+        playerTransform = GameObject.Find("Player").transform;
         enemyState = 1;
         rb_Enemy = GetComponent<Rigidbody2D>();
         enemyHealth = GetComponent<EnemyHealth>();
