@@ -48,7 +48,6 @@ public class SceneManagement : MonoBehaviour
             transitionSeconds = sceneTransitionScript.transitionDuration;
             sceneTransitionScript.FadeOut();
         }
-        Debug.Log(transitionSeconds);
         yield return new WaitForSeconds(transitionSeconds);
         SceneManager.LoadScene(sceneName);
     }
