@@ -38,10 +38,14 @@ public class MovementScript : MonoBehaviour
     Rigidbody2D rb_Player;
     SpriteRenderer spriteRenderer;
 
+    AudioManager audioManager;
+
     private void Awake()
     {
         rb_Player = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
 
     private void Start()
@@ -86,6 +90,8 @@ public class MovementScript : MonoBehaviour
     void OnMove(InputValue inputValue) //Used to we actually let unity know that we have input from player. 
     {
         movementInput = inputValue.Get<Vector2>(); // our inputValue we get from the player ("wasd") becomes movementInput.
+
+        audioManager.playSFX(audioManager.run);
     }
 
     void OnJump(InputValue inputValue)
