@@ -3,39 +3,43 @@ using UnityEngine;
 public class Particlecolorchanger : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    EnemyColorChanger enemyColorChanger;
-    Renderer particleRender;
+    ParticleSystem particleRender; 
+    Renderer particleRenderer2;
     public int localColor;
+    ParticleSystem.MainModule startColor;
     void Awake()
     {
-        particleRender=GetComponent<Renderer>();
-        enemyColorChanger = GetComponent<EnemyColorChanger>();
-       
-        if (localColor ==0)
-        {
-            particleRender.material.SetColor("_Color", Color.green);
-        }
-        if (localColor == 1)
-        {
-            particleRender.material.SetColor("_Color", Color.red);
-        }
-        if (localColor == 2)
-        {
-            particleRender.material.SetColor("_Color", Color.cyan);
-        }
-        if (localColor == 3)
-        {
-            particleRender.material.SetColor("_Color", Color.magenta);
-        }
-        if (localColor == 4)
-        {
-            particleRender.material.SetColor("_Color", Color.yellow);
-        }
+
+        particleRender = GetComponent<ParticleSystem>();
+        particleRenderer2 = GetComponent<Renderer>();
+          startColor = particleRender.main;
+          
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (localColor == 0)
+        {            
+            startColor.startColor = Color.green;
+        }
+        if (localColor == 1)
+        {
+            startColor.startColor = Color.red;
+        }
+        if (localColor == 2)
+        {
+            startColor.startColor = Color.cyan;
+        }
+        if (localColor == 3)
+        {
+            startColor.startColor = Color.magenta;
+        }
+        if (localColor == 4)
+        {
+            startColor.startColor = Color.yellow;
+
+        }
     }
 }

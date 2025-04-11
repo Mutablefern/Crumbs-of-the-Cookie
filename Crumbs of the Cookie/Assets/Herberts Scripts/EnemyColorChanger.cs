@@ -10,16 +10,16 @@ public class EnemyColorChanger : MonoBehaviour
     void Start()
     {
         enemy_Renderer = GetComponentInChildren<Renderer>();
-        particlecolorchanger = FindAnyObjectByType<Particlecolorchanger>();
+
         colorValue = Random.Range(0, 4);
-        ColorChanger(colorValue);
+
 
     }
 
     public void ColorChanger(int color)
     {
 
-       
+
         if (colorValue == 0)
         {
             enemy_Renderer.material.SetColor("_Color", Color.green);
@@ -45,7 +45,12 @@ public class EnemyColorChanger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        particlecolorchanger.localColor = colorValue;
+        particlecolorchanger = FindAnyObjectByType<Particlecolorchanger>();
+        if (particlecolorchanger != null)
+        {
+            particlecolorchanger.localColor = colorValue;
+        }
+        ColorChanger(colorValue);
 
     }
 }
