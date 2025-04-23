@@ -125,7 +125,7 @@ MonoBehaviour:
   knockback: 15
   knockbackY: 15
   enemyState: 1
-  sightRange: 9.5
+  sightRange: 7
   playerDetected: 0
   hasTurned: 0
   groundDetected: 0
