@@ -9,6 +9,7 @@ public class EnemyHealth : MonoBehaviour
     {
         GummyBear,
         GummyRat,
+        Butterroll,
     };
     [Tooltip("choose what type of enemy this is")]
     [SerializeField] enemyType thisEnemyType;
@@ -17,6 +18,7 @@ public class EnemyHealth : MonoBehaviour
     ParticlesManager particlesManager;
     EnemyPointMovement enemyPointMovement;
     EnemyLedgeChecking enemyLedgeChecking;
+    EnemyLedgeCheckingRollyPolly enemyLedgeCheckRollyPolly;
     Rigidbody2D rb_Enemy;
     Vector3 direction;
     public Vector3 sourceOfKnockback;
@@ -30,7 +32,7 @@ public class EnemyHealth : MonoBehaviour
         particlesManager = GameObject.Find("Particle Manager").GetComponent<ParticlesManager>();
         enemyPointMovement = GetComponent<EnemyPointMovement>();
         enemyLedgeChecking = GetComponent<EnemyLedgeChecking>();
-
+        enemyLedgeCheckRollyPolly = GetComponent<EnemyLedgeCheckingRollyPolly>();
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -66,6 +68,11 @@ public class EnemyHealth : MonoBehaviour
             particlesManager.Particels(1, transform.position);
             StartCoroutine(KnockBackLedge());
         }
+        if(thisEnemyType == enemyType.Butterroll)
+        {
+            particlesManager.Particels(0, transform.position);
+            StartCoroutine(KnockBackLedgeRollyPolly());
+        }
     }
     IEnumerator KnockBackPoint()
     {
@@ -81,5 +88,13 @@ public class EnemyHealth : MonoBehaviour
         enemyLedgeChecking.Knockback();
         yield return new WaitForSeconds(0.5f);
         enemyLedgeChecking.enemyState = 1;
+    }
+
+    IEnumerator KnockBackLedgeRollyPolly()
+    {
+        enemyLedgeCheckRollyPolly.enemyState = 2;
+        enemyLedgeCheckRollyPolly.Knockback();
+        yield return new WaitForSeconds(0.5f);
+        enemyLedgeCheckRollyPolly.enemyState = 1;
     }
 }

@@ -23,11 +23,11 @@ public class EnemyColorChanger : MonoBehaviour
         }
         if (colorValue == 1)
         {
-            enemy_Renderer.material.SetColor("_Color", Color.red);
+            enemy_Renderer.material.SetColor("_Color", Color.cyan);
         }
         if (colorValue == 2)
         {
-            enemy_Renderer.material.SetColor("_Color", Color.cyan);
+            enemy_Renderer.material.SetColor("_Color", Color.red);
         }
         if (colorValue == 3)
         {

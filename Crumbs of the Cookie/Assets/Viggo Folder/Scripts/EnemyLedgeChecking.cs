@@ -7,6 +7,7 @@ public class EnemyLedgeChecking : MonoBehaviour
 {
     [SerializeField] float moveSpeed = 1f;
     [SerializeField] Transform ledgeCheckPosition;
+    [SerializeField] float ledgeCheckOffset;
     [SerializeField] float ledgeCheckLength;
     [SerializeField] float groundCheck = 1f;
     [SerializeField] int knockback;
@@ -89,7 +90,7 @@ public class EnemyLedgeChecking : MonoBehaviour
     {
         //Checking if there is a ledge infrot of the enemy
         RaycastHit2D hit = Physics2D.Raycast(
-            ledgeCheckPosition.position,
+            new Vector2(ledgeCheckPosition.position.x + ledgeCheckOffset * transform.right.x, ledgeCheckPosition.position.y),
             Vector2.down,
             ledgeCheckLength,
             groundLayer);
