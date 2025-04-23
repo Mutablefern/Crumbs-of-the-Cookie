@@ -113,15 +113,15 @@ MonoBehaviour:
   runtoTransform: {fileID: 0}
   startRun: 0
   movementSpeed: 12.5
-  jumpingPower: 16
+  jumpingPower: 18
   dragForce: 15
   castDistance: 0.72
   boxSize: {x: 0.5, y: 0.5}
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
-  coyoteTimer: 0.25
-  jumpBuffering: 0.3
+  coyoteTimer: 0.15
+  jumpBuffering: 0.2
   gravityScale: 1.75
   gravityStrength: 2.35
   fallGravityMult: 3
@@ -145,12 +145,13 @@ MonoBehaviour:
   LightAttackHitbox: {fileID: 8398586250269062770}
   HeavyAttackHitbox: {fileID: 2297554566500561407}
   LightAttackDuration: 0.25
-  HeavyAttackDuration: 0.8
+  HeavyAttackStartLag: 0
   ammoAmmount: 0
   ammoMaxAmmount: 3
   reloadDuration: 0.5
   torchFire: {fileID: 8231151021998414769}
   PlayerAnim: {fileID: 5081686740506289931}
+  isAttacking: 0
 --- !u!61 &9127332720994520002
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -521,7 +522,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4234642538795602855, guid: 3f1c3d1514e9bf24a99089f2c8aa1c92, type: 3}
       insertIndex: -1
       addedObject: {fileID: 669968498829056503}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2487730543213311394, guid: 3f1c3d1514e9bf24a99089f2c8aa1c92, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8375085568056507556}
   m_SourcePrefab: {fileID: 100100000, guid: 3f1c3d1514e9bf24a99089f2c8aa1c92, type: 3}
 --- !u!95 &5081686740506289931 stripped
 Animator:
@@ -533,6 +537,23 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 205590968206420423, guid: 3f1c3d1514e9bf24a99089f2c8aa1c92, type: 3}
   m_PrefabInstance: {fileID: 5415295699471338984}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &7611310972748101706 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2487730543213311394, guid: 3f1c3d1514e9bf24a99089f2c8aa1c92, type: 3}
+  m_PrefabInstance: {fileID: 5415295699471338984}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8375085568056507556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7611310972748101706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07e8b56fe63aae649bc32d035cec0074, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &8206269135137218127 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4234642538795602855, guid: 3f1c3d1514e9bf24a99089f2c8aa1c92, type: 3}

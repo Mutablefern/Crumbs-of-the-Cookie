@@ -1719,18 +1719,6 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 2398665862090611863, guid: 9e531f0ff10db6e45860b6b6455a5d8c, type: 3}
-      propertyPath: coyoteTimer
-      value: 0.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 2398665862090611863, guid: 9e531f0ff10db6e45860b6b6455a5d8c, type: 3}
-      propertyPath: jumpingPower
-      value: 18
-      objectReference: {fileID: 0}
-    - target: {fileID: 2398665862090611863, guid: 9e531f0ff10db6e45860b6b6455a5d8c, type: 3}
-      propertyPath: jumpBuffering
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2398665862090611863, guid: 9e531f0ff10db6e45860b6b6455a5d8c, type: 3}
       propertyPath: runtoTransform
       value: 
       objectReference: {fileID: 2039716591}
@@ -1772,6 +1760,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5998911278847716393, guid: 9e531f0ff10db6e45860b6b6455a5d8c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8398586250269062770, guid: 9e531f0ff10db6e45860b6b6455a5d8c, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
