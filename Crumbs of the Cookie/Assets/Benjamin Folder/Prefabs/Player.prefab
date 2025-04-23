@@ -112,16 +112,19 @@ MonoBehaviour:
   playerAnim: {fileID: 5081686740506289931}
   runtoTransform: {fileID: 0}
   startRun: 0
+  timeInAir: 1
+  playerVelocityY: 0
+  playerVelocityX: 0
   movementSpeed: 12.5
-  jumpingPower: 16
+  jumpingPower: 18
   dragForce: 15
   castDistance: 0.72
   boxSize: {x: 0.5, y: 0.5}
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
-  coyoteTimer: 0.25
-  jumpBuffering: 0.3
+  coyoteTimer: 0.15
+  jumpBuffering: 0.2
   gravityScale: 1.75
   gravityStrength: 2.35
   fallGravityMult: 3
@@ -130,6 +133,7 @@ MonoBehaviour:
   minFastFallSpeed: 1
   jumpPressed: 0
   isGrounded: 0
+  rb_Player: {fileID: 0}
 --- !u!114 &8139019785647194950
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -145,12 +149,13 @@ MonoBehaviour:
   LightAttackHitbox: {fileID: 8398586250269062770}
   HeavyAttackHitbox: {fileID: 2297554566500561407}
   LightAttackDuration: 0.25
-  HeavyAttackDuration: 0.8
+  HeavyAttackStartLag: 0
   ammoAmmount: 0
   ammoMaxAmmount: 3
   reloadDuration: 0.5
   torchFire: {fileID: 8231151021998414769}
   PlayerAnim: {fileID: 5081686740506289931}
+  isAttacking: 0
 --- !u!61 &9127332720994520002
 BoxCollider2D:
   m_ObjectHideFlags: 0
