@@ -8,9 +8,9 @@ public class MovementScript : MonoBehaviour
 { 
     // Configurable parameters
     [SerializeField] Animator playerAnim;
-    [SerializeField] Transform runtoTransform;
-    [SerializeField] bool startRun;
-    Vector3 runtoPosition;
+    [SerializeField] public float timeInAir = 1f;
+    public float playerVelocityY;
+    public float playerVelocityX;
 
     [Header("Player Movement Stats")]
     [SerializeField] float movementSpeed = 20f;
@@ -43,13 +43,11 @@ public class MovementScript : MonoBehaviour
     public bool isGrounded;
 
     // Cached references
-    Rigidbody2D rb_Player;
+    public Rigidbody2D rb_Player;
 
     private void Awake()
     {
         rb_Player = GetComponent<Rigidbody2D>();
-        startRun = true;
-        runtoPosition = runtoTransform.position;
     }
 
     private void Start()
@@ -57,20 +55,8 @@ public class MovementScript : MonoBehaviour
         SetGravityScale(gravityScale);
     }
 
-    private void Update()
+    public void Update()
     {
-        if (startRun)
-        {
-            movementInput.x = 1;
-            playerAnim.SetBool("Running", true);
-            if (transform.position.x > runtoPosition.x) // it stops even if it overshoots, but not if it undershoots
-            {
-                startRun = false;
-                movementInput.x = 0;
-            }
-        }
-        if (!startRun)
-        {
             if (IsGrounded())
             {
                 playerAnim.SetBool("IsGrounded", true);
@@ -83,9 +69,9 @@ public class MovementScript : MonoBehaviour
                 coyoteCounter -= Time.deltaTime;
                 jumpBufferingTimer -= Time.deltaTime;
             }
-
+            playerVelocityY = rb_Player.linearVelocity.y;
+            playerVelocityX = rb_Player.linearVelocity.x;
             VariableJumping();
-        }
     }
 
     private void FixedUpdate()
@@ -107,11 +93,8 @@ public class MovementScript : MonoBehaviour
     
     void OnMove(InputValue inputValue)
     {
-        if (!startRun)
-        {
             movementInput = inputValue.Get<Vector2>();
             Debug.Log(movementInput);
-        }
     }
 
     void OnJump(InputValue inputValue)
@@ -157,7 +140,7 @@ public class MovementScript : MonoBehaviour
         }
     }
 
-    bool IsGrounded()
+    public bool IsGrounded()
     {
         Debug.DrawRay(transform.position, -transform.up*castDistance, Color.red);
         return Physics2D.BoxCast(transform.position, boxSize, 0, -transform.up, castDistance, groundLayer);
@@ -180,6 +163,7 @@ public class MovementScript : MonoBehaviour
             SetGravityScale(gravityScale * fallGravityMult);
         }
     }
+
 
     public void SetGravityScale(float scale)
     {

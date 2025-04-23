@@ -17,6 +17,7 @@ public class SceneManagement : MonoBehaviour
         {
             sceneTransitionScript = Transitioner.GetComponent<SceneTransition>();
         }
+        Debug.Log(PlayerPrefs.GetString("SavedScene"));
     }
     public void ChangeScene(string sceneName)
     {
@@ -30,6 +31,7 @@ public class SceneManagement : MonoBehaviour
 
     public void Quit()
     {
+        SaveScene(true);
         Application.Quit();
  
     }
@@ -57,5 +59,40 @@ public class SceneManagement : MonoBehaviour
         //Goes back to the previous scene
         transitionSeconds = deathDuration;
         ChangeScene(PrevScene);
+    }
+
+    public void ContinueGame()
+    {
+        SceneManager.LoadScene(SaveScene(false));
+    }
+
+    string SaveScene(bool toSave)
+    {
+        if (toSave == true && PrevScene != null)
+        {
+            PlayerPrefs.SetString("SavedScene", PrevScene);
+            Debug.Log(PlayerPrefs.GetString("SavedScene"));
+            return "BugScene";
+        }    
+
+        else if (toSave == false)
+        {
+            Debug.Log("Saved String is " + PlayerPrefs.GetString("SavedScene"));
+            return PlayerPrefs.GetString("SavedScene");
+        }
+
+        else
+        {
+            Debug.LogError("Unexpected value of bool");
+            return null;
+        }
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.PageUp))
+        {
+            PlayerPrefs.DeleteAll();
+        }
     }
 }
