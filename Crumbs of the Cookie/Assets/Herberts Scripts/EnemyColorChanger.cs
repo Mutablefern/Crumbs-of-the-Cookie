@@ -3,22 +3,19 @@ using UnityEngine;
 public class EnemyColorChanger : MonoBehaviour
 {
     public int colorValue;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     Renderer enemy_Renderer;
     Particlecolorchanger particlecolorchanger;
 
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         enemy_Renderer = GetComponentInChildren<Renderer>();
-
         colorValue = Random.Range(0, 4);
-
-
     }
 
     public void ColorChanger(int color)
     {
-
+        //Gives the enemy a random color from the ones below
 
         if (colorValue == 0)
         {
@@ -45,6 +42,7 @@ public class EnemyColorChanger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //This gives the particles the enemy drops when it gets hit the correct color
         particlecolorchanger = FindAnyObjectByType<Particlecolorchanger>();
         if (particlecolorchanger != null)
         {
