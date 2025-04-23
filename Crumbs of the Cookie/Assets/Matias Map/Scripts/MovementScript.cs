@@ -8,10 +8,7 @@ public class MovementScript : MonoBehaviour
 { 
     // Configurable parameters
     [SerializeField] Animator playerAnim;
-    [SerializeField] Transform runtoTransform;
-    [SerializeField] bool startRun;
     [SerializeField] public float timeInAir = 1f;
-    Vector3 runtoPosition;
     public float playerVelocityY;
     public float playerVelocityX;
 
@@ -51,8 +48,6 @@ public class MovementScript : MonoBehaviour
     private void Awake()
     {
         rb_Player = GetComponent<Rigidbody2D>();
-        startRun = true;
-        runtoPosition = runtoTransform.position;
     }
 
     private void Start()
@@ -62,18 +57,6 @@ public class MovementScript : MonoBehaviour
 
     public void Update()
     {
-        if (startRun)
-        {
-            movementInput.x = 1;
-            playerAnim.SetBool("Running", true);
-            if (transform.position.x > runtoPosition.x) // it stops even if it overshoots, but not if it undershoots
-            {
-                startRun = false;
-                movementInput.x = 0;
-            }
-        }
-        if (!startRun)
-        {
             if (IsGrounded())
             {
                 playerAnim.SetBool("IsGrounded", true);
@@ -89,7 +72,6 @@ public class MovementScript : MonoBehaviour
             playerVelocityY = rb_Player.linearVelocity.y;
             playerVelocityX = rb_Player.linearVelocity.x;
             VariableJumping();
-        }
     }
 
     private void FixedUpdate()
@@ -111,11 +93,8 @@ public class MovementScript : MonoBehaviour
     
     void OnMove(InputValue inputValue)
     {
-        if (!startRun)
-        {
             movementInput = inputValue.Get<Vector2>();
             Debug.Log(movementInput);
-        }
     }
 
     void OnJump(InputValue inputValue)

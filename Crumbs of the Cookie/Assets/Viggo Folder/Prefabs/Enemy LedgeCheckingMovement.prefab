@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 8156490283258782286}
   - component: {fileID: 5923007786507999977}
   - component: {fileID: 7671075495402290627}
-  - component: {fileID: 1125123431811974035}
+  - component: {fileID: 4548321298536801395}
+  - component: {fileID: 7808187424318406752}
   m_Layer: 0
   m_Name: Enemy LedgeCheckingMovement
   m_TagString: Enemy
@@ -107,8 +108,20 @@ MonoBehaviour:
   thisEnemyType: 1
   health: 2
   sourceOfKnockback: {x: 0, y: 0, z: 0}
---- !u!70 &1125123431811974035
-CapsuleCollider2D:
+--- !u!114 &4548321298536801395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2627004226572899073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89d32794136c58441b35d70cf2d3aaa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!58 &7808187424318406752
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -117,7 +130,7 @@ CapsuleCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: c88b95268f945534e989a9d0a6f19c67, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -141,9 +154,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.4379332, y: -0.30000007}
-  m_Size: {x: 1.4291041, y: 0.40000725}
-  m_Direction: 1
+  m_Offset: {x: 0, y: 0}
+  m_Radius: 0.5
 --- !u!1 &9196337655188936591
 GameObject:
   m_ObjectHideFlags: 0
