@@ -81,7 +81,8 @@ public class MovementScript : MonoBehaviour
             if (IsGrounded() || coyoteCounter > 0)  
             {
                 JumpForce();
-                jumpBufferingTimer = 0;  
+                jumpBufferingTimer = 0;
+                audioManager.playSFX(audioManager.jump);
             }
         }  
     }
@@ -90,8 +91,6 @@ public class MovementScript : MonoBehaviour
     void OnMove(InputValue inputValue) //Used to we actually let unity know that we have input from player. 
     {
         movementInput = inputValue.Get<Vector2>(); // our inputValue we get from the player ("wasd") becomes movementInput.
-
-        audioManager.playSFX(audioManager.run);
     }
 
     void OnJump(InputValue inputValue)
@@ -99,7 +98,7 @@ public class MovementScript : MonoBehaviour
         if (inputValue.isPressed) // Unity detectes spacebar being pressed. 
         {
             jumpPressed = true;
-            jumpBufferingTimer = jumpBuffering;  
+            jumpBufferingTimer = jumpBuffering;
         }
 
         else

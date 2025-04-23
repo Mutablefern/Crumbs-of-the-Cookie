@@ -4,20 +4,25 @@ public class AudioManager : MonoBehaviour
 {
     [Header("Audio Source")]
     [SerializeField] AudioSource musicSource;
+    [SerializeField] AudioSource Ambiens;
     [SerializeField] AudioSource SFXSource;
 
     [Header("Audio Clip")]
     public AudioClip background;
+    public AudioClip birds;
     public AudioClip death;
     public AudioClip run;
     public AudioClip movingplatform;
     public AudioClip pickup;
     public AudioClip jump;
+    public AudioClip playerhurt;
 
     private void Start()
     {
         musicSource.clip = background;
         musicSource.Play();
+        Ambiens.clip = birds;
+        Ambiens.Play();
     }
 
     public void playSFX(AudioClip clip)
@@ -34,5 +39,5 @@ public class AudioManager : MonoBehaviour
     //    audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     //}
 
-    //Where the action and sound is going to be: audioManager.playSFX(audioManager.movingplatform);
+    //Where the action and sound is going to be: audioManager.playSFX(audioManager.nameOfTheSound);
 }
