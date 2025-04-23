@@ -82595,6 +82595,14 @@ PrefabInstance:
       value: -179.921
       objectReference: {fileID: 0}
     - target: {fileID: 2398665862090611863, guid: 9e531f0ff10db6e45860b6b6455a5d8c, type: 3}
+      propertyPath: coyoteTimer
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2398665862090611863, guid: 9e531f0ff10db6e45860b6b6455a5d8c, type: 3}
+      propertyPath: jumpBuffering
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2398665862090611863, guid: 9e531f0ff10db6e45860b6b6455a5d8c, type: 3}
       propertyPath: runtoTransform
       value: 
       objectReference: {fileID: 1327867968}
@@ -82656,6 +82664,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8139019785647194950, guid: 9e531f0ff10db6e45860b6b6455a5d8c, type: 3}
       propertyPath: HeavyAttackDuration
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 8139019785647194950, guid: 9e531f0ff10db6e45860b6b6455a5d8c, type: 3}
+      propertyPath: HeavyAttackStartLag
       value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 8139019785647194950, guid: 9e531f0ff10db6e45860b6b6455a5d8c, type: 3}
@@ -83371,6 +83383,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HeadIcon (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5277059455770041707, guid: 2c0215cea86481e4c84a738d0e20845d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6395103304902219905, guid: 2c0215cea86481e4c84a738d0e20845d, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -83580,6 +83596,7 @@ GameObject:
   - component: {fileID: 1005894523}
   - component: {fileID: 1005894522}
   - component: {fileID: 1005894524}
+  - component: {fileID: 1005894525}
   m_Layer: 0
   m_Name: hus 2 destroid_2
   m_TagString: Untagged
@@ -83703,6 +83720,18 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 5.28, y: 3.55}
   m_EdgeRadius: 0
+--- !u!114 &1005894525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1005894521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1da993ac38877c04eba6d983d1e0a464, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1236910172 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4961296530283879748, guid: 2c0215cea86481e4c84a738d0e20845d, type: 3}
