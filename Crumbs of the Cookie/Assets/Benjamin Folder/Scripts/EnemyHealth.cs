@@ -94,7 +94,7 @@ public class EnemyHealth : MonoBehaviour
     {
         enemyLedgeCheckRollyPolly.enemyState = 2;
         enemyLedgeCheckRollyPolly.Knockback();
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.75f);
         enemyLedgeCheckRollyPolly.enemyState = 1;
     }
 }

@@ -3,8 +3,6 @@ using UnityEngine;
 public class EnemyLedgeCheckingRollyPolly : MonoBehaviour
 {
     [SerializeField] float moveSpeed = 1f;
-    [SerializeField] Transform ledgeCheckPosition;
-    [SerializeField] float ledgeCheckLength;
     [SerializeField] float groundCheck = 1f;
     [SerializeField] LayerMask groundLayer;
     [SerializeField] Transform playerTransform;
@@ -19,12 +17,18 @@ public class EnemyLedgeCheckingRollyPolly : MonoBehaviour
     Vector3 direction;
     public bool playerDetected;
     bool isFacingRight;
-
-    public GameObject[] wayPoints;
-    public int nextWayPoint = 1;
-    float distToPoint;
-
     Rigidbody2D rb_Enemy;
+    public bool hasTurned;
+    public bool groundDetected;
+    public Transform groundPos;
+    public float groundCheckSize;
+    public bool wallDetected;
+    public Transform wallPos;
+    public float wallCheckSize;
+    private float ZAxisAdd;
+    public float fallTime;
+   
+
 
     void Awake()
     {
@@ -62,6 +66,7 @@ public class EnemyLedgeCheckingRollyPolly : MonoBehaviour
     {
         DetectPlayer();
         RollMode();
+        EnvironmentDetection();
     }
     public void Knockback()
     {
@@ -73,42 +78,10 @@ public class EnemyLedgeCheckingRollyPolly : MonoBehaviour
 
     void Move()
     {
-        distToPoint = Vector2.Distance(transform.position, wayPoints[nextWayPoint].transform.position);
-
-        transform.position = Vector2.MoveTowards(transform.position, wayPoints[nextWayPoint].transform.position, moveSpeed * Time.deltaTime);
-
-        if (distToPoint < 0.2f)
-        {
-            TakeTurn();
-        }
+        rb_Enemy.linearVelocity = transform.right * moveSpeed;
     }
 
-    void TakeTurn()
-    {
-        Vector3 currRot = transform.eulerAngles;
-        currRot.z += wayPoints[nextWayPoint].transform.eulerAngles.z;
-        transform.eulerAngles = currRot;
-        ChooseNextWayPoint();
-    }
-
-    void ChooseNextWayPoint()
-    {
-        nextWayPoint++;
-
-        if(nextWayPoint == wayPoints.Length)
-        {
-            nextWayPoint = 0;
-        }
-    }
-
-    bool CheckGrounded()
-    {
-        Collider2D isGrounded = Physics2D.OverlapCircle(transform.position, groundCheck, groundLayer);
-
-        return isGrounded;
-
-    }
-
+   
     void DetectPlayer()
     {
         //is player within sight range?
@@ -120,6 +93,63 @@ public class EnemyLedgeCheckingRollyPolly : MonoBehaviour
         {
             playerDetected = false;
         }
+    }
+
+    void EnvironmentDetection()
+    {
+        groundDetected = Physics2D.Raycast(groundPos.position, -transform.up, groundCheckSize, groundLayer);
+        wallDetected = Physics2D.Raycast(wallPos.position, transform.right, wallCheckSize, groundLayer);
+
+        if (!groundDetected)
+        {
+            if (hasTurned == false)
+            {
+                ZAxisAdd -= 90;
+                transform.eulerAngles = new Vector3(0f,0f,ZAxisAdd);
+                hasTurned = true;
+            }
+
+            fallTime -= Time.deltaTime; 
+        }
+
+        if (groundDetected)
+        {
+            hasTurned = false;
+            fallTime = 1f;
+        }
+
+        if (wallDetected)
+        {
+            if (!hasTurned)
+            {
+                ZAxisAdd += 90;
+
+                transform.eulerAngles = new Vector3(0f, 0f, ZAxisAdd);
+            }
+        }
+
+        if(fallTime == 1)
+        {
+            rb_Enemy.gravityScale = 0f;
+
+            minMoveSpeed = 1f;
+            maxMoveSpeed = 5f;
+        }
+
+        else if (fallTime <= 0)
+        {
+            transform.eulerAngles = new Vector3(0,0,0);
+            ZAxisAdd = 0f;
+            rb_Enemy.gravityScale = 50f;
+            minMoveSpeed = 0f;
+            maxMoveSpeed = 0f;
+        }
+
+        if(ZAxisAdd <= -360f)
+        {
+            ZAxisAdd = 0f;
+        }
+
     }
 
     void RollMode()
@@ -145,6 +175,7 @@ public class EnemyLedgeCheckingRollyPolly : MonoBehaviour
         }
     }
 
+
     void Flip()
     {
         isFacingRight = !isFacingRight;
@@ -155,7 +186,7 @@ public class EnemyLedgeCheckingRollyPolly : MonoBehaviour
         }
         else
         {
-            transform.eulerAngles = new Vector3(0f, -180f, 0f);
+            transform.eulerAngles = new Vector3(0f, 0f, -180f);
         }
     }
 
@@ -164,5 +195,7 @@ public class EnemyLedgeCheckingRollyPolly : MonoBehaviour
     {
         Gizmos.color = Color.green;
         Gizmos.DrawWireSphere(transform.position, groundCheck);
+        Gizmos.DrawLine(groundPos.position, new Vector2(groundPos.position.x, groundPos.position.y - groundCheckSize));
+        Gizmos.DrawLine(wallPos.position, new Vector2(wallPos.position.x + wallCheckSize, wallPos.position.y));
     }
 }
