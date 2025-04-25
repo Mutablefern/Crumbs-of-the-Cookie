@@ -32,7 +32,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.725, y: 0.725, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5331304671737308207}
@@ -110,13 +110,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerAnim: {fileID: 5081686740506289931}
-  runtoTransform: {fileID: 0}
-  startRun: 0
   timeInAir: 1
   playerVelocityY: 0
   playerVelocityX: 0
   movementSpeed: 12.5
-  jumpingPower: 18
+  jumpingPower: 18.5
   dragForce: 15
   castDistance: 0.72
   boxSize: {x: 0.5, y: 0.5}
@@ -133,7 +131,7 @@ MonoBehaviour:
   minFastFallSpeed: 1
   jumpPressed: 0
   isGrounded: 0
-  rb_Player: {fileID: 0}
+  rb_Player: {fileID: 4087171699187291558}
 --- !u!114 &8139019785647194950
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -215,10 +213,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   armorIcon:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  healthIcon: 1
+  - {fileID: 8012086442472653416, guid: 19a06d15f9173894b8d773301eb4f01e, type: 3}
+  - {fileID: 2349645310391461885, guid: f4c031b4c82b6484f9bb6a0dc6a26141, type: 3}
+  - {fileID: 6394342225344318559, guid: 4fe12f2bc8bc41349ba1374100ecf241, type: 3}
+  healthIcon: 3
 --- !u!1 &2297554566500561407
 GameObject:
   m_ObjectHideFlags: 0
