@@ -259,7 +259,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      UI Buttens click_0: 996400809876761351
+      UI Buttens click_1: 6892996651710656112
+      UI Buttens click_2: 993420641073661501
+      UI Buttens click_3: 1209049615213625707
+      UI Buttens click_4: -5505699004172267305
+      UI Buttens click_5: -2469337053024559684
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

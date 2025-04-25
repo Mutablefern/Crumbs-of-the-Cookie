@@ -259,7 +259,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      UI Buttens hover_0: 7172322469642883962
+      UI Buttens hover_1: 1245843854988429760
+      UI Buttens hover_2: 5151804176189997532
+      UI Buttens hover_3: 848095129524461044
+      UI Buttens hover_4: -1008298240858251072
+      UI Buttens hover_5: 166416446500753276
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

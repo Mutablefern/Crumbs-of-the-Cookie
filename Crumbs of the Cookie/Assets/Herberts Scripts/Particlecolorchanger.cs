@@ -15,13 +15,14 @@ public class Particlecolorchanger : MonoBehaviour
         particleRender = GetComponent<ParticleSystem>();
         particleRenderer2 = GetComponent<Renderer>();
         startColor = particleRender.main;
-
+       
 
     }
 
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(localColor);
         //Changes the particles color to match the enemy they spawn from
         if (localColor == 0)
         {
