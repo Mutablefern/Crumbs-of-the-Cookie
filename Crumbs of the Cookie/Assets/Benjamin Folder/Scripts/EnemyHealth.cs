@@ -19,6 +19,7 @@ public class EnemyHealth : MonoBehaviour
     EnemyPointMovement enemyPointMovement;
     EnemyLedgeChecking enemyLedgeChecking;
     EnemyLedgeCheckingRollyPolly enemyLedgeCheckRollyPolly;
+    EnemyColorChanger enemyColorChanger;
     Rigidbody2D rb_Enemy;
     Vector3 direction;
     public Vector3 sourceOfKnockback;
@@ -32,6 +33,7 @@ public class EnemyHealth : MonoBehaviour
         particlesManager = GameObject.Find("Particle Manager").GetComponent<ParticlesManager>();
         enemyPointMovement = GetComponent<EnemyPointMovement>();
         enemyLedgeChecking = GetComponent<EnemyLedgeChecking>();
+        enemyColorChanger = GetComponent<EnemyColorChanger>();
         enemyLedgeCheckRollyPolly = GetComponent<EnemyLedgeCheckingRollyPolly>();
     }
     private void OnTriggerEnter2D(Collider2D collision)
@@ -59,6 +61,7 @@ public class EnemyHealth : MonoBehaviour
         if (thisEnemyType == enemyType.GummyBear)
         {
             particlesManager.Particels(1, transform.position);
+            enemyColorChanger.ColorChangerForParticle();
             StartCoroutine(KnockBackPoint());
             
             
@@ -66,6 +69,7 @@ public class EnemyHealth : MonoBehaviour
         if (thisEnemyType == enemyType.GummyRat)
         {
             particlesManager.Particels(1, transform.position);
+            enemyColorChanger.ColorChangerForParticle();
             StartCoroutine(KnockBackLedge());
         }
         if(thisEnemyType == enemyType.Butterroll)

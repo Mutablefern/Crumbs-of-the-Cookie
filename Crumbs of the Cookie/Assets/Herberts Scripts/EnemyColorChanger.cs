@@ -7,7 +7,7 @@ public class EnemyColorChanger : MonoBehaviour
     Particlecolorchanger particlecolorchanger;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    void Awake()
     {
         enemy_Renderer = GetComponentInChildren<Renderer>();
         colorValue = Random.Range(0, 4);
@@ -42,13 +42,17 @@ public class EnemyColorChanger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //ColorChangerForParticle();
+        ColorChanger(colorValue);
+    }
+    public void ColorChangerForParticle()
+    {
         //This gives the particles the enemy drops when it gets hit the correct color
         particlecolorchanger = FindAnyObjectByType<Particlecolorchanger>();
         if (particlecolorchanger != null)
         {
             particlecolorchanger.localColor = colorValue;
         }
-        ColorChanger(colorValue);
-
+        
     }
 }
