@@ -7,12 +7,6 @@ public class MovingPlatforms : MonoBehaviour
 
     private Vector3 nextPosition;
 
-    AudioManager audioManager;
-
-    private void Awake()
-    {
-        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
-    }
 
     void Start()
     {
@@ -23,7 +17,6 @@ public class MovingPlatforms : MonoBehaviour
     {
         transform.position = Vector3.MoveTowards(transform.position, nextPosition, moveSpeed * Time.deltaTime);
 
-        audioManager.playSFX(audioManager.movingplatform);
 
         if (transform.position == nextPosition)
         {

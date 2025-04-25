@@ -80,9 +80,9 @@ public class MovementScript : MonoBehaviour
         {
             if (IsGrounded() || coyoteCounter > 0)  
             {
+                audioManager.playSFX(audioManager.jump);
                 JumpForce();
                 jumpBufferingTimer = 0;
-                audioManager.playSFX(audioManager.jump);
             }
         }  
     }
@@ -115,7 +115,7 @@ public class MovementScript : MonoBehaviour
     void JumpForce()
     {
         rb_Player.linearVelocity = new Vector2(rb_Player.linearVelocity.x, jumpingPower);  
-        coyoteCounter = 0f; 
+        coyoteCounter = 0f;
     }
 
     void VariableJumping()

@@ -4,25 +4,34 @@ public class AudioManager : MonoBehaviour
 {
     [Header("Audio Source")]
     [SerializeField] AudioSource musicSource;
-    [SerializeField] AudioSource Ambiens;
+    [SerializeField] AudioSource ambianceBirds;
+    [SerializeField] AudioSource ambianceCicadas;
     [SerializeField] AudioSource SFXSource;
 
     [Header("Audio Clip")]
     public AudioClip background;
     public AudioClip birds;
-    public AudioClip death;
-    public AudioClip run;
-    public AudioClip movingplatform;
-    public AudioClip pickup;
-    public AudioClip jump;
+    public AudioClip cicadas;
+    public AudioClip playerdie;
     public AudioClip playerhurt;
+    public AudioClip run;
+    public AudioClip jump;
+    public AudioClip lightattack;
+    public AudioClip heavyattack;
+    public AudioClip pickup;
+    public AudioClip rathurt;
+    public AudioClip bearhurt;
+    public AudioClip rolleypolleyhurt;
+    public AudioClip bouncemellow;
 
     private void Start()
     {
         musicSource.clip = background;
+        ambianceBirds.clip = birds;
+        ambianceCicadas.clip = cicadas;
         musicSource.Play();
-        Ambiens.clip = birds;
-        Ambiens.Play();
+        ambianceBirds.Play();
+        ambianceCicadas.Play();
     }
 
     public void playSFX(AudioClip clip)
