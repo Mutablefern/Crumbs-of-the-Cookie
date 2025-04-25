@@ -112,16 +112,17 @@ MonoBehaviour:
   playerAnim: {fileID: 5081686740506289931}
   runtoTransform: {fileID: 0}
   startRun: 0
+  timeInAir: 1
   movementSpeed: 12.5
-  jumpingPower: 14
+  jumpingPower: 18.5
   dragForce: 15
   castDistance: 0.72
   boxSize: {x: 0.5, y: 0.5}
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
-  coyoteTimer: 0.25
-  jumpBuffering: 0.3
+  coyoteTimer: 0.15
+  jumpBuffering: 0.2
   gravityScale: 1.75
   gravityStrength: 2.35
   fallGravityMult: 3

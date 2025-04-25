@@ -6,6 +6,7 @@ public class BreakingWall : MonoBehaviour
 
     [SerializeField] Rigidbody2D rb_box;
     [SerializeField] bool trigger;
+    [SerializeField] float breakPower = 1;
 
     BoxCollider2D boxCollider;
 
@@ -44,7 +45,7 @@ public class BreakingWall : MonoBehaviour
     private void Break()
     {
         rb_box.mass = 10;
-        rb_box.AddForce(new Vector2(5,-1f), ForceMode2D.Impulse);
+        rb_box.AddForce(new Vector2(5,-1f) * breakPower, ForceMode2D.Impulse);
         StartCoroutine (timer2());
     }
 
