@@ -56,7 +56,7 @@ public class Health_Player : MonoBehaviour
         for (int i = healthIcon; i > 1; i--)
         {
             healthIcon -= 1;
-            armorIcon[healthIcon].SetActive(true);
+            armorIcon[healthIcon -1].SetActive(true);
         }
         healthIcon = playerHealth;
     }
