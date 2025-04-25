@@ -19,14 +19,27 @@ public class SceneManagement : MonoBehaviour
         }
         Debug.Log(PlayerPrefs.GetString("SavedScene"));
     }
+
+    public void LoadNextScene()
+    {
+        ChangeScene(null);
+    }
     public void ChangeScene(string sceneName)
     {
-        if ((SceneManager.GetActiveScene().name != ("DeathScene")))
-            //Cant go back to death scene, but remembers all other scenes
+        if (sceneName != null)
         {
-            PrevScene = SceneManager.GetActiveScene().name;
+            if ((SceneManager.GetActiveScene().name != ("DeathScene")))
+            //Cant go back to death scene, but remembers all other scenes
+            {
+                PrevScene = SceneManager.GetActiveScene().name;
+            }
+            StartCoroutine(WaitForTransitionCor(sceneName));
         }
-        StartCoroutine(WaitForTransitionCor(sceneName));
+        else 
+        {
+            Scene sceneLoaded = SceneManager.GetActiveScene();
+            SceneManager.LoadScene(sceneLoaded.buildIndex + 1);
+        }
     }
 
     public void Quit()
