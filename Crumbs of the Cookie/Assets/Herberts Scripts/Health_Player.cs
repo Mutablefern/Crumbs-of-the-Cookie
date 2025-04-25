@@ -28,10 +28,11 @@ public class Health_Player : MonoBehaviour
     }
     public void Health(int dmg)
     {
-        particlesManager.Particels(2, transform.position);
+        
         //When called with a negative int, the players health is increased. When called with a positive int player health is decreased
         if (dmg > 0  && playerHealth >= 0)
         {
+            particlesManager.Particels(2, transform.position);
             playerHealth -= dmg;
             healthIcon -= dmg;
             armorIcon[healthIcon].SetActive(false);
@@ -39,9 +40,9 @@ public class Health_Player : MonoBehaviour
 
         if (dmg < 0)
         {
-            playerHealth += dmg;
+            playerHealth -= dmg;
             armorIcon[healthIcon].SetActive(true);
-            healthIcon += dmg;
+            healthIcon -= dmg;
 
         }
     }
