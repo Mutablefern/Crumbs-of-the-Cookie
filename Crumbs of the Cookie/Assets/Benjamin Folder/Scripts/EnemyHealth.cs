@@ -54,6 +54,7 @@ public class EnemyHealth : MonoBehaviour
         {
             Debug.Log("Play Enemy death anim");
             Destroy(gameObject);
+
         }
     }
     public void DamageEffect()
@@ -76,6 +77,7 @@ public class EnemyHealth : MonoBehaviour
         {
             particlesManager.Particels(0, transform.position);
             StartCoroutine(KnockBackLedgeRollyPolly());
+            enemyLedgeCheckRollyPolly.Ondeath();
         }
     }
     IEnumerator KnockBackPoint()
