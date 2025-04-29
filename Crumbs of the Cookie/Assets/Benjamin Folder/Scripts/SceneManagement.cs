@@ -22,7 +22,8 @@ public class SceneManagement : MonoBehaviour
 
     public void LoadNextScene()
     {
-        ChangeScene(null);
+        Scene sceneLoaded = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(sceneLoaded.buildIndex + 1);   //loads the next scene in build order. (levels 1,2,3 need to be right next to each other)    
     }
     public void ChangeScene(string sceneName)
     {
@@ -35,18 +36,13 @@ public class SceneManagement : MonoBehaviour
             }
             StartCoroutine(WaitForTransitionCor(sceneName));
         }
-        else 
-        {
-            Scene sceneLoaded = SceneManager.GetActiveScene();
-            SceneManager.LoadScene(sceneLoaded.buildIndex + 1);
-        }
+
     }
 
     public void Quit()
     {
         SaveScene(true);
         Application.Quit();
- 
     }
 
     IEnumerator WaitForTransitionCor(string sceneName)
@@ -81,29 +77,29 @@ public class SceneManagement : MonoBehaviour
 
     string SaveScene(bool toSave)
     {
-        if (toSave == true && PrevScene != null)
+        if (toSave == true && PrevScene != null) //saves the current scene, so it can be loaded with continue button.
         {
             PlayerPrefs.SetString("SavedScene", PrevScene);
             Debug.Log(PlayerPrefs.GetString("SavedScene"));
-            return "BugScene";
+            return "BugScene"; //if a code tries to load a scene while also saving, it gets sent to an error scene 
         }    
 
         else if (toSave == false)
         {
             Debug.Log("Saved String is " + PlayerPrefs.GetString("SavedScene"));
-            return PlayerPrefs.GetString("SavedScene");
+            return PlayerPrefs.GetString("SavedScene"); //load this to continue onto the saced scene.
         }
 
         else
         {
-            Debug.LogError("Unexpected value of bool");
+            Debug.LogError("Unexpected value of bool"); //should not be possible, but it required something if everything fails
             return null;
         }
     }
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.PageUp))
+        if (Input.GetKeyDown(KeyCode.PageUp)) //clears the loaded scene (for debug purpouses)
         {
             PlayerPrefs.DeleteAll();
         }
