@@ -8,11 +8,11 @@ public class PickUpScript : MonoBehaviour
     };
     [SerializeField] PickUptypes ThisPickUp;
 
-    [SerializeField] GameObject Player;
+    GameObject Player;
 
     private void Start()
     {
-       //Player = GameObject.FindGameObjectWithTag("Player");
+      Player = GameObject.FindGameObjectWithTag("Player");
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

@@ -52,6 +52,10 @@ public class EnemyHealth : MonoBehaviour
         }
         if (health <= 0)
         {
+            if (thisEnemyType== enemyType.Butterroll) //when the butterroll dies it gives the player armor
+            {
+                enemyLedgeCheckRollyPolly.Ondeath();
+            }
             Debug.Log("Play Enemy death anim");
             Destroy(gameObject);
 
@@ -67,17 +71,17 @@ public class EnemyHealth : MonoBehaviour
             
             
         }
-        if (thisEnemyType == enemyType.GummyRat)
+        else if (thisEnemyType == enemyType.GummyRat)
         {
             particlesManager.Particels(1, transform.position);
             enemyColorChanger.ColorChangerForParticle();
             StartCoroutine(KnockBackLedge());
         }
-        if(thisEnemyType == enemyType.Butterroll)
+        else if(thisEnemyType == enemyType.Butterroll)
         {
             particlesManager.Particels(0, transform.position);
             StartCoroutine(KnockBackLedgeRollyPolly());
-            enemyLedgeCheckRollyPolly.Ondeath();
+           
         }
     }
     IEnumerator KnockBackPoint()
