@@ -6,7 +6,7 @@ public class SceneEnder : MonoBehaviour
 
     private void Awake()
     {
-            SceneManagement_s = GameObject.Find("SceneManager").GetComponent<SceneManagement>();
+        SceneManagement_s = GameObject.Find("SceneManager").GetComponent<SceneManagement>();
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -15,3 +15,4 @@ public class SceneEnder : MonoBehaviour
             SceneManagement_s.LoadNextScene();
         }
     }
+}
