@@ -130,7 +130,7 @@ GameObject:
   - component: {fileID: 32420879}
   - component: {fileID: 32420880}
   m_Layer: 0
-  m_Name: Birds
+  m_Name: Birds and lava
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -164,8 +164,8 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: bec1cfb465efc7a41bd5ccbac5b6f2a2, type: 3}
   m_Resource: {fileID: 8300000, guid: bec1cfb465efc7a41bd5ccbac5b6f2a2, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.45
-  m_Pitch: 0.45
+  m_Volume: 0.4
+  m_Pitch: 0.4
   Loop: 1
   Mute: 0
   Spatialize: 0
@@ -772,7 +772,7 @@ GameObject:
   - component: {fileID: 359612784}
   - component: {fileID: 359612785}
   m_Layer: 0
-  m_Name: Cicadas
+  m_Name: Cicadas and fire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -806,13 +806,13 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 2cbeb5b18dd7a4940801811781c0e0d8, type: 3}
   m_Resource: {fileID: 8300000, guid: 2cbeb5b18dd7a4940801811781c0e0d8, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.085
+  m_Volume: 0.06
   m_Pitch: 0.9
   Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 100
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -1235,12 +1235,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   musicSource: {fileID: 691266448}
-  ambianceBirds: {fileID: 32420880}
-  ambianceCicadas: {fileID: 359612785}
+  ambianceBirdsAndLava: {fileID: 32420880}
+  ambianceCicadasAndFire: {fileID: 359612785}
   SFXSource: {fileID: 653997667}
   background: {fileID: 8300000, guid: 89f935015cc98724a862a586326fdf21, type: 3}
-  birds: {fileID: 8300000, guid: bec1cfb465efc7a41bd5ccbac5b6f2a2, type: 3}
-  cicadas: {fileID: 8300000, guid: 2cbeb5b18dd7a4940801811781c0e0d8, type: 3}
+  birdslava: {fileID: 8300000, guid: bec1cfb465efc7a41bd5ccbac5b6f2a2, type: 3}
+  cicadasfire: {fileID: 8300000, guid: 2cbeb5b18dd7a4940801811781c0e0d8, type: 3}
   playerdie: {fileID: 8300000, guid: 0770b1c961942084798ed7b054718b64, type: 3}
   playerhurt: {fileID: 8300000, guid: ec51a339a3354c940b9a7af0b391767a, type: 3}
   run: {fileID: 8300000, guid: df7087e4d8a8bb546bc08ce68632903f, type: 3}
@@ -1248,8 +1248,8 @@ MonoBehaviour:
   lightattack: {fileID: 8300000, guid: 74abaedb141e2c34c8493133473fa967, type: 3}
   heavyattack: {fileID: 8300000, guid: 1709008d657296c44b3c8c8faed9a1b0, type: 3}
   pickup: {fileID: 8300000, guid: 75c682d82a497234991cc48628a5c649, type: 3}
-  rathurt: {fileID: 8300000, guid: 406e2cd5771c0e946b31894eb6d29e2b, type: 3}
-  bearhurt: {fileID: 8300000, guid: 406e2cd5771c0e946b31894eb6d29e2b, type: 3}
+  rathurt: {fileID: 8300000, guid: b06a3298bd0272e4f8b6d4332022bd49, type: 3}
+  bearhurt: {fileID: 8300000, guid: b06a3298bd0272e4f8b6d4332022bd49, type: 3}
   rolleypolleyhurt: {fileID: 8300000, guid: 406e2cd5771c0e946b31894eb6d29e2b, type: 3}
   bouncemellow: {fileID: 8300000, guid: 3de87641ad0420344a70aedafe9a6f4c, type: 3}
 --- !u!4 &1110301139

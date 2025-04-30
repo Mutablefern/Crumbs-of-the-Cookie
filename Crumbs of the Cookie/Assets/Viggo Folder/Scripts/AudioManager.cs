@@ -4,14 +4,14 @@ public class AudioManager : MonoBehaviour
 {
     [Header("Audio Source")]
     [SerializeField] AudioSource musicSource;
-    [SerializeField] AudioSource ambianceBirds;
-    [SerializeField] AudioSource ambianceCicadas;
+    [SerializeField] AudioSource ambianceBirdsAndLava;
+    [SerializeField] AudioSource ambianceCicadasAndFire;
     [SerializeField] AudioSource SFXSource;
 
     [Header("Audio Clip")]
     public AudioClip background;
-    public AudioClip birds;
-    public AudioClip cicadas;
+    public AudioClip birdslava;
+    public AudioClip cicadasfire;
     public AudioClip playerdie;
     public AudioClip playerhurt;
     public AudioClip run;
@@ -27,11 +27,11 @@ public class AudioManager : MonoBehaviour
     private void Start()
     {
         musicSource.clip = background;
-        ambianceBirds.clip = birds;
-        ambianceCicadas.clip = cicadas;
+        ambianceBirdsAndLava.clip = birdslava;
+        ambianceCicadasAndFire.clip = cicadasfire;
         musicSource.Play();
-        ambianceBirds.Play();
-        ambianceCicadas.Play();
+        ambianceBirdsAndLava.Play();
+        ambianceCicadasAndFire.Play();
     }
 
     public void playSFX(AudioClip clip)
