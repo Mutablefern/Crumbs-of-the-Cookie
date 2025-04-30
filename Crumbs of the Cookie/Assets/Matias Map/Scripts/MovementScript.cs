@@ -44,14 +44,13 @@ public class MovementScript : MonoBehaviour
 
     // Cached references
     public Rigidbody2D rb_Player;
-    private SpriteRenderer spriteRenderer;
+    public SpriteRenderer spriteRenderer;
     AudioManager audioManager;
 
     private void Awake()
     {
         rb_Player = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
-
         audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
 
