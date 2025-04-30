@@ -44,10 +44,15 @@ public class MovementScript : MonoBehaviour
 
     // Cached references
     public Rigidbody2D rb_Player;
+    private SpriteRenderer spriteRenderer;
+    AudioManager audioManager;
 
     private void Awake()
     {
         rb_Player = GetComponent<Rigidbody2D>();
+        spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
 
     private void Start()
@@ -84,8 +89,9 @@ public class MovementScript : MonoBehaviour
         {
             if (IsGrounded() || coyoteCounter > 0)  
             {
+                audioManager.playSFX(audioManager.jump);
                 JumpForce();
-                jumpBufferingTimer = 0;  
+                jumpBufferingTimer = 0;
             }
         }  
     }
@@ -102,7 +108,7 @@ public class MovementScript : MonoBehaviour
         if (inputValue.isPressed)
         {
             jumpPressed = true;
-            jumpBufferingTimer = jumpBuffering;  
+            jumpBufferingTimer = jumpBuffering;
         }
 
         else
@@ -129,7 +135,7 @@ public class MovementScript : MonoBehaviour
     {
         playerAnim.SetTrigger("Jump");
         rb_Player.linearVelocity = new Vector2(rb_Player.linearVelocity.x, jumpingPower);  
-        coyoteCounter = 0f; 
+        coyoteCounter = 0f;
     }
 
     void VariableJumping()
