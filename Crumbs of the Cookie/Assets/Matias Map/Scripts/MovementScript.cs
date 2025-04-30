@@ -45,7 +45,7 @@ public class MovementScript : MonoBehaviour
     // Cached references
     public Rigidbody2D rb_Player;
 
-    AudioManager audioManager;
+    //AudioManager audioManager;
 
     private void Awake()
     {
@@ -86,7 +86,7 @@ public class MovementScript : MonoBehaviour
         {
             if (IsGrounded() || coyoteCounter > 0)  
             {
-                audioManager.playSFX(audioManager.jump);
+                //audioManager.playSFX(audioManager.jump);
                 JumpForce();
                 jumpBufferingTimer = 0;
             }
