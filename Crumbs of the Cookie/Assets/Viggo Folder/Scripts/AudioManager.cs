@@ -18,6 +18,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip jump;
     public AudioClip lightattack;
     public AudioClip heavyattack;
+    public AudioClip matchignite;
     public AudioClip pickup;
     public AudioClip explosion;
     public AudioClip rathurt;

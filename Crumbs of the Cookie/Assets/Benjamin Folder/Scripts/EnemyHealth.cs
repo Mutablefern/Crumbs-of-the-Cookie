@@ -76,6 +76,7 @@ public class EnemyHealth : MonoBehaviour
         }
         if(thisEnemyType == enemyType.Butterroll)
         {
+            audioManager.playSFX(audioManager.rolleypolleyhurt);
             particlesManager.Particels(0, transform.position);
             StartCoroutine(KnockBackLedgeRollyPolly());
         }

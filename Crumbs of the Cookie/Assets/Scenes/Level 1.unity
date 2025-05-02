@@ -82795,7 +82795,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 2cbeb5b18dd7a4940801811781c0e0d8, type: 3}
   m_Resource: {fileID: 8300000, guid: 2cbeb5b18dd7a4940801811781c0e0d8, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.06
+  m_Volume: 0.03
   m_Pitch: 0.9
   Loop: 1
   Mute: 0
@@ -83896,6 +83896,7 @@ MonoBehaviour:
   jump: {fileID: 8300000, guid: e25798c5219cd7a49beb66b2711bdd09, type: 3}
   lightattack: {fileID: 8300000, guid: 74abaedb141e2c34c8493133473fa967, type: 3}
   heavyattack: {fileID: 8300000, guid: 1709008d657296c44b3c8c8faed9a1b0, type: 3}
+  matchignite: {fileID: 8300000, guid: f2feb41269baf3044a2efffadde49e54, type: 3}
   pickup: {fileID: 8300000, guid: 75c682d82a497234991cc48628a5c649, type: 3}
   explosion: {fileID: 8300000, guid: 15f022cf281cdc94a9452c9badf011c3, type: 3}
   rathurt: {fileID: 8300000, guid: b06a3298bd0272e4f8b6d4332022bd49, type: 3}
@@ -85018,7 +85019,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: bec1cfb465efc7a41bd5ccbac5b6f2a2, type: 3}
   m_Resource: {fileID: 8300000, guid: bec1cfb465efc7a41bd5ccbac5b6f2a2, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.4
+  m_Volume: 0.2
   m_Pitch: 0.4
   Loop: 1
   Mute: 0

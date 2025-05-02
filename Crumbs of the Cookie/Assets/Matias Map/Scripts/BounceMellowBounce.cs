@@ -8,6 +8,13 @@ public class BounceMellowBounce : MonoBehaviour
     public Rigidbody2D player_rb;
     public float guaranteedBounce = 20f;
 
+    AudioManager audioManager;
+
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
+
     private void FixedUpdate()
     {
         if (player_rb.linearVelocityY > 45f)
@@ -25,6 +32,8 @@ public class BounceMellowBounce : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        audioManager.playSFX(audioManager.bouncemellow);
+
         if (collision.gameObject.CompareTag("Player"))
         {
             collision.gameObject.GetComponent<Rigidbody2D>().AddForce(Vector2.up * Mathf.Abs(Bounciness), ForceMode2D.Impulse);
