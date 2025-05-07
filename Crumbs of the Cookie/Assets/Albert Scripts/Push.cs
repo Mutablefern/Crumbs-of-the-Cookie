@@ -13,7 +13,7 @@ public class Push : MonoBehaviour
 
     IEnumerator timer()
     {
-        yield return new WaitForSeconds(56);
+        yield return new WaitForSeconds(61);
         push_rb.AddForce(new Vector3(100, 0, 0));
         StartCoroutine(loop());
     }
@@ -22,8 +22,9 @@ public class Push : MonoBehaviour
         yield return new WaitForSeconds(0.1f);
         push_rb.AddForce(new Vector3(20, 0, 0));
         counter += 1;
-        if (counter < 40 && gameObject.transform.position.y >= 10)
+        if (gameObject.transform.position.y >= 10)
         {
             StartCoroutine(loop());
         }
+    }
 }
