@@ -172,7 +172,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Hot_Chocolate_Bomb_0: -6303167319380558055
+      Hot_Chocolate_Bomb_1: 2443696242020334425
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
