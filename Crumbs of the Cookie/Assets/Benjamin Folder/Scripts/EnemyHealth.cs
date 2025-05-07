@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
 {
+    AudioManager audioManager;
+
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
 
     public enum enemyType
     {
@@ -58,18 +64,19 @@ public class EnemyHealth : MonoBehaviour
     {
         if (thisEnemyType == enemyType.GummyBear)
         {
+            audioManager.playSFX(audioManager.bearhurt);
             particlesManager.Particels(1, transform.position);
             StartCoroutine(KnockBackPoint());
-            
-            
         }
         if (thisEnemyType == enemyType.GummyRat)
         {
+            audioManager.playSFX(audioManager.rathurt);
             particlesManager.Particels(1, transform.position);
             StartCoroutine(KnockBackLedge());
         }
         if(thisEnemyType == enemyType.Butterroll)
         {
+            audioManager.playSFX(audioManager.rolleypolleyhurt);
             particlesManager.Particels(0, transform.position);
             StartCoroutine(KnockBackLedgeRollyPolly());
         }
