@@ -259,7 +259,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      UI Buttens Idle new_0: -9187546278496400582
+      UI Buttens Idle new_1: 6404559798572650791
+      UI Buttens Idle new_2: 4161535225028328503
+      UI Buttens Idle new_3: -7244434852769694708
+      UI Buttens Idle new_4: 8082803852808133673
+      UI Buttens Idle new_5: 2200223805445558602
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

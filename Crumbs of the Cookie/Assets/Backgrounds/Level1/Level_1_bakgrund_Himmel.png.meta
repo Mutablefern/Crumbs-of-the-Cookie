@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Level_1_bakgrund_Himmel_0: -1176550333248959045
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

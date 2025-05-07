@@ -1,91 +1,91 @@
 fileFormatVersion: 2
-guid: bb4e4d941de76804b954ac07f43ca02e
+guid: 89d90f2400f2cc04c84ab2b0250359ae
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6273281396564807599
-    second: Death screen rubrik_0
+      213: -3436610502354623899
+    second: Gradian_level_one_0
   - first:
-      213: -541164421503830086
-    second: Death screen rubrik_1
+      213: 6063738938563542538
+    second: Gradian_level_one_1
   - first:
-      213: -5174897309518045957
-    second: Death screen rubrik_2
+      213: 8358991012109330903
+    second: Gradian_level_one_2
   - first:
-      213: -5070043102795028909
-    second: Death screen rubrik_3
+      213: -6628427145330354108
+    second: Gradian_level_one_3
   - first:
-      213: 1963813728556360848
-    second: Death screen rubrik_4
+      213: -8310765574886730880
+    second: Gradian_level_one_4
   - first:
-      213: 6139580438484305323
-    second: Death screen rubrik_5
+      213: 6066540919372742238
+    second: Gradian_level_one_5
   - first:
-      213: -7594885587215376032
-    second: Death screen rubrik_6
+      213: -4922272114122012761
+    second: Gradian_level_one_6
   - first:
-      213: -9072391202876887646
-    second: Death screen rubrik_7
+      213: 7852564886952315639
+    second: Gradian_level_one_7
   - first:
-      213: -3916561988585524146
-    second: Death screen rubrik_8
+      213: -8753727608272311958
+    second: Gradian_level_one_8
   - first:
-      213: -6083057578783820098
-    second: Death screen rubrik_9
+      213: 1085177158570203212
+    second: Gradian_level_one_9
   - first:
-      213: 4376356401282812067
-    second: Death screen rubrik_10
+      213: 7701661469791423606
+    second: Gradian_level_one_10
   - first:
-      213: 520476090765950004
-    second: Death screen rubrik_11
+      213: -6424916940281247378
+    second: Gradian_level_one_11
   - first:
-      213: 7426920113528693453
-    second: Death screen rubrik_12
+      213: -415784226808021679
+    second: Gradian_level_one_12
   - first:
-      213: -7240212682335765809
-    second: Death screen rubrik_13
+      213: -2199903598518755255
+    second: Gradian_level_one_13
   - first:
-      213: -3621698410374214324
-    second: Death screen rubrik_14
+      213: 125296881860413708
+    second: Gradian_level_one_14
   - first:
-      213: 1743688032791737006
-    second: Death screen rubrik_15
+      213: 7345108899151022682
+    second: Gradian_level_one_15
   - first:
-      213: 3693254965970835067
-    second: Death screen rubrik_16
+      213: 4056998360281897261
+    second: Gradian_level_one_16
   - first:
-      213: -2731074975746980329
-    second: Death screen rubrik_17
+      213: -5290061133509796426
+    second: Gradian_level_one_17
   - first:
-      213: 3246092082117615022
-    second: Death screen rubrik_18
+      213: -8222885585856100194
+    second: Gradian_level_one_18
   - first:
-      213: -5022374071638912433
-    second: Death screen rubrik_19
+      213: -3197709667109509187
+    second: Gradian_level_one_19
   - first:
-      213: 3151832096514853844
-    second: Death screen rubrik_20
+      213: -8824428370979354003
+    second: Gradian_level_one_20
   - first:
-      213: -3806736784938685646
-    second: Death screen rubrik_21
+      213: -1164585013356229511
+    second: Gradian_level_one_21
   - first:
-      213: -5239608664257928420
-    second: Death screen rubrik_22
+      213: -965964731951988291
+    second: Gradian_level_one_22
   - first:
-      213: -7368379854790886494
-    second: Death screen rubrik_23
+      213: -992414088810696785
+    second: Gradian_level_one_23
   - first:
-      213: 4772331409163854703
-    second: Death screen rubrik_24
+      213: -756450752766882695
+    second: Gradian_level_one_24
   - first:
-      213: 7423871846382743247
-    second: Death screen rubrik_25
+      213: -4671823943368962087
+    second: Gradian_level_one_25
   - first:
-      213: -515021968383215471
-    second: Death screen rubrik_26
+      213: 8095096859977587325
+    second: Gradian_level_one_26
   - first:
-      213: -1111882041371172052
-    second: Death screen rubrik_27
+      213: -6448968907014700949
+    second: Gradian_level_one_27
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -181,13 +181,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Death screen rubrik_0
+      name: Gradian_level_one_0
       rect:
         serializedVersion: 2
-        x: 87
-        y: 828
-        width: 80
-        height: 109
+        x: 0
+        y: 0
+        width: 1920
+        height: 1021
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -196,20 +196,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fafcf42613c2f0750800000000000000
-      internalID: 6273281396564807599
+      spriteID: 562a6cfb4f4be40d0800000000000000
+      internalID: -3436610502354623899
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Death screen rubrik_1
+      name: Gradian_level_one_1
       rect:
         serializedVersion: 2
-        x: 167
-        y: 829
-        width: 92
-        height: 104
+        x: 1217
+        y: 1006
+        width: 6
+        height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,20 +218,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ab73f2b63d56d78f0800000000000000
-      internalID: -541164421503830086
+      spriteID: a0eb8c3007ab62450800000000000000
+      internalID: 6063738938563542538
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Death screen rubrik_2
+      name: Gradian_level_one_2
       rect:
         serializedVersion: 2
-        x: 260
-        y: 827
-        width: 82
-        height: 107
+        x: 1226
+        y: 1006
+        width: 6
+        height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -240,20 +240,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bfc5d0590521f28b0800000000000000
-      internalID: -5174897309518045957
+      spriteID: 7d9a575a90a110470800000000000000
+      internalID: 8358991012109330903
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Death screen rubrik_3
+      name: Gradian_level_one_3
       rect:
         serializedVersion: 2
-        x: 331
-        y: 829
-        width: 81
-        height: 109
+        x: 1280
+        y: 1005
+        width: 6
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -262,20 +262,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 356abf509a693a9b0800000000000000
-      internalID: -5070043102795028909
+      spriteID: 448170751a81304a0800000000000000
+      internalID: -6628427145330354108
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Death screen rubrik_4
+      name: Gradian_level_one_4
       rect:
         serializedVersion: 2
-        x: 443
-        y: 827
-        width: 73
-        height: 110
+        x: 1389
+        y: 1002
+        width: 7
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -284,20 +284,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 09423af6e2ed04b10800000000000000
-      internalID: 1963813728556360848
+      spriteID: 083d451fdba3aac80800000000000000
+      internalID: -8310765574886730880
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Death screen rubrik_5
+      name: Gradian_level_one_5
       rect:
         serializedVersion: 2
-        x: 517
-        y: 828
-        width: 92
-        height: 107
+        x: 1440
+        y: 1009
+        width: 7
+        height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -306,20 +306,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ba54bc141eb243550800000000000000
-      internalID: 6139580438484305323
+      spriteID: e5e759203dea03450800000000000000
+      internalID: 6066540919372742238
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Death screen rubrik_6
+      name: Gradian_level_one_6
       rect:
         serializedVersion: 2
-        x: 613
-        y: 828
-        width: 82
-        height: 109
+        x: 1639
+        y: 1010
+        width: 6
+        height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -328,20 +328,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0612b404ccb899690800000000000000
-      internalID: -7594885587215376032
+      spriteID: 7a742fd679390bbb0800000000000000
+      internalID: -4922272114122012761
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Death screen rubrik_7
+      name: Gradian_level_one_7
       rect:
         serializedVersion: 2
-        x: 695
-        y: 829
-        width: 80
-        height: 108
+        x: 1663
+        y: 1009
+        width: 6
+        height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -350,20 +350,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2ade421c444681280800000000000000
-      internalID: -9072391202876887646
+      spriteID: 7fa8f76f82ae9fc60800000000000000
+      internalID: 7852564886952315639
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Death screen rubrik_8
+      name: Gradian_level_one_8
       rect:
         serializedVersion: 2
-        x: 810
-        y: 829
-        width: 92
-        height: 104
+        x: 1705
+        y: 1005
+        width: 6
+        height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -372,20 +372,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e44ff894f9395a9c0800000000000000
-      internalID: -3916561988585524146
+      spriteID: a6926689e13848680800000000000000
+      internalID: -8753727608272311958
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Death screen rubrik_9
+      name: Gradian_level_one_9
       rect:
         serializedVersion: 2
-        x: 904
-        y: 831
-        width: 93
-        height: 103
+        x: 1706
+        y: 1009
+        width: 8
+        height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -394,20 +394,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: eb6b75c8c53a49ba0800000000000000
-      internalID: -6083057578783820098
+      spriteID: c48d1fe40e25f0f00800000000000000
+      internalID: 1085177158570203212
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Death screen rubrik_10
+      name: Gradian_level_one_10
       rect:
         serializedVersion: 2
-        x: 998
-        y: 828
-        width: 116
-        height: 105
+        x: 1746
+        y: 1009
+        width: 6
+        height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -416,20 +416,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3a808f4c5f0fbbc30800000000000000
-      internalID: 4376356401282812067
+      spriteID: 67c0b373d4cc1ea60800000000000000
+      internalID: 7701661469791423606
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Death screen rubrik_11
+      name: Gradian_level_one_11
       rect:
         serializedVersion: 2
-        x: 1146
-        y: 829
-        width: 80
-        height: 108
+        x: 1832
+        y: 999
+        width: 11
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -438,20 +438,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 43c30383f3a193700800000000000000
-      internalID: 520476090765950004
+      spriteID: e69852f551c16d6a0800000000000000
+      internalID: -6424916940281247378
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Death screen rubrik_12
+      name: Gradian_level_one_12
       rect:
         serializedVersion: 2
-        x: 1227
-        y: 829
-        width: 92
-        height: 104
+        x: 1854
+        y: 1003
+        width: 9
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -460,20 +460,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dc2e4166e78b11760800000000000000
-      internalID: 7426920113528693453
+      spriteID: 15db5e9d276da3af0800000000000000
+      internalID: -415784226808021679
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Death screen rubrik_13
+      name: Gradian_level_one_13
       rect:
         serializedVersion: 2
-        x: 1323
-        y: 828
-        width: 68
-        height: 108
+        x: 1856
+        y: 1001
+        width: 23
+        height: 21
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -482,20 +482,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fca391bfce8958b90800000000000000
-      internalID: -7240212682335765809
+      spriteID: 940af2e255f5871e0800000000000000
+      internalID: -2199903598518755255
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Death screen rubrik_14
+      name: Gradian_level_one_14
       rect:
         serializedVersion: 2
-        x: 1426
-        y: 829
-        width: 76
-        height: 104
+        x: 1883
+        y: 1007
+        width: 9
+        height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -504,20 +504,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c4d4c0efb742dbdc0800000000000000
-      internalID: -3621698410374214324
+      spriteID: c0901c6a9d42db100800000000000000
+      internalID: 125296881860413708
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Death screen rubrik_15
+      name: Gradian_level_one_15
       rect:
         serializedVersion: 2
-        x: 1501
-        y: 831
-        width: 93
-        height: 103
+        x: 1894
+        y: 1004
+        width: 6
+        height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -526,20 +526,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ea2b6a10703d23810800000000000000
-      internalID: 1743688032791737006
+      spriteID: a5a0572b0a11fe560800000000000000
+      internalID: 7345108899151022682
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Death screen rubrik_16
+      name: Gradian_level_one_16
       rect:
         serializedVersion: 2
-        x: 1593
-        y: 831
-        width: 93
-        height: 103
+        x: 1895
+        y: 1006
+        width: 24
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -548,20 +548,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b7693a7e2d3114330800000000000000
-      internalID: 3693254965970835067
+      spriteID: d29d1f6838a5d4830800000000000000
+      internalID: 4056998360281897261
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Death screen rubrik_17
+      name: Gradian_level_one_17
       rect:
         serializedVersion: 2
-        x: 1688
-        y: 826
-        width: 80
-        height: 109
+        x: 880
+        y: 1000
+        width: 7
+        height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -570,20 +570,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 71684a787c5491ad0800000000000000
-      internalID: -2731074975746980329
+      spriteID: 6bd5c015d6de596b0800000000000000
+      internalID: -5290061133509796426
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Death screen rubrik_18
+      name: Gradian_level_one_18
       rect:
         serializedVersion: 2
-        x: 1769
-        y: 828
-        width: 38
-        height: 105
+        x: 1063
+        y: 1003
+        width: 6
+        height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -592,20 +592,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ead14d6dc8f6c0d20800000000000000
-      internalID: 3246092082117615022
+      spriteID: e980e5a502172ed80800000000000000
+      internalID: -8222885585856100194
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Death screen rubrik_19
+      name: Gradian_level_one_19
       rect:
         serializedVersion: 2
-        x: 1812
-        y: 828
-        width: 68
-        height: 108
+        x: 1199
+        y: 1000
+        width: 6
+        height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -614,20 +614,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f4294da3461fc4ab0800000000000000
-      internalID: -5022374071638912433
+      spriteID: db7ea1dfff37f93d0800000000000000
+      internalID: -3197709667109509187
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Death screen rubrik_20
+      name: Gradian_level_one_20
       rect:
         serializedVersion: 2
-        x: 596
-        y: 667
-        width: 76
-        height: 104
+        x: 1279
+        y: 1000
+        width: 7
+        height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -636,20 +636,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4db4178b79e8dbb20800000000000000
-      internalID: 3151832096514853844
+      spriteID: d6a85e18625598580800000000000000
+      internalID: -8824428370979354003
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Death screen rubrik_21
+      name: Gradian_level_one_21
       rect:
         serializedVersion: 2
-        x: 674
-        y: 667
-        width: 74
-        height: 103
+        x: 1409
+        y: 1000
+        width: 8
+        height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -658,20 +658,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 23b21542011cb2bc0800000000000000
-      internalID: -3806736784938685646
+      spriteID: 97c8820c91096dfe0800000000000000
+      internalID: -1164585013356229511
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Death screen rubrik_22
+      name: Gradian_level_one_22
       rect:
         serializedVersion: 2
-        x: 750
-        y: 666
-        width: 92
-        height: 107
+        x: 1555
+        y: 1003
+        width: 9
+        height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -680,20 +680,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c13e8d43eab2947b0800000000000000
-      internalID: -5239608664257928420
+      spriteID: db14276b1343892f0800000000000000
+      internalID: -965964731951988291
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Death screen rubrik_23
+      name: Gradian_level_one_23
       rect:
         serializedVersion: 2
-        x: 846
-        y: 666
-        width: 116
-        height: 105
+        x: 1612
+        y: 1001
+        width: 6
+        height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -702,20 +702,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2ab7b09bf814eb990800000000000000
-      internalID: -7368379854790886494
+      spriteID: faf685ee4ac3a32f0800000000000000
+      internalID: -992414088810696785
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Death screen rubrik_24
+      name: Gradian_level_one_24
       rect:
         serializedVersion: 2
-        x: 964
-        y: 664
-        width: 80
-        height: 109
+        x: 1675
+        y: 998
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -724,20 +724,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f63a6a9b12aba3240800000000000000
-      internalID: 4772331409163854703
+      spriteID: 97cc0475c0c8085f0800000000000000
+      internalID: -756450752766882695
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Death screen rubrik_25
+      name: Gradian_level_one_25
       rect:
         serializedVersion: 2
-        x: 1046
-        y: 665
-        width: 64
-        height: 108
+        x: 1718
+        y: 1000
+        width: 7
+        height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -746,20 +746,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fceaaa56c14e60760800000000000000
-      internalID: 7423871846382743247
+      spriteID: 9df045a30e85a2fb0800000000000000
+      internalID: -4671823943368962087
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Death screen rubrik_26
+      name: Gradian_level_one_26
       rect:
         serializedVersion: 2
-        x: 1111
-        y: 666
-        width: 68
-        height: 108
+        x: 1726
+        y: 1003
+        width: 6
+        height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -768,20 +768,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 198fefa9f364ad8f0800000000000000
-      internalID: -515021968383215471
+      spriteID: d7a185954bf875070800000000000000
+      internalID: 8095096859977587325
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Death screen rubrik_27
+      name: Gradian_level_one_27
       rect:
         serializedVersion: 2
-        x: 1179
-        y: 666
-        width: 82
-        height: 108
+        x: 1759
+        y: 1002
+        width: 6
+        height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -790,8 +790,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c236fe3ac2dc190f0800000000000000
-      internalID: -1111882041371172052
+      spriteID: b6089d972f8a086a0800000000000000
+      internalID: -6448968907014700949
       vertices: []
       indices: 
       edges: []
