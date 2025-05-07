@@ -80,6 +80,7 @@ public class Health_Player : MonoBehaviour
         Destroy(GetComponent<MovementScript>());
         GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionX;
         GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionY;
+        Destroy(GetComponent<AttackScript>());
         Destroy(GetComponentInChildren<Animator>());
         yield return new WaitForSeconds(0.6f);
         sceneManagement.ChangeScene("DeathScene");
