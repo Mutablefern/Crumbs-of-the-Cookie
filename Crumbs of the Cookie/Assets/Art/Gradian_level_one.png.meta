@@ -177,6 +177,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -809,7 +822,35 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Gradian_level_one_0: -3436610502354623899
+      Gradian_level_one_1: 6063738938563542538
+      Gradian_level_one_10: 7701661469791423606
+      Gradian_level_one_11: -6424916940281247378
+      Gradian_level_one_12: -415784226808021679
+      Gradian_level_one_13: -2199903598518755255
+      Gradian_level_one_14: 125296881860413708
+      Gradian_level_one_15: 7345108899151022682
+      Gradian_level_one_16: 4056998360281897261
+      Gradian_level_one_17: -5290061133509796426
+      Gradian_level_one_18: -8222885585856100194
+      Gradian_level_one_19: -3197709667109509187
+      Gradian_level_one_2: 8358991012109330903
+      Gradian_level_one_20: -8824428370979354003
+      Gradian_level_one_21: -1164585013356229511
+      Gradian_level_one_22: -965964731951988291
+      Gradian_level_one_23: -992414088810696785
+      Gradian_level_one_24: -756450752766882695
+      Gradian_level_one_25: -4671823943368962087
+      Gradian_level_one_26: 8095096859977587325
+      Gradian_level_one_27: -6448968907014700949
+      Gradian_level_one_3: -6628427145330354108
+      Gradian_level_one_4: -8310765574886730880
+      Gradian_level_one_5: 6066540919372742238
+      Gradian_level_one_6: -4922272114122012761
+      Gradian_level_one_7: 7852564886952315639
+      Gradian_level_one_8: -8753727608272311958
+      Gradian_level_one_9: 1085177158570203212
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

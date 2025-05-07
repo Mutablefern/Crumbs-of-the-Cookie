@@ -41,6 +41,7 @@ public class MovementScript : MonoBehaviour
     private float lastGroundedTime = -0.09f;
     [SerializeField] private bool jumpPressed;
     public bool isGrounded;
+    SpriteRenderer spriteRenderer;
 
     // Cached references
     public Rigidbody2D rb_Player;

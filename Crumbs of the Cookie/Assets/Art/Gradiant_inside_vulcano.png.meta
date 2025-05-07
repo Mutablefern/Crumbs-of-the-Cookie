@@ -273,6 +273,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -1609,7 +1622,67 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Gradiant_inside_vulcano_0: 6555931105565875240
+      Gradiant_inside_vulcano_1: -496786527866852248
+      Gradiant_inside_vulcano_10: -4815620071279183224
+      Gradiant_inside_vulcano_11: 1583689452660489190
+      Gradiant_inside_vulcano_12: -2477521046489628213
+      Gradiant_inside_vulcano_13: -8548414507566249018
+      Gradiant_inside_vulcano_14: 7004754735352626860
+      Gradiant_inside_vulcano_15: 2178623556121658655
+      Gradiant_inside_vulcano_16: 2338904451263096469
+      Gradiant_inside_vulcano_17: 5084232481339026141
+      Gradiant_inside_vulcano_18: -2188424106565705559
+      Gradiant_inside_vulcano_19: 9220457359877094490
+      Gradiant_inside_vulcano_2: -4878150238839383695
+      Gradiant_inside_vulcano_20: -3275377816565911492
+      Gradiant_inside_vulcano_21: 3582467763893665857
+      Gradiant_inside_vulcano_22: 1442383962169926679
+      Gradiant_inside_vulcano_23: -5546063332298586416
+      Gradiant_inside_vulcano_24: 4254579907337922128
+      Gradiant_inside_vulcano_25: -5278651214121226746
+      Gradiant_inside_vulcano_26: 5696504287005547722
+      Gradiant_inside_vulcano_27: 1671333291697276429
+      Gradiant_inside_vulcano_28: -8751696750189868088
+      Gradiant_inside_vulcano_29: 7682406717346903310
+      Gradiant_inside_vulcano_3: 4326211074366962684
+      Gradiant_inside_vulcano_30: 5173232415886790021
+      Gradiant_inside_vulcano_31: -4757244260017859376
+      Gradiant_inside_vulcano_32: 5181852597055285046
+      Gradiant_inside_vulcano_33: 1997523322925332814
+      Gradiant_inside_vulcano_34: -6940993274784311313
+      Gradiant_inside_vulcano_35: -5221773747016729002
+      Gradiant_inside_vulcano_36: 8865540806681540891
+      Gradiant_inside_vulcano_37: 6628800162694689031
+      Gradiant_inside_vulcano_38: 360590375567185042
+      Gradiant_inside_vulcano_39: 6190422852653891720
+      Gradiant_inside_vulcano_4: -7966609136307936344
+      Gradiant_inside_vulcano_40: -3445443995938970420
+      Gradiant_inside_vulcano_41: 8968323722317462360
+      Gradiant_inside_vulcano_42: -2572359742199507039
+      Gradiant_inside_vulcano_43: 6352941788385865054
+      Gradiant_inside_vulcano_44: -4278708079943144086
+      Gradiant_inside_vulcano_45: -1658871601904187900
+      Gradiant_inside_vulcano_46: -419091368300194926
+      Gradiant_inside_vulcano_47: -5005902658479246189
+      Gradiant_inside_vulcano_48: 2263178126261564004
+      Gradiant_inside_vulcano_49: 5726262975847456674
+      Gradiant_inside_vulcano_5: -2309099841999123057
+      Gradiant_inside_vulcano_50: -3673637744618274217
+      Gradiant_inside_vulcano_51: 2111298666034267363
+      Gradiant_inside_vulcano_52: -8564654272248551975
+      Gradiant_inside_vulcano_53: 2809494396897611120
+      Gradiant_inside_vulcano_54: -8123870949193974015
+      Gradiant_inside_vulcano_55: 5114910040717159639
+      Gradiant_inside_vulcano_56: 4999383486633484444
+      Gradiant_inside_vulcano_57: 8125221314300378873
+      Gradiant_inside_vulcano_58: -7221829487600273982
+      Gradiant_inside_vulcano_59: 2514362361038101944
+      Gradiant_inside_vulcano_6: 7697018955919084657
+      Gradiant_inside_vulcano_7: 5906083926285288353
+      Gradiant_inside_vulcano_8: 3970696853155612726
+      Gradiant_inside_vulcano_9: 7230256967397546890
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
