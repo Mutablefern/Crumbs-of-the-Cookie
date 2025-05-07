@@ -1,4 +1,6 @@
+using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Health_Player : MonoBehaviour
@@ -27,11 +29,7 @@ public class Health_Player : MonoBehaviour
     void Update()
 
     {
-        if (playerHealth == 0)
-        {
-            audioManager.playSFX(audioManager.playerdie);
-            Die();
-        }
+
     }
     public void Health(int dmg)
     {
@@ -49,7 +47,12 @@ public class Health_Player : MonoBehaviour
             playerHealth += dmg;
             armorIcon[healthIcon].SetActive(true);
             healthIcon += dmg;
+        }
+        if (playerHealth <= 0)
+        {
+            audioManager.playSFX(audioManager.playerdie);
 
+            Die();
         }
     }
     void SetHealth()
@@ -67,8 +70,18 @@ public class Health_Player : MonoBehaviour
         }
         healthIcon = playerHealth;
     }
-    void Die()
+    public void Die()
     {
+        StartCoroutine("Die_Cor");
+    }
+    IEnumerator Die_Cor()
+    {
+        Destroy(GetComponent<BoxCollider2D>());
+        Destroy(GetComponent<MovementScript>());
+        GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionX;
+        GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionY;
+        Destroy(GetComponentInChildren<Animator>());
+        yield return new WaitForSeconds(0.6f);
         sceneManagement.ChangeScene("DeathScene");
     }
     private void OnCollisionEnter2D(Collision2D collision)
