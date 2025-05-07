@@ -1,0 +1,817 @@
+fileFormatVersion: 2
+guid: bb4e4d941de76804b954ac07f43ca02e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6273281396564807599
+    second: Death screen rubrik_0
+  - first:
+      213: -541164421503830086
+    second: Death screen rubrik_1
+  - first:
+      213: -5174897309518045957
+    second: Death screen rubrik_2
+  - first:
+      213: -5070043102795028909
+    second: Death screen rubrik_3
+  - first:
+      213: 1963813728556360848
+    second: Death screen rubrik_4
+  - first:
+      213: 6139580438484305323
+    second: Death screen rubrik_5
+  - first:
+      213: -7594885587215376032
+    second: Death screen rubrik_6
+  - first:
+      213: -9072391202876887646
+    second: Death screen rubrik_7
+  - first:
+      213: -3916561988585524146
+    second: Death screen rubrik_8
+  - first:
+      213: -6083057578783820098
+    second: Death screen rubrik_9
+  - first:
+      213: 4376356401282812067
+    second: Death screen rubrik_10
+  - first:
+      213: 520476090765950004
+    second: Death screen rubrik_11
+  - first:
+      213: 7426920113528693453
+    second: Death screen rubrik_12
+  - first:
+      213: -7240212682335765809
+    second: Death screen rubrik_13
+  - first:
+      213: -3621698410374214324
+    second: Death screen rubrik_14
+  - first:
+      213: 1743688032791737006
+    second: Death screen rubrik_15
+  - first:
+      213: 3693254965970835067
+    second: Death screen rubrik_16
+  - first:
+      213: -2731074975746980329
+    second: Death screen rubrik_17
+  - first:
+      213: 3246092082117615022
+    second: Death screen rubrik_18
+  - first:
+      213: -5022374071638912433
+    second: Death screen rubrik_19
+  - first:
+      213: 3151832096514853844
+    second: Death screen rubrik_20
+  - first:
+      213: -3806736784938685646
+    second: Death screen rubrik_21
+  - first:
+      213: -5239608664257928420
+    second: Death screen rubrik_22
+  - first:
+      213: -7368379854790886494
+    second: Death screen rubrik_23
+  - first:
+      213: 4772331409163854703
+    second: Death screen rubrik_24
+  - first:
+      213: 7423871846382743247
+    second: Death screen rubrik_25
+  - first:
+      213: -515021968383215471
+    second: Death screen rubrik_26
+  - first:
+      213: -1111882041371172052
+    second: Death screen rubrik_27
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Death screen rubrik_0
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 828
+        width: 80
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fafcf42613c2f0750800000000000000
+      internalID: 6273281396564807599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death screen rubrik_1
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 829
+        width: 92
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab73f2b63d56d78f0800000000000000
+      internalID: -541164421503830086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death screen rubrik_2
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 827
+        width: 82
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfc5d0590521f28b0800000000000000
+      internalID: -5174897309518045957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death screen rubrik_3
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 829
+        width: 81
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 356abf509a693a9b0800000000000000
+      internalID: -5070043102795028909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death screen rubrik_4
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 827
+        width: 73
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09423af6e2ed04b10800000000000000
+      internalID: 1963813728556360848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death screen rubrik_5
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 828
+        width: 92
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba54bc141eb243550800000000000000
+      internalID: 6139580438484305323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death screen rubrik_6
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 828
+        width: 82
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0612b404ccb899690800000000000000
+      internalID: -7594885587215376032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death screen rubrik_7
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 829
+        width: 80
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ade421c444681280800000000000000
+      internalID: -9072391202876887646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death screen rubrik_8
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 829
+        width: 92
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e44ff894f9395a9c0800000000000000
+      internalID: -3916561988585524146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death screen rubrik_9
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 831
+        width: 93
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb6b75c8c53a49ba0800000000000000
+      internalID: -6083057578783820098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death screen rubrik_10
+      rect:
+        serializedVersion: 2
+        x: 998
+        y: 828
+        width: 116
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a808f4c5f0fbbc30800000000000000
+      internalID: 4376356401282812067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death screen rubrik_11
+      rect:
+        serializedVersion: 2
+        x: 1146
+        y: 829
+        width: 80
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43c30383f3a193700800000000000000
+      internalID: 520476090765950004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death screen rubrik_12
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 829
+        width: 92
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc2e4166e78b11760800000000000000
+      internalID: 7426920113528693453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death screen rubrik_13
+      rect:
+        serializedVersion: 2
+        x: 1323
+        y: 828
+        width: 68
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fca391bfce8958b90800000000000000
+      internalID: -7240212682335765809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death screen rubrik_14
+      rect:
+        serializedVersion: 2
+        x: 1426
+        y: 829
+        width: 76
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4d4c0efb742dbdc0800000000000000
+      internalID: -3621698410374214324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death screen rubrik_15
+      rect:
+        serializedVersion: 2
+        x: 1501
+        y: 831
+        width: 93
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea2b6a10703d23810800000000000000
+      internalID: 1743688032791737006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death screen rubrik_16
+      rect:
+        serializedVersion: 2
+        x: 1593
+        y: 831
+        width: 93
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7693a7e2d3114330800000000000000
+      internalID: 3693254965970835067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death screen rubrik_17
+      rect:
+        serializedVersion: 2
+        x: 1688
+        y: 826
+        width: 80
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71684a787c5491ad0800000000000000
+      internalID: -2731074975746980329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death screen rubrik_18
+      rect:
+        serializedVersion: 2
+        x: 1769
+        y: 828
+        width: 38
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ead14d6dc8f6c0d20800000000000000
+      internalID: 3246092082117615022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death screen rubrik_19
+      rect:
+        serializedVersion: 2
+        x: 1812
+        y: 828
+        width: 68
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4294da3461fc4ab0800000000000000
+      internalID: -5022374071638912433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death screen rubrik_20
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 667
+        width: 76
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4db4178b79e8dbb20800000000000000
+      internalID: 3151832096514853844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death screen rubrik_21
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 667
+        width: 74
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23b21542011cb2bc0800000000000000
+      internalID: -3806736784938685646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death screen rubrik_22
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 666
+        width: 92
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c13e8d43eab2947b0800000000000000
+      internalID: -5239608664257928420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death screen rubrik_23
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 666
+        width: 116
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ab7b09bf814eb990800000000000000
+      internalID: -7368379854790886494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death screen rubrik_24
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 664
+        width: 80
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f63a6a9b12aba3240800000000000000
+      internalID: 4772331409163854703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death screen rubrik_25
+      rect:
+        serializedVersion: 2
+        x: 1046
+        y: 665
+        width: 64
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fceaaa56c14e60760800000000000000
+      internalID: 7423871846382743247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death screen rubrik_26
+      rect:
+        serializedVersion: 2
+        x: 1111
+        y: 666
+        width: 68
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 198fefa9f364ad8f0800000000000000
+      internalID: -515021968383215471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death screen rubrik_27
+      rect:
+        serializedVersion: 2
+        x: 1179
+        y: 666
+        width: 82
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c236fe3ac2dc190f0800000000000000
+      internalID: -1111882041371172052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
