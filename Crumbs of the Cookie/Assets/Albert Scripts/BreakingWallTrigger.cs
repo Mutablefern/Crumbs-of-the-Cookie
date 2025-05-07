@@ -45,4 +45,20 @@ public class BreakingWallTrigger : MonoBehaviour
         }
     }
 
+    public void TriggerBreak()
+    {
+        if (!triggered)
+        {
+            triggered = true;
+            triggerScript1.BreakWall();
+            triggerScript2.BreakWall();
+            triggerScript3.BreakWall();
+            triggerScript4.BreakWall();
+            if (amountIs5)
+            {
+                triggerScript5.BreakWall();
+            }
+        }
+    }
+
 }
