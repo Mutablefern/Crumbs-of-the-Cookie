@@ -30,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 73.91, y: -2.01, z: 0}
-  m_LocalScale: {x: 1.2697865, y: 1.3580996, z: 1}
+  m_LocalScale: {x: 0.7698749, y: 0.8234193, z: 0.60630256}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -148,7 +148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2539ef793b4cca4285b361af6c00f68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destroyBounceMellow: 0
+  destroyBounceMellow: 1
 --- !u!114 &8956029779880786830
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -161,5 +161,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2548cc073b5cd9d47a9663446c4f0ec0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxVelocity: 25
   player_rb: {fileID: 0}
-  guaranteedBounce: 7
+  guaranteedBounce: 10
+  touchedBounceMellow: 0
+  waitForTime: 0
