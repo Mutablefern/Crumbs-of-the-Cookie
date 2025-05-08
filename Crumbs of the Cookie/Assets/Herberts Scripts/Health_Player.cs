@@ -93,6 +93,12 @@ public class Health_Player : MonoBehaviour
             Debug.Log("OW");
             Health(1);
         }
+
+        if (collision.gameObject.CompareTag("DeathCollider"))
+        {
+            audioManager.playSFX(audioManager.playerdie);
+            Die();
+        }
     }
 
 }
