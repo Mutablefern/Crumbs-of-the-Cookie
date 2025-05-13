@@ -264,6 +264,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: "Kn\xE4ck enemy 2 Map"
       objectReference: {fileID: 0}
+    - target: {fileID: 8465399893727256086, guid: cdaf356587ba51e4e9d0ca29b7559fa3, type: 3}
+      propertyPath: m_SortingLayer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8465399893727256086, guid: cdaf356587ba51e4e9d0ca29b7559fa3, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -298193615
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

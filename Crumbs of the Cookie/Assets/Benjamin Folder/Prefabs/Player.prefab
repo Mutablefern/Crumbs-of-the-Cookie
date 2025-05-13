@@ -518,6 +518,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ginger man map
       objectReference: {fileID: 0}
+    - target: {fileID: 7448994665480449797, guid: 3f1c3d1514e9bf24a99089f2c8aa1c92, type: 3}
+      propertyPath: m_SortingLayer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7448994665480449797, guid: 3f1c3d1514e9bf24a99089f2c8aa1c92, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -298193615
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
