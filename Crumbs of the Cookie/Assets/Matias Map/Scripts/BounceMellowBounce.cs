@@ -10,6 +10,13 @@ public class BounceMellowBounce : MonoBehaviour
     public bool touchedBounceMellow;
     public float waitForTime;
 
+    AudioManager audioManager;
+
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
+
     private void FixedUpdate()
     {
         if (player_rb.linearVelocityY > maxVelocity)
@@ -27,6 +34,8 @@ public class BounceMellowBounce : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        audioManager.playSFX(audioManager.bouncemellow);
+
         if (collision.gameObject.CompareTag("Player"))
         {
             collision.gameObject.GetComponent<Rigidbody2D>().AddForce(Vector2.up * Mathf.Abs(bounceness), ForceMode2D.Impulse);

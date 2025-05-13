@@ -8,6 +8,12 @@ public class Health_Player : MonoBehaviour
     [SerializeField] int healthIcon;
     SceneManagement sceneManagement;
     ParticlesManager particlesManager;
+    AudioManager audioManager;
+
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -23,6 +29,7 @@ public class Health_Player : MonoBehaviour
     {
         if (playerHealth == 0)
         {
+            audioManager.playSFX(audioManager.playerdie);
             Die();
         }
     }
@@ -68,8 +75,15 @@ public class Health_Player : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
+            audioManager.playSFX(audioManager.playerhurt);
             Debug.Log("OW");
             Health(1);
+        }
+
+        if (collision.gameObject.CompareTag("DeathCollider"))
+        {
+            audioManager.playSFX(audioManager.playerdie);
+            Die();
         }
     }
 
