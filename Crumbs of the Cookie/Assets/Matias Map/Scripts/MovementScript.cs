@@ -37,7 +37,7 @@ public class MovementScript : MonoBehaviour
     // Private variables
     private Vector2 movementInput;
     private float coyoteCounter;
-    private float jumpBufferingTimer;
+    [SerializeField]  private float jumpBufferingTimer;
     private float lastGroundedTime = -0.09f;
     [SerializeField] private bool jumpPressed;
     public bool isGrounded;
@@ -86,9 +86,11 @@ public class MovementScript : MonoBehaviour
        
         if (jumpPressed && jumpBufferingTimer > 0)
         {
+            Debug.Log("Jumpo");
             if (IsGrounded() || coyoteCounter > 0)  
             {
-                //audioManager.playSFX(audioManager.jump);
+                audioManager.playSFX(audioManager.jump);
+                Debug.Log("Bumpo");
                 JumpForce();
                 jumpBufferingTimer = 0;
             }
@@ -139,9 +141,18 @@ public class MovementScript : MonoBehaviour
 
     void VariableJumping()
     {
-        if (rb_Player.linearVelocityY > 0 && !Input.GetButton("Jump"))
+        if(Input.GetButton("Jump"))
+        {
+          
+        }
+        if (rb_Player.linearVelocityY > 0.1f && !Input.GetButton("Jump"))
         {
             rb_Player.AddForce(-transform.up * dragForce);
+
+        }
+        else if (rb_Player.linearVelocityY > 0 && Input.GetButton("Jump"))
+        {
+            Debug.Log("Jump");
         }
     }
 
@@ -153,7 +164,7 @@ public class MovementScript : MonoBehaviour
 
     void ExtraGravity()
     {
-        if (rb_Player.linearVelocity.y > 0)
+        if (rb_Player.linearVelocity.y > 0.01)
         {
             SetGravityScale(gravityScale * fallGravityMult);
             rb_Player.linearVelocity = new Vector2(rb_Player.linearVelocity.x, Mathf.Max(rb_Player.linearVelocity.y, -maxFallSpeed));
@@ -163,7 +174,7 @@ public class MovementScript : MonoBehaviour
             SetGravityScale(gravityScale);
         }
 
-        if(rb_Player.linearVelocity.y < 0)
+        if(rb_Player.linearVelocity.y < -0.01)
         {
             SetGravityScale(gravityScale * fallGravityMult);
         }

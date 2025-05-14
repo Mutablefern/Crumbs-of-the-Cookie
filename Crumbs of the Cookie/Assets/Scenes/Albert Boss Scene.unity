@@ -7059,7 +7059,7 @@ GameObject:
   m_Component:
   - component: {fileID: 845099534}
   - component: {fileID: 845099533}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Grid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9891,7 +9891,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1304624337
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9993,7 +9993,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 755695906}
-  - {fileID: 2043753683}
   - {fileID: 753325150}
   - {fileID: 538664674}
   - {fileID: 1807588337}
@@ -10292,6 +10291,10 @@ PrefabInstance:
       propertyPath: spriteRenderer
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 2398665862090611863, guid: 9e531f0ff10db6e45860b6b6455a5d8c, type: 3}
+      propertyPath: groundLayer.m_Bits
+      value: 64
+      objectReference: {fileID: 0}
     - target: {fileID: 5536806420500308807, guid: 9e531f0ff10db6e45860b6b6455a5d8c, type: 3}
       propertyPath: 'armorIcon.Array.data[0]'
       value: 
@@ -10310,7 +10313,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5998911278847716393, guid: 9e531f0ff10db6e45860b6b6455a5d8c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2
+      value: -1.34
       objectReference: {fileID: 0}
     - target: {fileID: 5998911278847716393, guid: 9e531f0ff10db6e45860b6b6455a5d8c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -34642,11 +34645,11 @@ Transform:
   m_GameObject: {fileID: 2043753680}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 12.5, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1304624339}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2043753684
 MonoBehaviour:
@@ -34729,7 +34732,7 @@ MonoBehaviour:
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
-  m_ApplyToSortingLayers: 00000000
+  m_ApplyToSortingLayers: 00000000091d8b4ab92e0aa501fd37adb3c657d931ed39ee
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -35650,6 +35653,7 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 2043753683}
   - {fileID: 1304624339}
   - {fileID: 845099534}
   - {fileID: 1395472457}
