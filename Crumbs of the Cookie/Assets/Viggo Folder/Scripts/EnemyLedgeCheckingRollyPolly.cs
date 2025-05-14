@@ -14,6 +14,7 @@ public class EnemyLedgeCheckingRollyPolly : MonoBehaviour
     public float sightRange;
     Animator animator;
     EnemyHealth enemyHealth;
+    [SerializeField] GameObject armor;
     Vector3 direction;
     public bool playerDetected;
     bool isFacingRight;
@@ -27,7 +28,7 @@ public class EnemyLedgeCheckingRollyPolly : MonoBehaviour
     public float wallCheckSize;
     private float ZAxisAdd;
     public float fallTime;
-   
+
 
 
     void Awake()
@@ -81,7 +82,7 @@ public class EnemyLedgeCheckingRollyPolly : MonoBehaviour
         rb_Enemy.linearVelocity = transform.right * moveSpeed;
     }
 
-   
+
     void DetectPlayer()
     {
         //is player within sight range?
@@ -105,11 +106,11 @@ public class EnemyLedgeCheckingRollyPolly : MonoBehaviour
             if (hasTurned == false)
             {
                 ZAxisAdd -= 90;
-                transform.eulerAngles = new Vector3(0f,0f,ZAxisAdd);
+                transform.eulerAngles = new Vector3(0f, 0f, ZAxisAdd);
                 hasTurned = true;
             }
 
-            fallTime -= Time.deltaTime; 
+            fallTime -= Time.deltaTime;
         }
 
         if (groundDetected)
@@ -128,7 +129,7 @@ public class EnemyLedgeCheckingRollyPolly : MonoBehaviour
             }
         }
 
-        if(fallTime == 1)
+        if (fallTime == 1)
         {
             rb_Enemy.gravityScale = 0f;
 
@@ -138,14 +139,14 @@ public class EnemyLedgeCheckingRollyPolly : MonoBehaviour
 
         else if (fallTime <= 0)
         {
-            transform.eulerAngles = new Vector3(0,0,0);
+            transform.eulerAngles = new Vector3(0, 0, 0);
             ZAxisAdd = 0f;
             rb_Enemy.gravityScale = 50f;
             minMoveSpeed = 0f;
             maxMoveSpeed = 0f;
         }
 
-        if(ZAxisAdd <= -360f)
+        if (ZAxisAdd <= -360f)
         {
             ZAxisAdd = 0f;
         }
@@ -169,7 +170,7 @@ public class EnemyLedgeCheckingRollyPolly : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.CompareTag("Enemy"))
+        if (collision.gameObject.CompareTag("Enemy"))
         {
             Flip();
         }
@@ -198,4 +199,9 @@ public class EnemyLedgeCheckingRollyPolly : MonoBehaviour
         Gizmos.DrawLine(groundPos.position, new Vector2(groundPos.position.x, groundPos.position.y - groundCheckSize));
         Gizmos.DrawLine(wallPos.position, new Vector2(wallPos.position.x + wallCheckSize, wallPos.position.y));
     }
+    public void Ondeath()
+    {
+        Instantiate(armor);
+    }
+
 }

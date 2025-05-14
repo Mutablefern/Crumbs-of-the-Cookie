@@ -1,0 +1,1690 @@
+fileFormatVersion: 2
+guid: 2f87c42ef1a1e814da282b9ca90969df
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6555931105565875240
+    second: Gradiant_inside_vulcano_0
+  - first:
+      213: -496786527866852248
+    second: Gradiant_inside_vulcano_1
+  - first:
+      213: -4878150238839383695
+    second: Gradiant_inside_vulcano_2
+  - first:
+      213: 4326211074366962684
+    second: Gradiant_inside_vulcano_3
+  - first:
+      213: -7966609136307936344
+    second: Gradiant_inside_vulcano_4
+  - first:
+      213: -2309099841999123057
+    second: Gradiant_inside_vulcano_5
+  - first:
+      213: 7697018955919084657
+    second: Gradiant_inside_vulcano_6
+  - first:
+      213: 5906083926285288353
+    second: Gradiant_inside_vulcano_7
+  - first:
+      213: 3970696853155612726
+    second: Gradiant_inside_vulcano_8
+  - first:
+      213: 7230256967397546890
+    second: Gradiant_inside_vulcano_9
+  - first:
+      213: -4815620071279183224
+    second: Gradiant_inside_vulcano_10
+  - first:
+      213: 1583689452660489190
+    second: Gradiant_inside_vulcano_11
+  - first:
+      213: -2477521046489628213
+    second: Gradiant_inside_vulcano_12
+  - first:
+      213: -8548414507566249018
+    second: Gradiant_inside_vulcano_13
+  - first:
+      213: 7004754735352626860
+    second: Gradiant_inside_vulcano_14
+  - first:
+      213: 2178623556121658655
+    second: Gradiant_inside_vulcano_15
+  - first:
+      213: 2338904451263096469
+    second: Gradiant_inside_vulcano_16
+  - first:
+      213: 5084232481339026141
+    second: Gradiant_inside_vulcano_17
+  - first:
+      213: -2188424106565705559
+    second: Gradiant_inside_vulcano_18
+  - first:
+      213: 9220457359877094490
+    second: Gradiant_inside_vulcano_19
+  - first:
+      213: -3275377816565911492
+    second: Gradiant_inside_vulcano_20
+  - first:
+      213: 3582467763893665857
+    second: Gradiant_inside_vulcano_21
+  - first:
+      213: 1442383962169926679
+    second: Gradiant_inside_vulcano_22
+  - first:
+      213: -5546063332298586416
+    second: Gradiant_inside_vulcano_23
+  - first:
+      213: 4254579907337922128
+    second: Gradiant_inside_vulcano_24
+  - first:
+      213: -5278651214121226746
+    second: Gradiant_inside_vulcano_25
+  - first:
+      213: 5696504287005547722
+    second: Gradiant_inside_vulcano_26
+  - first:
+      213: 1671333291697276429
+    second: Gradiant_inside_vulcano_27
+  - first:
+      213: -8751696750189868088
+    second: Gradiant_inside_vulcano_28
+  - first:
+      213: 7682406717346903310
+    second: Gradiant_inside_vulcano_29
+  - first:
+      213: 5173232415886790021
+    second: Gradiant_inside_vulcano_30
+  - first:
+      213: -4757244260017859376
+    second: Gradiant_inside_vulcano_31
+  - first:
+      213: 5181852597055285046
+    second: Gradiant_inside_vulcano_32
+  - first:
+      213: 1997523322925332814
+    second: Gradiant_inside_vulcano_33
+  - first:
+      213: -6940993274784311313
+    second: Gradiant_inside_vulcano_34
+  - first:
+      213: -5221773747016729002
+    second: Gradiant_inside_vulcano_35
+  - first:
+      213: 8865540806681540891
+    second: Gradiant_inside_vulcano_36
+  - first:
+      213: 6628800162694689031
+    second: Gradiant_inside_vulcano_37
+  - first:
+      213: 360590375567185042
+    second: Gradiant_inside_vulcano_38
+  - first:
+      213: 6190422852653891720
+    second: Gradiant_inside_vulcano_39
+  - first:
+      213: -3445443995938970420
+    second: Gradiant_inside_vulcano_40
+  - first:
+      213: 8968323722317462360
+    second: Gradiant_inside_vulcano_41
+  - first:
+      213: -2572359742199507039
+    second: Gradiant_inside_vulcano_42
+  - first:
+      213: 6352941788385865054
+    second: Gradiant_inside_vulcano_43
+  - first:
+      213: -4278708079943144086
+    second: Gradiant_inside_vulcano_44
+  - first:
+      213: -1658871601904187900
+    second: Gradiant_inside_vulcano_45
+  - first:
+      213: -419091368300194926
+    second: Gradiant_inside_vulcano_46
+  - first:
+      213: -5005902658479246189
+    second: Gradiant_inside_vulcano_47
+  - first:
+      213: 2263178126261564004
+    second: Gradiant_inside_vulcano_48
+  - first:
+      213: 5726262975847456674
+    second: Gradiant_inside_vulcano_49
+  - first:
+      213: -3673637744618274217
+    second: Gradiant_inside_vulcano_50
+  - first:
+      213: 2111298666034267363
+    second: Gradiant_inside_vulcano_51
+  - first:
+      213: -8564654272248551975
+    second: Gradiant_inside_vulcano_52
+  - first:
+      213: 2809494396897611120
+    second: Gradiant_inside_vulcano_53
+  - first:
+      213: -8123870949193974015
+    second: Gradiant_inside_vulcano_54
+  - first:
+      213: 5114910040717159639
+    second: Gradiant_inside_vulcano_55
+  - first:
+      213: 4999383486633484444
+    second: Gradiant_inside_vulcano_56
+  - first:
+      213: 8125221314300378873
+    second: Gradiant_inside_vulcano_57
+  - first:
+      213: -7221829487600273982
+    second: Gradiant_inside_vulcano_58
+  - first:
+      213: 2514362361038101944
+    second: Gradiant_inside_vulcano_59
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Gradiant_inside_vulcano_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1920
+        height: 1012
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82c103f0b985bfa50800000000000000
+      internalID: 6555931105565875240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradiant_inside_vulcano_1
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 996
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86ceb45f84f0b19f0800000000000000
+      internalID: -496786527866852248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradiant_inside_vulcano_2
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 1000
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 179ddfc04345d4cb0800000000000000
+      internalID: -4878150238839383695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradiant_inside_vulcano_3
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 999
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfbf0070d0ac90c30800000000000000
+      internalID: 4326211074366962684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradiant_inside_vulcano_4
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 999
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a3ebfd033be07190800000000000000
+      internalID: -7966609136307936344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradiant_inside_vulcano_5
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 1001
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8d4bb68ded64ffd0800000000000000
+      internalID: -2309099841999123057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradiant_inside_vulcano_6
+      rect:
+        serializedVersion: 2
+        x: 991
+        y: 999
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17c4109b5fd41da60800000000000000
+      internalID: 7697018955919084657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradiant_inside_vulcano_7
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 998
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a301e70a00a6f150800000000000000
+      internalID: 5906083926285288353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradiant_inside_vulcano_8
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 1001
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6380a1310cfba1730800000000000000
+      internalID: 3970696853155612726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradiant_inside_vulcano_9
+      rect:
+        serializedVersion: 2
+        x: 1402
+        y: 1002
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8b16808768075460800000000000000
+      internalID: 7230256967397546890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradiant_inside_vulcano_10
+      rect:
+        serializedVersion: 2
+        x: 1552
+        y: 1004
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88ab9263f0b7b2db0800000000000000
+      internalID: -4815620071279183224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradiant_inside_vulcano_11
+      rect:
+        serializedVersion: 2
+        x: 1701
+        y: 1004
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6eb7c5c9a256af510800000000000000
+      internalID: 1583689452660489190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradiant_inside_vulcano_12
+      rect:
+        serializedVersion: 2
+        x: 1720
+        y: 1003
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc18e641cb31e9dd0800000000000000
+      internalID: -2477521046489628213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradiant_inside_vulcano_13
+      rect:
+        serializedVersion: 2
+        x: 1806
+        y: 1003
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cbc7bbfb4eed5980800000000000000
+      internalID: -8548414507566249018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradiant_inside_vulcano_14
+      rect:
+        serializedVersion: 2
+        x: 1812
+        y: 1006
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: caebd6ba153e53160800000000000000
+      internalID: 7004754735352626860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradiant_inside_vulcano_15
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 989
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f150ee9d4960c3e10800000000000000
+      internalID: 2178623556121658655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradiant_inside_vulcano_16
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 992
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 596ed15d435757020800000000000000
+      internalID: 2338904451263096469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradiant_inside_vulcano_17
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 996
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dda27bd1182de8640800000000000000
+      internalID: 5084232481339026141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradiant_inside_vulcano_18
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 996
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a0ef3eaed721a1e0800000000000000
+      internalID: -2188424106565705559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradiant_inside_vulcano_19
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 990
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5c3c12ed15a5ff70800000000000000
+      internalID: 9220457359877094490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradiant_inside_vulcano_20
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 988
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c30f462ca358b82d0800000000000000
+      internalID: -3275377816565911492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradiant_inside_vulcano_21
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 999
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1408b26537b77b130800000000000000
+      internalID: 3582467763893665857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradiant_inside_vulcano_22
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 995
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 714ebde4290640410800000000000000
+      internalID: 1442383962169926679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradiant_inside_vulcano_23
+      rect:
+        serializedVersion: 2
+        x: 958
+        y: 992
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d6068898cc6803b0800000000000000
+      internalID: -5546063332298586416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradiant_inside_vulcano_24
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 994
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 056246d42ed4b0b30800000000000000
+      internalID: 4254579907337922128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradiant_inside_vulcano_25
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 991
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60eae1130b67eb6b0800000000000000
+      internalID: -5278651214121226746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradiant_inside_vulcano_26
+      rect:
+        serializedVersion: 2
+        x: 1046
+        y: 999
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acc9478b77c0e0f40800000000000000
+      internalID: 5696504287005547722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradiant_inside_vulcano_27
+      rect:
+        serializedVersion: 2
+        x: 1063
+        y: 997
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0686e016c4c13710800000000000000
+      internalID: 1671333291697276429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradiant_inside_vulcano_28
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 991
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cb0ef69c2abb8680800000000000000
+      internalID: -8751696750189868088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradiant_inside_vulcano_29
+      rect:
+        serializedVersion: 2
+        x: 1126
+        y: 999
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e05798fc4346d9a60800000000000000
+      internalID: 7682406717346903310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradiant_inside_vulcano_30
+      rect:
+        serializedVersion: 2
+        x: 1169
+        y: 992
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58dc77929730bc740800000000000000
+      internalID: 5173232415886790021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradiant_inside_vulcano_31
+      rect:
+        serializedVersion: 2
+        x: 1256
+        y: 999
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d49edbec8fdafdb0800000000000000
+      internalID: -4757244260017859376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradiant_inside_vulcano_32
+      rect:
+        serializedVersion: 2
+        x: 1269
+        y: 995
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6376aed7b73a9e740800000000000000
+      internalID: 5181852597055285046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradiant_inside_vulcano_33
+      rect:
+        serializedVersion: 2
+        x: 1289
+        y: 992
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e49b58df0e0a8bb10800000000000000
+      internalID: 1997523322925332814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradiant_inside_vulcano_34
+      rect:
+        serializedVersion: 2
+        x: 1330
+        y: 994
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe71b1c3463acaf90800000000000000
+      internalID: -6940993274784311313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradiant_inside_vulcano_35
+      rect:
+        serializedVersion: 2
+        x: 1339
+        y: 993
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65e7b9771788887b0800000000000000
+      internalID: -5221773747016729002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradiant_inside_vulcano_36
+      rect:
+        serializedVersion: 2
+        x: 1469
+        y: 993
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b19bbfb546ab80b70800000000000000
+      internalID: 8865540806681540891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradiant_inside_vulcano_37
+      rect:
+        serializedVersion: 2
+        x: 1648
+        y: 997
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 701f77880aa3efb50800000000000000
+      internalID: 6628800162694689031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradiant_inside_vulcano_38
+      rect:
+        serializedVersion: 2
+        x: 1668
+        y: 993
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2945b1d3903110500800000000000000
+      internalID: 360590375567185042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradiant_inside_vulcano_39
+      rect:
+        serializedVersion: 2
+        x: 1695
+        y: 983
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88045e549ccc8e550800000000000000
+      internalID: 6190422852653891720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradiant_inside_vulcano_40
+      rect:
+        serializedVersion: 2
+        x: 1742
+        y: 991
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc42e80c0f25f20d0800000000000000
+      internalID: -3445443995938970420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradiant_inside_vulcano_41
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 993
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85bf073c8e2e57c70800000000000000
+      internalID: 8968323722317462360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradiant_inside_vulcano_42
+      rect:
+        serializedVersion: 2
+        x: 1769
+        y: 994
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a7dea381742d4cd0800000000000000
+      internalID: -2572359742199507039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradiant_inside_vulcano_43
+      rect:
+        serializedVersion: 2
+        x: 1783
+        y: 996
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5d697fa5ee2a2850800000000000000
+      internalID: 6352941788385865054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradiant_inside_vulcano_44
+      rect:
+        serializedVersion: 2
+        x: 1832
+        y: 993
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6d256dbba9fe94c0800000000000000
+      internalID: -4278708079943144086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradiant_inside_vulcano_45
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 992
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 406848031118af8e0800000000000000
+      internalID: -1658871601904187900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradiant_inside_vulcano_46
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 990
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 293d808fe961f2af0800000000000000
+      internalID: -419091368300194926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradiant_inside_vulcano_47
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 983
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3943925fd06778ab0800000000000000
+      internalID: -5005902658479246189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradiant_inside_vulcano_48
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 988
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4623147d38c686f10800000000000000
+      internalID: 2263178126261564004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradiant_inside_vulcano_49
+      rect:
+        serializedVersion: 2
+        x: 1154
+        y: 991
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2afdbd566d5c77f40800000000000000
+      internalID: 5726262975847456674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradiant_inside_vulcano_50
+      rect:
+        serializedVersion: 2
+        x: 1158
+        y: 992
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7528f8e5fed940dc0800000000000000
+      internalID: -3673637744618274217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradiant_inside_vulcano_51
+      rect:
+        serializedVersion: 2
+        x: 1195
+        y: 985
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e48abb53f6dc4d10800000000000000
+      internalID: 2111298666034267363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradiant_inside_vulcano_52
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 991
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d5e79e115c342980800000000000000
+      internalID: -8564654272248551975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradiant_inside_vulcano_53
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 991
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07d4885c4445df620800000000000000
+      internalID: 2809494396897611120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradiant_inside_vulcano_54
+      rect:
+        serializedVersion: 2
+        x: 1359
+        y: 989
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10f7d20f966324f80800000000000000
+      internalID: -8123870949193974015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradiant_inside_vulcano_55
+      rect:
+        serializedVersion: 2
+        x: 1410
+        y: 990
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dc6603059fcbf640800000000000000
+      internalID: 5114910040717159639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradiant_inside_vulcano_56
+      rect:
+        serializedVersion: 2
+        x: 1441
+        y: 991
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c902eb01bc0616540800000000000000
+      internalID: 4999383486633484444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradiant_inside_vulcano_57
+      rect:
+        serializedVersion: 2
+        x: 1549
+        y: 992
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fe7e407cb592c070800000000000000
+      internalID: 8125221314300378873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradiant_inside_vulcano_58
+      rect:
+        serializedVersion: 2
+        x: 1602
+        y: 991
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c5f42b0858e6cb90800000000000000
+      internalID: -7221829487600273982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradiant_inside_vulcano_59
+      rect:
+        serializedVersion: 2
+        x: 1719
+        y: 991
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bdd946ee3fc4e220800000000000000
+      internalID: 2514362361038101944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Gradiant_inside_vulcano_0: 6555931105565875240
+      Gradiant_inside_vulcano_1: -496786527866852248
+      Gradiant_inside_vulcano_10: -4815620071279183224
+      Gradiant_inside_vulcano_11: 1583689452660489190
+      Gradiant_inside_vulcano_12: -2477521046489628213
+      Gradiant_inside_vulcano_13: -8548414507566249018
+      Gradiant_inside_vulcano_14: 7004754735352626860
+      Gradiant_inside_vulcano_15: 2178623556121658655
+      Gradiant_inside_vulcano_16: 2338904451263096469
+      Gradiant_inside_vulcano_17: 5084232481339026141
+      Gradiant_inside_vulcano_18: -2188424106565705559
+      Gradiant_inside_vulcano_19: 9220457359877094490
+      Gradiant_inside_vulcano_2: -4878150238839383695
+      Gradiant_inside_vulcano_20: -3275377816565911492
+      Gradiant_inside_vulcano_21: 3582467763893665857
+      Gradiant_inside_vulcano_22: 1442383962169926679
+      Gradiant_inside_vulcano_23: -5546063332298586416
+      Gradiant_inside_vulcano_24: 4254579907337922128
+      Gradiant_inside_vulcano_25: -5278651214121226746
+      Gradiant_inside_vulcano_26: 5696504287005547722
+      Gradiant_inside_vulcano_27: 1671333291697276429
+      Gradiant_inside_vulcano_28: -8751696750189868088
+      Gradiant_inside_vulcano_29: 7682406717346903310
+      Gradiant_inside_vulcano_3: 4326211074366962684
+      Gradiant_inside_vulcano_30: 5173232415886790021
+      Gradiant_inside_vulcano_31: -4757244260017859376
+      Gradiant_inside_vulcano_32: 5181852597055285046
+      Gradiant_inside_vulcano_33: 1997523322925332814
+      Gradiant_inside_vulcano_34: -6940993274784311313
+      Gradiant_inside_vulcano_35: -5221773747016729002
+      Gradiant_inside_vulcano_36: 8865540806681540891
+      Gradiant_inside_vulcano_37: 6628800162694689031
+      Gradiant_inside_vulcano_38: 360590375567185042
+      Gradiant_inside_vulcano_39: 6190422852653891720
+      Gradiant_inside_vulcano_4: -7966609136307936344
+      Gradiant_inside_vulcano_40: -3445443995938970420
+      Gradiant_inside_vulcano_41: 8968323722317462360
+      Gradiant_inside_vulcano_42: -2572359742199507039
+      Gradiant_inside_vulcano_43: 6352941788385865054
+      Gradiant_inside_vulcano_44: -4278708079943144086
+      Gradiant_inside_vulcano_45: -1658871601904187900
+      Gradiant_inside_vulcano_46: -419091368300194926
+      Gradiant_inside_vulcano_47: -5005902658479246189
+      Gradiant_inside_vulcano_48: 2263178126261564004
+      Gradiant_inside_vulcano_49: 5726262975847456674
+      Gradiant_inside_vulcano_5: -2309099841999123057
+      Gradiant_inside_vulcano_50: -3673637744618274217
+      Gradiant_inside_vulcano_51: 2111298666034267363
+      Gradiant_inside_vulcano_52: -8564654272248551975
+      Gradiant_inside_vulcano_53: 2809494396897611120
+      Gradiant_inside_vulcano_54: -8123870949193974015
+      Gradiant_inside_vulcano_55: 5114910040717159639
+      Gradiant_inside_vulcano_56: 4999383486633484444
+      Gradiant_inside_vulcano_57: 8125221314300378873
+      Gradiant_inside_vulcano_58: -7221829487600273982
+      Gradiant_inside_vulcano_59: 2514362361038101944
+      Gradiant_inside_vulcano_6: 7697018955919084657
+      Gradiant_inside_vulcano_7: 5906083926285288353
+      Gradiant_inside_vulcano_8: 3970696853155612726
+      Gradiant_inside_vulcano_9: 7230256967397546890
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

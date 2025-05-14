@@ -1,0 +1,858 @@
+fileFormatVersion: 2
+guid: 068773410232c34478985ec09910c3c7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3436610502354623899
+    second: Gradian_level_one_0
+  - first:
+      213: 6063738938563542538
+    second: Gradian_level_one_1
+  - first:
+      213: 8358991012109330903
+    second: Gradian_level_one_2
+  - first:
+      213: -6628427145330354108
+    second: Gradian_level_one_3
+  - first:
+      213: -8310765574886730880
+    second: Gradian_level_one_4
+  - first:
+      213: 6066540919372742238
+    second: Gradian_level_one_5
+  - first:
+      213: -4922272114122012761
+    second: Gradian_level_one_6
+  - first:
+      213: 7852564886952315639
+    second: Gradian_level_one_7
+  - first:
+      213: -8753727608272311958
+    second: Gradian_level_one_8
+  - first:
+      213: 1085177158570203212
+    second: Gradian_level_one_9
+  - first:
+      213: 7701661469791423606
+    second: Gradian_level_one_10
+  - first:
+      213: -6424916940281247378
+    second: Gradian_level_one_11
+  - first:
+      213: -415784226808021679
+    second: Gradian_level_one_12
+  - first:
+      213: -2199903598518755255
+    second: Gradian_level_one_13
+  - first:
+      213: 125296881860413708
+    second: Gradian_level_one_14
+  - first:
+      213: 7345108899151022682
+    second: Gradian_level_one_15
+  - first:
+      213: 4056998360281897261
+    second: Gradian_level_one_16
+  - first:
+      213: -5290061133509796426
+    second: Gradian_level_one_17
+  - first:
+      213: -8222885585856100194
+    second: Gradian_level_one_18
+  - first:
+      213: -3197709667109509187
+    second: Gradian_level_one_19
+  - first:
+      213: -8824428370979354003
+    second: Gradian_level_one_20
+  - first:
+      213: -1164585013356229511
+    second: Gradian_level_one_21
+  - first:
+      213: -965964731951988291
+    second: Gradian_level_one_22
+  - first:
+      213: -992414088810696785
+    second: Gradian_level_one_23
+  - first:
+      213: -756450752766882695
+    second: Gradian_level_one_24
+  - first:
+      213: -4671823943368962087
+    second: Gradian_level_one_25
+  - first:
+      213: 8095096859977587325
+    second: Gradian_level_one_26
+  - first:
+      213: -6448968907014700949
+    second: Gradian_level_one_27
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Gradian_level_one_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1920
+        height: 1021
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 562a6cfb4f4be40d0800000000000000
+      internalID: -3436610502354623899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradian_level_one_1
+      rect:
+        serializedVersion: 2
+        x: 1217
+        y: 1006
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0eb8c3007ab62450800000000000000
+      internalID: 6063738938563542538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradian_level_one_2
+      rect:
+        serializedVersion: 2
+        x: 1226
+        y: 1006
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d9a575a90a110470800000000000000
+      internalID: 8358991012109330903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradian_level_one_3
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1005
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 448170751a81304a0800000000000000
+      internalID: -6628427145330354108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradian_level_one_4
+      rect:
+        serializedVersion: 2
+        x: 1389
+        y: 1002
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 083d451fdba3aac80800000000000000
+      internalID: -8310765574886730880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradian_level_one_5
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 1009
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5e759203dea03450800000000000000
+      internalID: 6066540919372742238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradian_level_one_6
+      rect:
+        serializedVersion: 2
+        x: 1639
+        y: 1010
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a742fd679390bbb0800000000000000
+      internalID: -4922272114122012761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradian_level_one_7
+      rect:
+        serializedVersion: 2
+        x: 1663
+        y: 1009
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fa8f76f82ae9fc60800000000000000
+      internalID: 7852564886952315639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradian_level_one_8
+      rect:
+        serializedVersion: 2
+        x: 1705
+        y: 1005
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6926689e13848680800000000000000
+      internalID: -8753727608272311958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradian_level_one_9
+      rect:
+        serializedVersion: 2
+        x: 1706
+        y: 1009
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c48d1fe40e25f0f00800000000000000
+      internalID: 1085177158570203212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradian_level_one_10
+      rect:
+        serializedVersion: 2
+        x: 1746
+        y: 1009
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67c0b373d4cc1ea60800000000000000
+      internalID: 7701661469791423606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradian_level_one_11
+      rect:
+        serializedVersion: 2
+        x: 1832
+        y: 999
+        width: 11
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e69852f551c16d6a0800000000000000
+      internalID: -6424916940281247378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradian_level_one_12
+      rect:
+        serializedVersion: 2
+        x: 1854
+        y: 1003
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15db5e9d276da3af0800000000000000
+      internalID: -415784226808021679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradian_level_one_13
+      rect:
+        serializedVersion: 2
+        x: 1856
+        y: 1001
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 940af2e255f5871e0800000000000000
+      internalID: -2199903598518755255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradian_level_one_14
+      rect:
+        serializedVersion: 2
+        x: 1883
+        y: 1007
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0901c6a9d42db100800000000000000
+      internalID: 125296881860413708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradian_level_one_15
+      rect:
+        serializedVersion: 2
+        x: 1894
+        y: 1004
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5a0572b0a11fe560800000000000000
+      internalID: 7345108899151022682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradian_level_one_16
+      rect:
+        serializedVersion: 2
+        x: 1895
+        y: 1006
+        width: 24
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d29d1f6838a5d4830800000000000000
+      internalID: 4056998360281897261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradian_level_one_17
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 1000
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bd5c015d6de596b0800000000000000
+      internalID: -5290061133509796426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradian_level_one_18
+      rect:
+        serializedVersion: 2
+        x: 1063
+        y: 1003
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e980e5a502172ed80800000000000000
+      internalID: -8222885585856100194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradian_level_one_19
+      rect:
+        serializedVersion: 2
+        x: 1199
+        y: 1000
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db7ea1dfff37f93d0800000000000000
+      internalID: -3197709667109509187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradian_level_one_20
+      rect:
+        serializedVersion: 2
+        x: 1279
+        y: 1000
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6a85e18625598580800000000000000
+      internalID: -8824428370979354003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradian_level_one_21
+      rect:
+        serializedVersion: 2
+        x: 1409
+        y: 1000
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97c8820c91096dfe0800000000000000
+      internalID: -1164585013356229511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradian_level_one_22
+      rect:
+        serializedVersion: 2
+        x: 1555
+        y: 1003
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db14276b1343892f0800000000000000
+      internalID: -965964731951988291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradian_level_one_23
+      rect:
+        serializedVersion: 2
+        x: 1612
+        y: 1001
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: faf685ee4ac3a32f0800000000000000
+      internalID: -992414088810696785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradian_level_one_24
+      rect:
+        serializedVersion: 2
+        x: 1675
+        y: 998
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97cc0475c0c8085f0800000000000000
+      internalID: -756450752766882695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradian_level_one_25
+      rect:
+        serializedVersion: 2
+        x: 1718
+        y: 1000
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9df045a30e85a2fb0800000000000000
+      internalID: -4671823943368962087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradian_level_one_26
+      rect:
+        serializedVersion: 2
+        x: 1726
+        y: 1003
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7a185954bf875070800000000000000
+      internalID: 8095096859977587325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gradian_level_one_27
+      rect:
+        serializedVersion: 2
+        x: 1759
+        y: 1002
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6089d972f8a086a0800000000000000
+      internalID: -6448968907014700949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Gradian_level_one_0: -3436610502354623899
+      Gradian_level_one_1: 6063738938563542538
+      Gradian_level_one_10: 7701661469791423606
+      Gradian_level_one_11: -6424916940281247378
+      Gradian_level_one_12: -415784226808021679
+      Gradian_level_one_13: -2199903598518755255
+      Gradian_level_one_14: 125296881860413708
+      Gradian_level_one_15: 7345108899151022682
+      Gradian_level_one_16: 4056998360281897261
+      Gradian_level_one_17: -5290061133509796426
+      Gradian_level_one_18: -8222885585856100194
+      Gradian_level_one_19: -3197709667109509187
+      Gradian_level_one_2: 8358991012109330903
+      Gradian_level_one_20: -8824428370979354003
+      Gradian_level_one_21: -1164585013356229511
+      Gradian_level_one_22: -965964731951988291
+      Gradian_level_one_23: -992414088810696785
+      Gradian_level_one_24: -756450752766882695
+      Gradian_level_one_25: -4671823943368962087
+      Gradian_level_one_26: 8095096859977587325
+      Gradian_level_one_27: -6448968907014700949
+      Gradian_level_one_3: -6628427145330354108
+      Gradian_level_one_4: -8310765574886730880
+      Gradian_level_one_5: 6066540919372742238
+      Gradian_level_one_6: -4922272114122012761
+      Gradian_level_one_7: 7852564886952315639
+      Gradian_level_one_8: -8753727608272311958
+      Gradian_level_one_9: 1085177158570203212
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

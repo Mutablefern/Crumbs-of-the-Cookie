@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: ea26abbce5202b24fa890b39396a7078
+guid: da9809b40a7b8cb49a62a683d0b2f2bc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7172322469642883962
-    second: UI Buttens hover_0
+      213: -4549885627578201809
+    second: UI Buttens hover new_0
   - first:
-      213: 1245843854988429760
-    second: UI Buttens hover_1
+      213: 7906701289756673869
+    second: UI Buttens hover new_1
   - first:
-      213: 5151804176189997532
-    second: UI Buttens hover_2
+      213: -2129731576666241918
+    second: UI Buttens hover new_2
   - first:
-      213: 848095129524461044
-    second: UI Buttens hover_3
+      213: 4214549225870922480
+    second: UI Buttens hover new_3
   - first:
-      213: -1008298240858251072
-    second: UI Buttens hover_4
+      213: -6866037402502639252
+    second: UI Buttens hover new_4
   - first:
-      213: 166416446500753276
-    second: UI Buttens hover_5
+      213: -579111964007516470
+    second: UI Buttens hover new_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -115,7 +115,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: UI Buttens hover_0
+      name: UI Buttens hover new_0
       rect:
         serializedVersion: 2
         x: 589
@@ -130,14 +130,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a73dd991945398360800000000000000
-      internalID: 7172322469642883962
+      spriteID: f29cb87c02f8bd0c0800000000000000
+      internalID: -4549885627578201809
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI Buttens hover_1
+      name: UI Buttens hover new_1
       rect:
         serializedVersion: 2
         x: 589
@@ -152,14 +152,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0c94036a2602a4110800000000000000
-      internalID: 1245843854988429760
+      spriteID: d47c1197eee3abd60800000000000000
+      internalID: 7906701289756673869
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI Buttens hover_2
+      name: UI Buttens hover new_2
       rect:
         serializedVersion: 2
         x: 589
@@ -174,14 +174,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cd1cd225a92ee7740800000000000000
-      internalID: 5151804176189997532
+      spriteID: 28440e13a6ca172e0800000000000000
+      internalID: -2129731576666241918
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI Buttens hover_3
+      name: UI Buttens hover new_3
       rect:
         serializedVersion: 2
         x: 589
@@ -196,14 +196,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4fd5b03e60a05cb00800000000000000
-      internalID: 848095129524461044
+      spriteID: 0f21f68f0361d7a30800000000000000
+      internalID: 4214549225870922480
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI Buttens hover_4
+      name: UI Buttens hover new_4
       rect:
         serializedVersion: 2
         x: 589
@@ -218,14 +218,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0c02ef5971ec102f0800000000000000
-      internalID: -1008298240858251072
+      spriteID: c61d8493c5fe6b0a0800000000000000
+      internalID: -6866037402502639252
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI Buttens hover_5
+      name: UI Buttens hover new_5
       rect:
         serializedVersion: 2
         x: 589
@@ -240,8 +240,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c7fc57a50ea3f4200800000000000000
-      internalID: 166416446500753276
+      spriteID: ac6372cacb496f7f0800000000000000
+      internalID: -579111964007516470
       vertices: []
       indices: 
       edges: []
@@ -260,12 +260,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      UI Buttens hover_0: 7172322469642883962
-      UI Buttens hover_1: 1245843854988429760
-      UI Buttens hover_2: 5151804176189997532
-      UI Buttens hover_3: 848095129524461044
-      UI Buttens hover_4: -1008298240858251072
-      UI Buttens hover_5: 166416446500753276
+      UI Buttens hover new_0: -4549885627578201809
+      UI Buttens hover new_1: 7906701289756673869
+      UI Buttens hover new_2: -2129731576666241918
+      UI Buttens hover new_3: 4214549225870922480
+      UI Buttens hover new_4: -6866037402502639252
+      UI Buttens hover new_5: -579111964007516470
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
