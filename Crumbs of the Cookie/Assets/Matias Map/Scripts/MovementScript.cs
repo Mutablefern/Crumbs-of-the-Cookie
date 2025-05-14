@@ -153,7 +153,7 @@ public class MovementScript : MonoBehaviour
 
     void ExtraGravity()
     {
-        if (rb_Player.linearVelocity.y > 0)
+        if (rb_Player.linearVelocity.y > 0.1)
         {
             SetGravityScale(gravityScale * fallGravityMult);
             rb_Player.linearVelocity = new Vector2(rb_Player.linearVelocity.x, Mathf.Max(rb_Player.linearVelocity.y, -maxFallSpeed));
@@ -163,7 +163,7 @@ public class MovementScript : MonoBehaviour
             SetGravityScale(gravityScale);
         }
 
-        if(rb_Player.linearVelocity.y < 0)
+        if(rb_Player.linearVelocity.y < -0.1)
         {
             SetGravityScale(gravityScale * fallGravityMult);
         }
