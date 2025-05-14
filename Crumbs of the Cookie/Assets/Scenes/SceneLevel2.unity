@@ -1389,8 +1389,32 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5019323917719363133, guid: 7f8045718a067554fb678e9db44ab0e1, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 5019323917719363133, guid: 7f8045718a067554fb678e9db44ab0e1, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 5201404834545050797, guid: 7f8045718a067554fb678e9db44ab0e1, type: 3}
       propertyPath: m_LayerOverridePriority
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6175388451302062714, guid: 7f8045718a067554fb678e9db44ab0e1, type: 3}
+      propertyPath: m_Size.x
+      value: 7.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 6175388451302062714, guid: 7f8045718a067554fb678e9db44ab0e1, type: 3}
+      propertyPath: m_Size.y
+      value: 2.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 6175388451302062714, guid: 7f8045718a067554fb678e9db44ab0e1, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 5385414357304913817, guid: 837d33fafc4cf5b459ccc678a7dda295, type: 3}
+    - target: {fileID: 6175388451302062714, guid: 7f8045718a067554fb678e9db44ab0e1, type: 3}
+      propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1769,6 +1793,30 @@ PrefabInstance:
     - target: {fileID: 4834779767450934817, guid: 7f8045718a067554fb678e9db44ab0e1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5019323917719363133, guid: 7f8045718a067554fb678e9db44ab0e1, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 5019323917719363133, guid: 7f8045718a067554fb678e9db44ab0e1, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6175388451302062714, guid: 7f8045718a067554fb678e9db44ab0e1, type: 3}
+      propertyPath: m_Size.x
+      value: 7.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 6175388451302062714, guid: 7f8045718a067554fb678e9db44ab0e1, type: 3}
+      propertyPath: m_Size.y
+      value: 2.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 6175388451302062714, guid: 7f8045718a067554fb678e9db44ab0e1, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 5385414357304913817, guid: 837d33fafc4cf5b459ccc678a7dda295, type: 3}
+    - target: {fileID: 6175388451302062714, guid: 7f8045718a067554fb678e9db44ab0e1, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -56949,6 +56997,30 @@ PrefabInstance:
     - target: {fileID: 4834779767450934817, guid: 7f8045718a067554fb678e9db44ab0e1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5019323917719363133, guid: 7f8045718a067554fb678e9db44ab0e1, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 5019323917719363133, guid: 7f8045718a067554fb678e9db44ab0e1, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6175388451302062714, guid: 7f8045718a067554fb678e9db44ab0e1, type: 3}
+      propertyPath: m_Size.x
+      value: 7.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 6175388451302062714, guid: 7f8045718a067554fb678e9db44ab0e1, type: 3}
+      propertyPath: m_Size.y
+      value: 2.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 6175388451302062714, guid: 7f8045718a067554fb678e9db44ab0e1, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 5385414357304913817, guid: 837d33fafc4cf5b459ccc678a7dda295, type: 3}
+    - target: {fileID: 6175388451302062714, guid: 7f8045718a067554fb678e9db44ab0e1, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
