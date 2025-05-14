@@ -1955,6 +1955,14 @@ PrefabInstance:
       propertyPath: 'armorIcon.Array.data[1]'
       value: 
       objectReference: {fileID: 819984980}
+    - target: {fileID: 5885793928009815931, guid: 9e531f0ff10db6e45860b6b6455a5d8c, type: 3}
+      propertyPath: m_SortingLayer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5885793928009815931, guid: 9e531f0ff10db6e45860b6b6455a5d8c, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -298193615
+      objectReference: {fileID: 0}
     - target: {fileID: 5998911278847716393, guid: 9e531f0ff10db6e45860b6b6455a5d8c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.21
@@ -56654,8 +56662,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 1553748742}
-  parallaxEffect: 0.8
-  parallaxEffectY: 0.4
+  parallaxEffect: 0.5
+  parallaxEffectY: 0.5
 --- !u!1001 &1307602517
 PrefabInstance:
   m_ObjectHideFlags: 0
