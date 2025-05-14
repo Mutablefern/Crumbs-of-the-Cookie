@@ -83849,6 +83849,9 @@ MonoBehaviour:
   bearhurt: {fileID: 8300000, guid: b06a3298bd0272e4f8b6d4332022bd49, type: 3}
   rolleypolleyhurt: {fileID: 8300000, guid: 406e2cd5771c0e946b31894eb6d29e2b, type: 3}
   bouncemellow: {fileID: 8300000, guid: 3de87641ad0420344a70aedafe9a6f4c, type: 3}
+  bossroar: {fileID: 0}
+  bossslam: {fileID: 0}
+  bosswalk: {fileID: 0}
 --- !u!4 &805898858
 Transform:
   m_ObjectHideFlags: 0
@@ -84127,6 +84130,7 @@ MonoBehaviour:
   player: {fileID: 561235415}
   CameraMovementSpeed: 2
   cameraActive: 1
+  autoScroll: 0
 --- !u!114 &860448456
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -84147,7 +84151,7 @@ MonoBehaviour:
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
-  m_ApplyToSortingLayers: 00000000
+  m_ApplyToSortingLayers: 00000000091d8b4ab92e0aa501fd37adb3c657d931ed39ee
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
