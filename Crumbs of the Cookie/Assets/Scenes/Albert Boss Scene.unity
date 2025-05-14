@@ -3131,6 +3131,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 413268048162448624, guid: 8f7a47b0713d16d45b7cf414a4937ebf, type: 3}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 413268048162448624, guid: 8f7a47b0713d16d45b7cf414a4937ebf, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2472225397544480432, guid: 8f7a47b0713d16d45b7cf414a4937ebf, type: 3}
       propertyPath: m_Name
       value: Bouncemellow (1)
@@ -9112,6 +9120,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 413268048162448624, guid: 8f7a47b0713d16d45b7cf414a4937ebf, type: 3}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 413268048162448624, guid: 8f7a47b0713d16d45b7cf414a4937ebf, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2472225397544480432, guid: 8f7a47b0713d16d45b7cf414a4937ebf, type: 3}
       propertyPath: m_Name
       value: Bouncemellow
@@ -10287,11 +10303,11 @@ PrefabInstance:
     - target: {fileID: 2398665862090611863, guid: 9e531f0ff10db6e45860b6b6455a5d8c, type: 3}
       propertyPath: rb_Player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 386276371}
     - target: {fileID: 2398665862090611863, guid: 9e531f0ff10db6e45860b6b6455a5d8c, type: 3}
       propertyPath: spriteRenderer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1465490896}
     - target: {fileID: 5536806420500308807, guid: 9e531f0ff10db6e45860b6b6455a5d8c, type: 3}
       propertyPath: 'armorIcon.Array.data[0]'
       value: 
@@ -11343,6 +11359,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   push_rb: {fileID: 0}
+--- !u!212 &1465490896 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 3190478805094195949, guid: 9e531f0ff10db6e45860b6b6455a5d8c, type: 3}
+  m_PrefabInstance: {fileID: 1395472457}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1470653063
 GameObject:
   m_ObjectHideFlags: 0
@@ -34729,7 +34750,7 @@ MonoBehaviour:
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
-  m_ApplyToSortingLayers: 00000000
+  m_ApplyToSortingLayers: 00000000091d8b4ab92e0aa501fd37adb3c657d931ed39ee
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0

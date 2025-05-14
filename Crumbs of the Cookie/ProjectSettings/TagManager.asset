@@ -52,6 +52,9 @@ TagManager:
   - name: Clouds
     uniqueID: 2768907961
     locked: 0
+  - name: Vulkan
+    uniqueID: 4246099469
+    locked: 0
   - name: Mountain
     uniqueID: 2906127617
     locked: 0
@@ -60,6 +63,9 @@ TagManager:
     locked: 0
   - name: Gingerman
     uniqueID: 3996773681
+    locked: 0
+  - name: Boss Huvud enter
+    uniqueID: 2900621239
     locked: 0
   m_RenderingLayers:
   - Default

@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Health_Player : MonoBehaviour
 {
-    public static int playerHealth = 1 ;
+    [SerializeField] public static int playerHealth = 1 ;
     [SerializeField] List<GameObject> armorIcon;
     [SerializeField] int healthIcon;
     SceneManagement sceneManagement;
@@ -46,8 +46,8 @@ public class Health_Player : MonoBehaviour
         if (dmg < 0)
         {
             playerHealth -= dmg;
-            armorIcon[healthIcon].SetActive(true);
-            healthIcon += dmg;
+            armorIcon[healthIcon -1].SetActive(true);
+            healthIcon -= dmg;
         }
         if (playerHealth <= 0)
         {
