@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Lolipop_small_0: 1422574579482555455
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

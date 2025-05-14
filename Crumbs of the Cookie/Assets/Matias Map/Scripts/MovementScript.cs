@@ -99,13 +99,13 @@ public class MovementScript : MonoBehaviour
     void OnMove(InputValue inputValue)
     {
             movementInput = inputValue.Get<Vector2>();
-            Debug.Log(movementInput);
     }
 
     void OnJump(InputValue inputValue)
     {
         if (inputValue.isPressed)
         {
+            Debug.Log("Yes");
             jumpPressed = true;
             jumpBufferingTimer = jumpBuffering;
         }
