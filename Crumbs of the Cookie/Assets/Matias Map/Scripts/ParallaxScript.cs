@@ -15,9 +15,9 @@ public class Parallaxscript : MonoBehaviour
         length = GetComponent<SpriteRenderer>().bounds.size.x;
     }
 
-    void FixedUpdate()
+    void Update()
     {
-        //Calculate distance background move based on cam movement
+        //calculate distance background move based on cam movement
         float distance = cam.transform.position.x * parallaxEffect; 
         float movement = cam.transform.position.x * (1-parallaxEffect);
 

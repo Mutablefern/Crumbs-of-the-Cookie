@@ -1,4 +1,6 @@
+using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Health_Player : MonoBehaviour
@@ -27,18 +29,15 @@ public class Health_Player : MonoBehaviour
     void Update()
 
     {
-        if (playerHealth == 0)
-        {
-            audioManager.playSFX(audioManager.playerdie);
-            Die();
-        }
+
     }
     public void Health(int dmg)
     {
-        particlesManager.Particels(2, transform.position);
+        
         //When called with a negative int, the players health is increased. When called with a positive int player health is decreased
         if (dmg > 0  && playerHealth >= 0)
         {
+            particlesManager.Particels(2, transform.position);
             playerHealth -= dmg;
             healthIcon -= dmg;
             armorIcon[healthIcon].SetActive(false);
@@ -46,10 +45,15 @@ public class Health_Player : MonoBehaviour
 
         if (dmg < 0)
         {
-            playerHealth += dmg;
+            playerHealth -= dmg;
             armorIcon[healthIcon].SetActive(true);
             healthIcon += dmg;
+        }
+        if (playerHealth <= 0)
+        {
+            audioManager.playSFX(audioManager.playerdie);
 
+            Die();
         }
     }
     void SetHealth()
@@ -67,8 +71,19 @@ public class Health_Player : MonoBehaviour
         }
         healthIcon = playerHealth;
     }
-    void Die()
+    public void Die()
     {
+        StartCoroutine("Die_Cor");
+    }
+    IEnumerator Die_Cor()
+    {
+        Destroy(GetComponent<BoxCollider2D>());
+        Destroy(GetComponent<MovementScript>());
+        GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionX;
+        GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionY;
+        Destroy(GetComponent<AttackScript>());
+        Destroy(GetComponentInChildren<Animator>());
+        yield return new WaitForSeconds(0.6f);
         sceneManagement.ChangeScene("DeathScene");
     }
     private void OnCollisionEnter2D(Collision2D collision)

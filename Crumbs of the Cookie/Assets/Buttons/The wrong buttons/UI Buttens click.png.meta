@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: 4088d764a6dd3694bacf1ada850e8f1b
+guid: 0c6ae602f3c587d4eb0a689066a89810
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2975884396627854371
-    second: UI Buttens Idle_0
+      213: 996400809876761351
+    second: UI Buttens click_0
   - first:
-      213: -1242924301507183983
-    second: UI Buttens Idle_1
+      213: 6892996651710656112
+    second: UI Buttens click_1
   - first:
-      213: 8960290098657134552
-    second: UI Buttens Idle_2
+      213: 993420641073661501
+    second: UI Buttens click_2
   - first:
-      213: 2056002297382322063
-    second: UI Buttens Idle_3
+      213: 1209049615213625707
+    second: UI Buttens click_3
   - first:
-      213: 7720864888940179887
-    second: UI Buttens Idle_4
+      213: -5505699004172267305
+    second: UI Buttens click_4
   - first:
-      213: -7498520307151355394
-    second: UI Buttens Idle_5
+      213: -2469337053024559684
+    second: UI Buttens click_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -111,17 +111,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: UI Buttens Idle_0
+      name: UI Buttens click_0
       rect:
         serializedVersion: 2
-        x: 645
-        y: 801
-        width: 629
-        height: 108
+        x: 670
+        y: 805
+        width: 579
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,20 +143,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ddb7e5e78e883b6d0800000000000000
-      internalID: -2975884396627854371
+      spriteID: 70bad96e14de3dd00800000000000000
+      internalID: 996400809876761351
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI Buttens Idle_1
+      name: UI Buttens click_1
       rect:
         serializedVersion: 2
-        x: 645
-        y: 646
-        width: 629
-        height: 108
+        x: 670
+        y: 650
+        width: 580
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +165,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 19ab6fddeee30cee0800000000000000
-      internalID: -1242924301507183983
+      spriteID: 07eab2f1fe7d8af50800000000000000
+      internalID: 6892996651710656112
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI Buttens Idle_2
+      name: UI Buttens click_2
       rect:
         serializedVersion: 2
-        x: 645
-        y: 486
-        width: 629
-        height: 108
+        x: 670
+        y: 489
+        width: 580
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,20 +187,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8d788eefe58595c70800000000000000
-      internalID: 8960290098657134552
+      spriteID: d368cb74fc659cd00800000000000000
+      internalID: 993420641073661501
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI Buttens Idle_3
+      name: UI Buttens click_3
       rect:
         serializedVersion: 2
-        x: 645
-        y: 326
-        width: 629
-        height: 108
+        x: 670
+        y: 330
+        width: 580
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -196,20 +209,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f8f3cd04233688c10800000000000000
-      internalID: 2056002297382322063
+      spriteID: b6181ae183867c010800000000000000
+      internalID: 1209049615213625707
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI Buttens Idle_4
+      name: UI Buttens click_4
       rect:
         serializedVersion: 2
-        x: 645
-        y: 172
-        width: 629
-        height: 108
+        x: 670
+        y: 177
+        width: 580
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,20 +231,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fa1b018a5b5062b60800000000000000
-      internalID: 7720864888940179887
+      spriteID: 7d017181de3d793b0800000000000000
+      internalID: -5505699004172267305
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI Buttens Idle_5
+      name: UI Buttens click_5
       rect:
         serializedVersion: 2
-        x: 645
-        y: 18
-        width: 629
-        height: 108
+        x: 670
+        y: 23
+        width: 580
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -240,8 +253,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ef1c03f6287efe790800000000000000
-      internalID: -7498520307151355394
+      spriteID: cbdd2cb88072bbdd0800000000000000
+      internalID: -2469337053024559684
       vertices: []
       indices: 
       edges: []
@@ -260,12 +273,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      UI Buttens Idle_0: -2975884396627854371
-      UI Buttens Idle_1: -1242924301507183983
-      UI Buttens Idle_2: 8960290098657134552
-      UI Buttens Idle_3: 2056002297382322063
-      UI Buttens Idle_4: 7720864888940179887
-      UI Buttens Idle_5: -7498520307151355394
+      UI Buttens click_0: 996400809876761351
+      UI Buttens click_1: 6892996651710656112
+      UI Buttens click_2: 993420641073661501
+      UI Buttens click_3: 1209049615213625707
+      UI Buttens click_4: -5505699004172267305
+      UI Buttens click_5: -2469337053024559684
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

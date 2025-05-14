@@ -35,8 +35,6 @@ public class EnemyLedgeChecking : MonoBehaviour
 
     void FixedUpdate()
     {
-
-
         LedgeCheck();
 
         switch (enemyState)
@@ -49,14 +47,9 @@ public class EnemyLedgeChecking : MonoBehaviour
 
             case 2:
                 // used for knockback whenever the enemy gets hit
-
-
                 break;
 
             case 3:
-
-
-
                 break;
         }
     }
@@ -67,14 +60,11 @@ public class EnemyLedgeChecking : MonoBehaviour
         direction = transform.position - enemyHealth.sourceOfKnockback;
         rb_Enemy.AddForce(direction.normalized * knockback, ForceMode2D.Impulse);
         rb_Enemy.AddForce(transform.up * knockbackY, ForceMode2D.Impulse);
-
     }
     void Move()
     {
         DetectPlayer();
         JumpAttack();
-
-       
 
         if (CheckGrounded())
         {
@@ -104,11 +94,9 @@ public class EnemyLedgeChecking : MonoBehaviour
     {
         //is player within sight range?
         if (Vector2.Distance(transform.position, playerTransform.position) <= sightRange)
-        {
-           
+        {           
             StartCoroutine(AttackWindow());
         }
-        
     }
 
     IEnumerator AttackWindow()
@@ -178,5 +166,4 @@ public class EnemyLedgeChecking : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         enemyState = 1; 
     }
-    
 }

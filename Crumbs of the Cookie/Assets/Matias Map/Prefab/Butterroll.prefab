@@ -125,7 +125,8 @@ MonoBehaviour:
   knockback: 15
   knockbackY: 15
   enemyState: 1
-  sightRange: 7
+  sightRange: 9.5
+  armor: {fileID: 6394342225344318559, guid: 4fe12f2bc8bc41349ba1374100ecf241, type: 3}
   playerDetected: 0
   hasTurned: 0
   groundDetected: 0

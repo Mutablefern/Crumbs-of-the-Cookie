@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: 0c6ae602f3c587d4eb0a689066a89810
+guid: ea26abbce5202b24fa890b39396a7078
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 996400809876761351
-    second: UI Buttens click_0
+      213: 7172322469642883962
+    second: UI Buttens hover_0
   - first:
-      213: 6892996651710656112
-    second: UI Buttens click_1
+      213: 1245843854988429760
+    second: UI Buttens hover_1
   - first:
-      213: 993420641073661501
-    second: UI Buttens click_2
+      213: 5151804176189997532
+    second: UI Buttens hover_2
   - first:
-      213: 1209049615213625707
-    second: UI Buttens click_3
+      213: 848095129524461044
+    second: UI Buttens hover_3
   - first:
-      213: -5505699004172267305
-    second: UI Buttens click_4
+      213: -1008298240858251072
+    second: UI Buttens hover_4
   - first:
-      213: -2469337053024559684
-    second: UI Buttens click_5
+      213: 166416446500753276
+    second: UI Buttens hover_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -111,17 +111,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: UI Buttens click_0
+      name: UI Buttens hover_0
       rect:
         serializedVersion: 2
-        x: 670
-        y: 805
-        width: 579
-        height: 100
+        x: 589
+        y: 786
+        width: 742
+        height: 137
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,20 +143,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 70bad96e14de3dd00800000000000000
-      internalID: 996400809876761351
+      spriteID: a73dd991945398360800000000000000
+      internalID: 7172322469642883962
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI Buttens click_1
+      name: UI Buttens hover_1
       rect:
         serializedVersion: 2
-        x: 670
-        y: 650
-        width: 580
-        height: 100
+        x: 589
+        y: 631
+        width: 742
+        height: 137
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +165,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 07eab2f1fe7d8af50800000000000000
-      internalID: 6892996651710656112
+      spriteID: 0c94036a2602a4110800000000000000
+      internalID: 1245843854988429760
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI Buttens click_2
+      name: UI Buttens hover_2
       rect:
         serializedVersion: 2
-        x: 670
-        y: 489
-        width: 580
-        height: 100
+        x: 589
+        y: 471
+        width: 742
+        height: 137
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,20 +187,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d368cb74fc659cd00800000000000000
-      internalID: 993420641073661501
+      spriteID: cd1cd225a92ee7740800000000000000
+      internalID: 5151804176189997532
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI Buttens click_3
+      name: UI Buttens hover_3
       rect:
         serializedVersion: 2
-        x: 670
-        y: 330
-        width: 580
-        height: 100
+        x: 589
+        y: 310
+        width: 742
+        height: 137
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -196,20 +209,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b6181ae183867c010800000000000000
-      internalID: 1209049615213625707
+      spriteID: 4fd5b03e60a05cb00800000000000000
+      internalID: 848095129524461044
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI Buttens click_4
+      name: UI Buttens hover_4
       rect:
         serializedVersion: 2
-        x: 670
-        y: 177
-        width: 580
-        height: 100
+        x: 589
+        y: 156
+        width: 742
+        height: 142
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,20 +231,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7d017181de3d793b0800000000000000
-      internalID: -5505699004172267305
+      spriteID: 0c02ef5971ec102f0800000000000000
+      internalID: -1008298240858251072
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI Buttens click_5
+      name: UI Buttens hover_5
       rect:
         serializedVersion: 2
-        x: 670
-        y: 23
-        width: 580
-        height: 100
+        x: 589
+        y: 0
+        width: 742
+        height: 141
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -240,8 +253,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cbdd2cb88072bbdd0800000000000000
-      internalID: -2469337053024559684
+      spriteID: c7fc57a50ea3f4200800000000000000
+      internalID: 166416446500753276
       vertices: []
       indices: 
       edges: []
@@ -260,12 +273,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      UI Buttens click_0: 996400809876761351
-      UI Buttens click_1: 6892996651710656112
-      UI Buttens click_2: 993420641073661501
-      UI Buttens click_3: 1209049615213625707
-      UI Buttens click_4: -5505699004172267305
-      UI Buttens click_5: -2469337053024559684
+      UI Buttens hover_0: 7172322469642883962
+      UI Buttens hover_1: 1245843854988429760
+      UI Buttens hover_2: 5151804176189997532
+      UI Buttens hover_3: 848095129524461044
+      UI Buttens hover_4: -1008298240858251072
+      UI Buttens hover_5: 166416446500753276
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
