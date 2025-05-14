@@ -31614,6 +31614,99 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &1676748126
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1944849014740877921, guid: e5e7fbdb9a8a0824c93435ade25e6c2e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1944849014740877921, guid: e5e7fbdb9a8a0824c93435ade25e6c2e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1944849014740877921, guid: e5e7fbdb9a8a0824c93435ade25e6c2e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1944849014740877921, guid: e5e7fbdb9a8a0824c93435ade25e6c2e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1944849014740877921, guid: e5e7fbdb9a8a0824c93435ade25e6c2e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1944849014740877921, guid: e5e7fbdb9a8a0824c93435ade25e6c2e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1944849014740877921, guid: e5e7fbdb9a8a0824c93435ade25e6c2e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1944849014740877921, guid: e5e7fbdb9a8a0824c93435ade25e6c2e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1944849014740877921, guid: e5e7fbdb9a8a0824c93435ade25e6c2e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1944849014740877921, guid: e5e7fbdb9a8a0824c93435ade25e6c2e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6343179792702763519, guid: e5e7fbdb9a8a0824c93435ade25e6c2e, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 829d5cceff68786419b7a4dc7b7dce0d, type: 3}
+    - target: {fileID: 6343179792702763519, guid: e5e7fbdb9a8a0824c93435ade25e6c2e, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 829d5cceff68786419b7a4dc7b7dce0d, type: 3}
+    - target: {fileID: 6767986411035026597, guid: e5e7fbdb9a8a0824c93435ade25e6c2e, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 4cd2f03056bd0ae4a95347f83d29938b, type: 3}
+    - target: {fileID: 6767986411035026597, guid: e5e7fbdb9a8a0824c93435ade25e6c2e, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 4cd2f03056bd0ae4a95347f83d29938b, type: 3}
+    - target: {fileID: 8366700663369872987, guid: e5e7fbdb9a8a0824c93435ade25e6c2e, type: 3}
+      propertyPath: m_Name
+      value: AudioManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 9116114386410544473, guid: e5e7fbdb9a8a0824c93435ade25e6c2e, type: 3}
+      propertyPath: bossroar
+      value: 
+      objectReference: {fileID: 8300000, guid: 478c9f3e37645954eb59e3673bf898b7, type: 3}
+    - target: {fileID: 9116114386410544473, guid: e5e7fbdb9a8a0824c93435ade25e6c2e, type: 3}
+      propertyPath: bossslam
+      value: 
+      objectReference: {fileID: 8300000, guid: 15f022cf281cdc94a9452c9badf011c3, type: 3}
+    - target: {fileID: 9116114386410544473, guid: e5e7fbdb9a8a0824c93435ade25e6c2e, type: 3}
+      propertyPath: bosswalk
+      value: 
+      objectReference: {fileID: 8300000, guid: 1353ba02739a74d4dacd8af05cd6bd49, type: 3}
+    - target: {fileID: 9116114386410544473, guid: e5e7fbdb9a8a0824c93435ade25e6c2e, type: 3}
+      propertyPath: birdslava
+      value: 
+      objectReference: {fileID: 8300000, guid: 829d5cceff68786419b7a4dc7b7dce0d, type: 3}
+    - target: {fileID: 9116114386410544473, guid: e5e7fbdb9a8a0824c93435ade25e6c2e, type: 3}
+      propertyPath: cicadasfire
+      value: 
+      objectReference: {fileID: 8300000, guid: 4cd2f03056bd0ae4a95347f83d29938b, type: 3}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e5e7fbdb9a8a0824c93435ade25e6c2e, type: 3}
 --- !u!1 &1689707825
 GameObject:
   m_ObjectHideFlags: 0
@@ -35552,6 +35645,7 @@ SceneRoots:
   - {fileID: 1304624339}
   - {fileID: 845099534}
   - {fileID: 1395472457}
+  - {fileID: 1676748126}
   - {fileID: 2076472428}
   - {fileID: 820892337}
   - {fileID: 350893525}

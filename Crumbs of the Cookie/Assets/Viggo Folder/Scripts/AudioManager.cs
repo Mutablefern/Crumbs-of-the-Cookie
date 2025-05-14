@@ -25,6 +25,9 @@ public class AudioManager : MonoBehaviour
     public AudioClip bearhurt;
     public AudioClip rolleypolleyhurt;
     public AudioClip bouncemellow;
+    public AudioClip bossroar;
+    public AudioClip bossslam;
+    public AudioClip bosswalk;
 
     private void Start()
     {
