@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 5d58da221d153bb40bc134fa5c56cf95
+guid: 837d33fafc4cf5b459ccc678a7dda295
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1456697967760710758
-    second: Inside_vulcano_0
+      213: 5385414357304913817
+    second: Moving plattform (2)_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Inside_vulcano_0
+      name: Moving plattform (2)_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1920
-        height: 1080
+        width: 768
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 66c1961751b373410800000000000000
-      internalID: 1456697967760710758
+      spriteID: 99fa27723d5dcba40800000000000000
+      internalID: 5385414357304913817
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Inside_vulcano_0: 1456697967760710758
+      Moving plattform (2)_0: 5385414357304913817
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

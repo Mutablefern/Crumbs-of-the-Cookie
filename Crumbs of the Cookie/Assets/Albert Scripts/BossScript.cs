@@ -18,6 +18,7 @@ public class BossScript : MonoBehaviour
     [SerializeField] GameObject OutOfBounds4;
     [SerializeField] SceneManagement sceneManagement;
     BreakingWallTrigger wallBreakTrigger;
+    AudioManager audioManager;
     Vector3 direction;
     bool arrived;
     int currentTarget = 0;
@@ -34,6 +35,11 @@ public class BossScript : MonoBehaviour
         StartCoroutine(attackPattern());
         wallBreakTrigger = wallBreakObject.GetComponent<BreakingWallTrigger>();
         cameraOffset = (camera_transform.position - gameObject.transform.position);
+    }
+
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
 
     private void Update()
@@ -81,6 +87,7 @@ public class BossScript : MonoBehaviour
     {
         yield return new WaitForSeconds(5.5f);
         StartCoroutine(camShake());
+        audioManager.playSFX(audioManager.bossroar);
         shake = true;
         yield return new WaitForSeconds(2f);
         shake = false;
@@ -118,6 +125,6 @@ public class BossScript : MonoBehaviour
     private void SlamAttack()
     {
         animator.SetTrigger("Slam");
-        //SLAM SOUND HERE
+        audioManager.playSFX(audioManager.bossslam);
     }
 }
