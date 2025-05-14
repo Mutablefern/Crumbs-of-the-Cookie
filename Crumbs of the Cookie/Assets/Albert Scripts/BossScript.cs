@@ -99,6 +99,7 @@ public class BossScript : MonoBehaviour
         yield return new WaitForSeconds(3f);
         SlamAttack();
         yield return new WaitForSeconds(2f);
+        audioManager.playSFX(audioManager.bossslam);
         wallBreakTrigger.TriggerBreak();
         yield return new WaitForSeconds(5f);
         yield return new WaitForSeconds(10f);
@@ -125,6 +126,5 @@ public class BossScript : MonoBehaviour
     private void SlamAttack()
     {
         animator.SetTrigger("Slam");
-        audioManager.playSFX(audioManager.bossslam);
     }
 }
