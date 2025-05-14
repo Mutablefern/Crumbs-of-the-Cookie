@@ -16,6 +16,7 @@ public class BossScript : MonoBehaviour
     [SerializeField] GameObject OutOfBounds2;
     [SerializeField] GameObject OutOfBounds3;
     [SerializeField] GameObject OutOfBounds4;
+    [SerializeField] SceneManagement sceneManagement;
     BreakingWallTrigger wallBreakTrigger;
     Vector3 direction;
     bool arrived;
@@ -110,6 +111,8 @@ public class BossScript : MonoBehaviour
         animator.SetTrigger("Crush");
         yield return new WaitForSeconds(4f);
         cameraTarget.position = new Vector3(transform.position.x-5, 0, transform.position.y);
+        yield return new WaitForSeconds(5f);
+        sceneManagement.ChangeScene("Main Menu Scene");
     }
 
     private void SlamAttack()
