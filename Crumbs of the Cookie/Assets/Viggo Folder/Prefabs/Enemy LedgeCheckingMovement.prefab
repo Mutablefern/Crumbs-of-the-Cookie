@@ -120,6 +120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89d32794136c58441b35d70cf2d3aaa9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  colorValue: 0
 --- !u!58 &7808187424318406752
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -266,6 +267,14 @@ PrefabInstance:
     - target: {fileID: 8407185157478612536, guid: b2867e8311bd1a84e8a328f9d99e1063, type: 3}
       propertyPath: m_Color.r
       value: 0.9811321
+      objectReference: {fileID: 0}
+    - target: {fileID: 8407185157478612536, guid: b2867e8311bd1a84e8a328f9d99e1063, type: 3}
+      propertyPath: m_SortingLayer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8407185157478612536, guid: b2867e8311bd1a84e8a328f9d99e1063, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -298193615
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

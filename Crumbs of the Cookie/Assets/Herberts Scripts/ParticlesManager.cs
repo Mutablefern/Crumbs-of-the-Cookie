@@ -12,12 +12,7 @@ public class ParticlesManager : MonoBehaviour
 
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-       
-
-    }
+   
     public void Particels(int ParticleType, Vector3 particlePosition)
     {
         //Summons the particle effects
