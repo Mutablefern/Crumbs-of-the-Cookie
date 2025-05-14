@@ -236,6 +236,14 @@ PrefabInstance:
       propertyPath: player_rb
       value: 
       objectReference: {fileID: 977236996}
+    - target: {fileID: 8956029779880786830, guid: 8f7a47b0713d16d45b7cf414a4937ebf, type: 3}
+      propertyPath: maxVelocity
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 8956029779880786830, guid: 8f7a47b0713d16d45b7cf414a4937ebf, type: 3}
+      propertyPath: guaranteedBounce
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

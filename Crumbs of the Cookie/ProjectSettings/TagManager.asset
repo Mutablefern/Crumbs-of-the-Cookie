@@ -7,6 +7,8 @@ TagManager:
   - Enemy
   - LightHit
   - HeavyHit
+  - Audio
+  - DeathCollider
   layers:
   - Default
   - TransparentFX
@@ -43,6 +45,21 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Sky
+    uniqueID: 1250630921
+    locked: 0
+  - name: Clouds
+    uniqueID: 2768907961
+    locked: 0
+  - name: Mountain
+    uniqueID: 2906127617
+    locked: 0
+  - name: Tilemap
+    uniqueID: 3646408371
+    locked: 0
+  - name: Gingerman
+    uniqueID: 3996773681
     locked: 0
   m_RenderingLayers:
   - Default

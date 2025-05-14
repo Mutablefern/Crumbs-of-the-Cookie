@@ -144,6 +144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89d32794136c58441b35d70cf2d3aaa9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  colorValue: 0
 --- !u!1 &5199706841042670109
 GameObject:
   m_ObjectHideFlags: 0
@@ -192,6 +193,14 @@ PrefabInstance:
     - target: {fileID: 7143119834086544547, guid: de606d71c2b278b47824d577d71ef1ec, type: 3}
       propertyPath: m_Color.r
       value: 0.69803923
+      objectReference: {fileID: 0}
+    - target: {fileID: 7143119834086544547, guid: de606d71c2b278b47824d577d71ef1ec, type: 3}
+      propertyPath: m_SortingLayer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7143119834086544547, guid: de606d71c2b278b47824d577d71ef1ec, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -298193615
       objectReference: {fileID: 0}
     - target: {fileID: 7144943832006021795, guid: de606d71c2b278b47824d577d71ef1ec, type: 3}
       propertyPath: m_LocalPosition.x

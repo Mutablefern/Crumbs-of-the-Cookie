@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
 {
+    AudioManager audioManager;
+
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
 
     public enum enemyType
     {
@@ -19,6 +25,7 @@ public class EnemyHealth : MonoBehaviour
     EnemyPointMovement enemyPointMovement;
     EnemyLedgeChecking enemyLedgeChecking;
     EnemyLedgeCheckingRollyPolly enemyLedgeCheckRollyPolly;
+    EnemyColorChanger enemyColorChanger;
     Rigidbody2D rb_Enemy;
     Vector3 direction;
     public Vector3 sourceOfKnockback;
@@ -32,6 +39,7 @@ public class EnemyHealth : MonoBehaviour
         particlesManager = GameObject.Find("Particle Manager").GetComponent<ParticlesManager>();
         enemyPointMovement = GetComponent<EnemyPointMovement>();
         enemyLedgeChecking = GetComponent<EnemyLedgeChecking>();
+        enemyColorChanger = GetComponent<EnemyColorChanger>();
         enemyLedgeCheckRollyPolly = GetComponent<EnemyLedgeCheckingRollyPolly>();
     }
     private void OnTriggerEnter2D(Collider2D collision)
@@ -50,28 +58,37 @@ public class EnemyHealth : MonoBehaviour
         }
         if (health <= 0)
         {
+            if (thisEnemyType== enemyType.Butterroll) //when the butterroll dies it gives the player armor
+            {
+                enemyLedgeCheckRollyPolly.Ondeath();
+            }
             Debug.Log("Play Enemy death anim");
             Destroy(gameObject);
+
         }
     }
     public void DamageEffect()
     {
         if (thisEnemyType == enemyType.GummyBear)
         {
+            audioManager.playSFX(audioManager.bearhurt);
             particlesManager.Particels(1, transform.position);
+            enemyColorChanger.ColorChangerForParticle();
             StartCoroutine(KnockBackPoint());
-            
-            
         }
-        if (thisEnemyType == enemyType.GummyRat)
+        else if (thisEnemyType == enemyType.GummyRat)
         {
+            audioManager.playSFX(audioManager.rathurt);
             particlesManager.Particels(1, transform.position);
+            enemyColorChanger.ColorChangerForParticle();
             StartCoroutine(KnockBackLedge());
         }
-        if(thisEnemyType == enemyType.Butterroll)
+        else if(thisEnemyType == enemyType.Butterroll)
         {
+            audioManager.playSFX(audioManager.rolleypolleyhurt);
             particlesManager.Particels(0, transform.position);
             StartCoroutine(KnockBackLedgeRollyPolly());
+           
         }
     }
     IEnumerator KnockBackPoint()

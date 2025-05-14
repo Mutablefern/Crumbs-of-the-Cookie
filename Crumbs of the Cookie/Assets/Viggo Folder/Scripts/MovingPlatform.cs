@@ -6,6 +6,8 @@ public class MovingPlatforms : MonoBehaviour
     public float moveSpeed;
 
     private Vector3 nextPosition;
+
+
     void Start()
     {
         nextPosition = pointB.position;
@@ -14,6 +16,7 @@ public class MovingPlatforms : MonoBehaviour
     void FixedUpdate()
     {
         transform.position = Vector3.MoveTowards(transform.position, nextPosition, moveSpeed * Time.deltaTime);
+
 
         if (transform.position == nextPosition)
         {
