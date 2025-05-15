@@ -1263,7 +1263,7 @@ PrefabInstance:
       objectReference: {fileID: 386276371}
     - target: {fileID: 8956029779880786830, guid: 8f7a47b0713d16d45b7cf414a4937ebf, type: 3}
       propertyPath: maxVelocity
-      value: 10
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 8956029779880786830, guid: 8f7a47b0713d16d45b7cf414a4937ebf, type: 3}
       propertyPath: guaranteedBounce
@@ -3192,7 +3192,7 @@ PrefabInstance:
       objectReference: {fileID: 386276371}
     - target: {fileID: 8956029779880786830, guid: 8f7a47b0713d16d45b7cf414a4937ebf, type: 3}
       propertyPath: maxVelocity
-      value: 10
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 8956029779880786830, guid: 8f7a47b0713d16d45b7cf414a4937ebf, type: 3}
       propertyPath: guaranteedBounce
@@ -9193,7 +9193,7 @@ PrefabInstance:
       objectReference: {fileID: 386276371}
     - target: {fileID: 8956029779880786830, guid: 8f7a47b0713d16d45b7cf414a4937ebf, type: 3}
       propertyPath: maxVelocity
-      value: 10
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 8956029779880786830, guid: 8f7a47b0713d16d45b7cf414a4937ebf, type: 3}
       propertyPath: guaranteedBounce
@@ -35187,8 +35187,8 @@ MonoBehaviour:
   cameraOffset: {x: 0, y: 0, z: 0}
   player: {fileID: 386276358}
   CameraMovementSpeed: 5
-  cameraActive: 1
-  autoScroll: 0
+  cameraActive: 0
+  autoScroll: 1
 --- !u!114 &2043753686
 MonoBehaviour:
   m_ObjectHideFlags: 0
