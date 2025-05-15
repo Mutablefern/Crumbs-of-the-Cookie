@@ -52,11 +52,17 @@ TagManager:
   - name: Clouds
     uniqueID: 2768907961
     locked: 0
+  - name: VulkanBakground
+    uniqueID: 384160697
+    locked: 0
   - name: Mountain
     uniqueID: 2906127617
     locked: 0
   - name: Tilemap
     uniqueID: 3646408371
+    locked: 0
+  - name: VulkanHuvud
+    uniqueID: 1687732659
     locked: 0
   - name: Gingerman
     uniqueID: 3996773681
