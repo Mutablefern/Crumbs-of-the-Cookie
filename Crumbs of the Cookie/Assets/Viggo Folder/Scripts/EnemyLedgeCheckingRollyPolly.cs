@@ -201,7 +201,7 @@ public class EnemyLedgeCheckingRollyPolly : MonoBehaviour
     }
     public void Ondeath()
     {
-        Instantiate(armor);
+        Instantiate(armor, transform.position, Quaternion.identity);
     }
 
 }

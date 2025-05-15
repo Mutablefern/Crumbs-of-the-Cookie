@@ -84806,6 +84806,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HeadIcon (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5277059455770041707, guid: 2c0215cea86481e4c84a738d0e20845d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6395103304902219905, guid: 2c0215cea86481e4c84a738d0e20845d, type: 3}
       propertyPath: m_Pivot.x
       value: 0
