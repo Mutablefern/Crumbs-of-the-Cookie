@@ -83611,6 +83611,10 @@ PrefabInstance:
       propertyPath: runtoTransform
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 2690315838920030526, guid: 9e531f0ff10db6e45860b6b6455a5d8c, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3190478805094195949, guid: 9e531f0ff10db6e45860b6b6455a5d8c, type: 3}
       propertyPath: m_Color.b
       value: 1
