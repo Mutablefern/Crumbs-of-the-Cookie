@@ -18,12 +18,14 @@ public class SceneManagement : MonoBehaviour
             sceneTransitionScript = Transitioner.GetComponent<SceneTransition>();
         }
         Debug.Log(PlayerPrefs.GetString("SavedScene"));
+
     }
 
     public void LoadNextScene()
     {
         Scene sceneLoaded = SceneManager.GetActiveScene();
-        SceneManager.LoadScene(sceneLoaded.buildIndex + 1);   //loads the next scene in build order. (levels 1,2,3 need to be right next to each other)    
+        SceneManager.LoadScene(sceneLoaded.buildIndex + 1);   //loads the next scene in build order. (levels 1,2,3 need to be right next to each other)
+        PrevScene = SceneManager.GetActiveScene().name;
     }
     public void ChangeScene(string sceneName)
     {
