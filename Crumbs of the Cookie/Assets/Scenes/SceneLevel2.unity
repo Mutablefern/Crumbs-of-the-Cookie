@@ -1586,6 +1586,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5998911278847716393, guid: 9e531f0ff10db6e45860b6b6455a5d8c, type: 3}
   m_PrefabInstance: {fileID: 1054251451}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &876643997 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5536806420500308807, guid: 9e531f0ff10db6e45860b6b6455a5d8c, type: 3}
+  m_PrefabInstance: {fileID: 1054251451}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 876643984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba9b1cd2d1da82b44910d2aa285c17bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &903401082
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2082,6 +2093,10 @@ PrefabInstance:
     - target: {fileID: 5998911278847716393, guid: 9e531f0ff10db6e45860b6b6455a5d8c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8139019785647194950, guid: 9e531f0ff10db6e45860b6b6455a5d8c, type: 3}
+      propertyPath: LightAttackDuration
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -57572,6 +57587,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4681643025691138556, guid: 87586c89f963ea244be9adee10911d3d, type: 3}
+      propertyPath: health
+      value: 
+      objectReference: {fileID: 876643997}
     - target: {fileID: 8332740904587088588, guid: 87586c89f963ea244be9adee10911d3d, type: 3}
       propertyPath: m_Name
       value: OutOfCam
@@ -57860,6 +57879,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4681643025691138556, guid: 87586c89f963ea244be9adee10911d3d, type: 3}
+      propertyPath: health
+      value: 
+      objectReference: {fileID: 876643997}
     - target: {fileID: 8332740904587088588, guid: 87586c89f963ea244be9adee10911d3d, type: 3}
       propertyPath: m_Name
       value: OutOfCam (1)
